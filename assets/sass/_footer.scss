@@ -1,0 +1,51 @@
+
+.site-footer {
+  padding: 3rem 0;
+  background-color: #F7F8F5;
+  color: #6C7E57;
+  @include phone{
+    padding-bottom: 0;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include phone{
+      display: block;
+      text-align: center;
+    }
+  }
+  .col {
+    width: auto;
+    &:first-of-type {
+      margin-right: 0;
+    }
+    &--copy {
+      @include phone{
+        background: #c9ccc3;
+      }
+    }
+    ul {
+      margin: 0;
+      display: flex;
+      list-style: none;
+      @include phone{
+        display: block;
+      }
+      li {
+        padding: 1rem;
+      }
+      a {
+        color: #6C7E57;
+        text-decoration: none;
+        font-size: 1.8rem;
+      }
+    }
+    .copy {
+      @include phone{
+        margin-top: 2rem;
+        padding: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.btn {
+  outline: none;
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color:#CF4B27;
+  font-family: 'Open Sans Condensed', sans-serif;
+  transition: all .1s ease-in-out;
+  //@include phone {
+  //  height: 5rem;
+  //}
+  &:hover {
+    background: #304A0D;
+  }
+  &:active {
+    border: 0 solid;
+  }
+  &--sidebar {
+    background-color: #FA9511;
+    border-bottom: 0.5rem solid #CF7D10;
+    height: 6.5rem;
+    font-size: 2.4rem;
+    line-height: 3/3rem;
+    text-transform: uppercase;
+    &:hover {
+      background: #ef8e10;
+    }
+    &:active {
+      border: 0 solid;
+    }
+  }
+}

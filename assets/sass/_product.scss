@@ -1,0 +1,91 @@
+//product item in archive
+li.product {
+  .button {
+    display: block;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #222;
+    max-width: 21rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-bottom: 0.2rem solid #555;
+    &:hover {
+      background: #aebb9d2b;
+      border-bottom: 0.2rem solid #000;
+    }
+    &:active {
+      border: 1px solid #222;
+    }
+  }
+}
+//pagination
+.woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+  background-color: #78A643;
+  color: #fff;
+  &:hover {
+    background-color: #78A643;
+    color: #fff;
+  }
+}
+.woocommerce-pagination .page-numbers li .page-numbers.current {
+  background-color: #638D33;
+  color: #fff;
+}
+.woocommerce-products-header {
+  padding-bottom: 2rem!important;
+}
+//breadcrubs
+.storefront-breadcrumb {
+  margin-bottom: 0;
+}
+
+//cart
+.cart-contents {
+  padding-left: 3rem!important;
+  padding-right: 3rem!important;
+}
+.site-header-cart .cart-contents::after {
+  margin-left: 1rem;
+}
+.widget_shopping_cart .product_list_widget li {
+  padding: 1rem;
+  background: #fff;
+  &:hover {
+    background:  #466323;
+    color: #fff;
+    span, a {
+      color: #fff!important;
+    }
+    a:before {
+      color: #fff;
+    }
+  }
+}
+.site-header-cart:hover .widget_shopping_cart {
+  box-shadow: 0 1px 8px #9e9999;
+}
+
+//taxonomies
+.single-product div.product .product_meta {
+  span {
+    margin-bottom: 1rem;
+  }
+}
+.woocommerce-product-details__short-description {
+  p {
+    line-height: 2.9rem;
+  }
+}
+
+ul.products li.product h2, ul.products li.product h3, ul.products li.product .woocommerce-loop-product__title, ul.products li.product .wc-block-grid__product-title, ul.products .wc-block-grid__product h2, ul.products .wc-block-grid__product h3, ul.products .wc-block-grid__product .woocommerce-loop-product__title, ul.products .wc-block-grid__product .wc-block-grid__product-title, .wc-block-grid__products li.product h2, .wc-block-grid__products li.product h3, .wc-block-grid__products li.product .woocommerce-loop-product__title, .wc-block-grid__products li.product .wc-block-grid__product-title, .wc-block-grid__products .wc-block-grid__product h2, .wc-block-grid__products .wc-block-grid__product h3, .wc-block-grid__products .wc-block-grid__product .woocommerce-loop-product__title, .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
+  font-size: 2rem;
+}
+
+.onsale {
+  color: #fe191a;
+  border-color: #fe191a;
+}

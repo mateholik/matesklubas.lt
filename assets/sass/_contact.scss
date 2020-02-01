@@ -1,0 +1,57 @@
+.contact {
+  .info {
+    line-height: 3rem;
+  }
+  .col:first-of-type {
+    margin-right: 10rem;
+  }
+  .form {
+    input, textarea {
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+      background-color: #638d3317;
+      border: 0.1rem solid #638D33;
+      outline: none;
+      border-radius: 0.3rem;
+      &:focus {
+        background-color: #638d3317;
+        outline-color: #638D33;
+      }
+    }
+    input {
+      height: 4rem;
+      padding-left: 1rem;
+      box-sizing: border-box;
+
+    }
+    input[type=submit] {
+      outline: none;
+      font-size: 2rem;
+      border-radius: 0.3rem;
+      width: 100%;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      color: white;
+      border-bottom: 0.3rem solid #30470E;
+      transition: all .1s ease-in-out;
+      background-color: #78A643;
+      border-bottom: 0.3rem solid #638D33;
+      padding:0 1rem;
+      @include phone {
+        height: 5rem;
+      }
+      &:hover {
+        background: #48691A;
+        border-bottom: 0.3rem solid #3d561a;
+      }
+      &:active {
+        border: 0 solid;
+      }
+    }
+  }
+}
