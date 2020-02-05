@@ -40,6 +40,7 @@ add_action( 'init', 'footer_menu' );
 include_once ('inc/header.php');
 include_once ('inc/homepage.php');
 include_once ('inc/woo.php');
+include_once ('inc/customTaxPost.php');
 
 
 add_image_size( 'home-slide', 300, 200, true );

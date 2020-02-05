@@ -13,106 +13,51 @@
  */
 
 get_header(); ?>
-<div class="container">
-    <main class="main">
-        <div class="main__sidebar">
-            <div class="sidebar">
-                <p class="sidebar__text">Mes galime tau padėti išsirinkti tau skirtą matę</p>
-                <div class="sidebar__btn">
-                    <a href="#" class="btn btn--sidebar">Negali išsirinkti?</a>
-                </div>
-                <div class="sidebar__block">
-                    <h3>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
-                        Matė arbatos:
-                    </h3>
-                    <ul>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sidebar__block">
-                    <h3>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/kalabasas.svg" alt="kalabasas">
-                        kalabasai:
-                    </h3>
-                    <ul>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sidebar__block">
-                    <h3>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/bombiles.svg" alt="bombiles">
-                        bombilai:
-                    </h3>
-                    <ul>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                        <li>
-                            Classical
-                            <span>(20)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<?php include_once("svg/svgHome.php"); ?>
+    <main class="main site-main">
+        <?php get_template_part('templates/sidebar'); ?>
         <div class="main__content">
             <div class="homepage">
                <div class="news">
                    <div class="row">
                        <div class="row__col">
-                            <div class="news__block">
+                           <?php
+                               $latestPost = wp_get_recent_posts(array(
+                                   'numberposts' => 1, // Number of recent posts thumbnails to display
+                                   'post_status' => 'publish' // Show only the published posts
+                               ))
+                           ;?>
+                            <a href="<?php echo get_permalink($latestPost[0]['ID']) ?>" class="news__block">
                                 <div class="news__preview">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/news-thumb.jpg" alt="thumb">
-                                    <p class="news__category" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-thumb.svg');">Naujausi Straipsniai</p>
+                                    <?php echo get_the_post_thumbnail($latestPost[0]['ID'], 'home-news'); ?>
+                                    <p class="news__category"">Naujausi Straipsniai</p>
+                                    <div class="news__category-bg">
+                                        <?php echo $bgThumb; ?>
+                                    </div>
                                 </div>
                                 <div class="news__text">
-                                    <h1 class="news__text-title">Naujas būdas ruošti matė arbatą pridedant kitų žolelių...</h1>
+                                    <h1 class="news__text-title"><?php echo $latestPost[0]['post_title'] ?></h1>
                                     <p class="news__text-more">Plačiau »</p>
                                 </div>
                                 <div class="news__border"></div>
-                            </div>
+                            </a>
+
                        </div>
                        <div class="row__col">
-                           <div class="news__block">
+                           <?php
+                               $latestVideo = wp_get_recent_posts(array(
+                                   'post_type'=>'videos',
+                                   'numberposts' => 1, // Number of recent posts thumbnails to display
+                                   'post_status' => 'publish' // Show only the published posts
+                               ))
+                           ;?>
+                           <a href="<?php echo get_permalink($latestVideo[0]['ID']) ?>"  class="news__block">
                                <div class="news__preview">
-                                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/news-thumb-video.jpg" alt="thumb">
-                                   <p class="news__category" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-thumb.svg');">Naujausias vaizdo įrašas</p>
+                                   <?php echo get_the_post_thumbnail($latestVideo[0]['ID'], 'home-news'); ?>
+                                   <p class="news__category">Naujausias vaizdo įrašas</p>
+                                   <div class="news__category-bg">
+                                       <?php echo $bgThumb; ?>
+                                   </div>
                                    <div class="news__play">
                                        <div class="news__play-wrap">
                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="play">
@@ -120,50 +65,73 @@ get_header(); ?>
                                    </div>
                                </div>
                                <div class="news__text">
-                                   <h1 class="news__text-title">Naujas būdas ruošti matė arbatą pridedant kitų žolelių...</h1>
+                                   <h1 class="news__text-title"><?php echo $latestVideo[0]['post_title'] ?></h1>
                                    <p class="news__text-more">Plačiau »</p>
                                </div>
                                <div class="news__border"></div>
-                           </div>
+                           </a>
                        </div>
                    </div>
                </div>
-
                 <div class="cats">
                     <h2 class="cats__title">Produktų kategorijos</h2>
-                    <div class="cats__wrap" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat.jpg');">
-                        <div class="block">
+                    <div class="cats__wrap">
+                        <div class="cats__bg">
+                            <?php echo $bgCat; ?>
+                        </div>
+                        <a href="#" class="block">
+                            <div class="block__bg-mob">
+                                <?php echo $bgCatItemMob; ?>
+                            </div>
                             <div class="block__img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate.png" alt="mate">
                             </div>
-                            <h3 class="block__text" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item.png');">
+                            <h3 class="block__text">
+                                <div class="block__text-bg">
+                                    <?php echo $bgCatItem; ?>
+                                </div>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
-                                Matė arbatos:
+                                <span>Matė arbatos:</span>
                             </h3>
-                        </div>
-                        <div class="block">
+                        </a>
+                        <a href="#" class="block">
+                            <div class="block__bg-mob">
+                                <?php echo $bgCatItemMob; ?>
+                            </div>
                             <div class="block__img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bombilos.png" alt="mate">
                             </div>
-                            <h3 class="block__text" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item.png');">
+                            <h3 class="block__text">
+                                <div class="block__text-bg">
+                                    <?php echo $bgCatItem; ?>
+                                </div>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/bombiles.svg" alt="bombiles">
-                                bombilai:
+                                <span>bombilai:</span>
                             </h3>
-                        </div>
-                        <div class="block">
+                        </a>
+                        <a href="#" class="block">
+                            <div class="block__bg-mob">
+                                <?php echo $bgCatItemMob; ?>
+                            </div>
                             <div class="block__img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/kalabasas.png" alt="mate">
                             </div>
-                            <h3 class="block__text" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item.png');">
+                            <h3 class="block__text">
+                                <div class="block__text-bg">
+                                    <?php echo $bgCatItem; ?>
+                                </div>
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/kalabasas.svg" alt="kalabasas">
-                                kalabasai:
+                                <span>kalabasai:</span>
                             </h3>
-                        </div>
+                        </a>
                     </div>
+                </div>
+                <div class="prods">
+                    <h2 class="cats__title">Naujausi produktai</h2>
+                    <?php echo do_shortcode('[sale_products columns="3" limit="6"]'); ?>
                 </div>
             </div>
         </div>
     </main>
-</div>
 <?php
 get_footer();

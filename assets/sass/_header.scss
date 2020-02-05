@@ -1,142 +1,23 @@
-//.header {
-//  &__wrap {
-//    position: relative;
-//    height: 8rem;
-//    display: flex;
-//    justify-content: space-between;
-//    align-items: center;
-//    @include phone{
-//      border-bottom: 1px solid #e2e8f0;
-//    }
-//  }
-//  &__logo {
-//    display: block;
-//    max-width: 16rem;
-//    @include phone{
-//      padding-left: 1rem;
-//    }
-//    .custom-logo-link {
-//      margin: 0;
-//      display: block;
-//      img {
-//        width: 100%;
-//        height: auto;
-//      }
-//    }
-//  }
-//  &__navigation {
-//    .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a {
-//      font-weight: 600;
-//      font-size: 16px;
-//      line-height: 20px;
-//      text-transform: uppercase;
-//      color: #466323;
-//    }
-//    .main-navigation ul.menu ul.sub-menu, .main-navigation ul.nav-menu ul.children {
-//      @media(min-width: 770px) {
-//        width: 100%;
-//        background-color: #fff;
-//        box-shadow: 0 1px 8px #9e9999;
-//        li {
-//          &:not(:last-child) {
-//            border-bottom: 1px solid #e2e8f0;
-//          }
-//          &:hover {
-//            background: #466323;
-//            a {
-//              color: #fff;
-//            }
-//          }
-//        }
-//        a {
-//          font-weight: 600;
-//        }
-//      }
-//    }
-//    //mobile
-//   .handheld-navigation {
-//      transition: all 0.5s ease;
-//      position: absolute;
-//      left: 0;
-//      top: 80px;
-//      background: white;
-//      z-index: 3;
-//      width: 100%;
-//      ul li {
-//        font-weight: 600;
-//        font-size: 1.5rem;
-//        line-height: 1.8rem;
-//        text-transform: uppercase;
-//        border-bottom: 1px solid #e2e8f0;
-//        padding: 1.5rem 1rem;
-//        a {
-//          padding: 0;
-//          color: #466323;
-//        }
-//      }
-//    }
-//    .handheld-navigation ul.sub-menu {
-//      transition: all 0.5s ease;
-//      li {
-//        border-bottom: none;
-//      }
-//    }
-//    .main-navigation {
-//      @include phone{
-//        padding-right: 1rem;
-//      }
-//    }
-//    button.menu-toggle {
-//      outline: none;
-//      border-color: #466323;
-//      color: #466323;
-//    }
-//    button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
-//      background-color: #466323;
-//    }
-//    //mobile-end
-//  }
-//  &__cart {
-//    @include phone{
-//      display: none;
-//    }
-//  }
-//}
-//
-//
-//
-//  .header__navigation .main-navigation ul.menu>li>a, .header__navigation .main-navigation ul.nav-menu>li>a {
-//    @media (max-width:900px) and (min-width:400px) {
-//      font-size: 1.4rem;
-//    }
-//
-//  }
-//  .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a {
-//    @media (max-width:900px) and (min-width:400px) {
-//      padding: 0.4rem;
-//    }
-//  }
 .header {
   .top {
     position: relative;
-    padding: 2rem;
-    padding-top: 1rem;
-    @include phone {
-     padding: 1rem 5rem;
-    }
-    &__bg {
-      position: absolute;
-      top:0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-    }
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    line-height: 0;
     &__content {
-      height: 16vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
       justify-content: center;
       align-items: center;
+      @include phone {
+        width: 65%;
+      }
       svg {
         width: 100%;
       }
@@ -162,7 +43,7 @@
   .nav {
     font-family: 'Open Sans Condensed', sans-serif;
     position: relative;
-    top: -13px;
+    top: -15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,6 +55,13 @@
     }
     .menu-toggle {
       display: none;
+    }
+    &__bg {
+      position: absolute;
+      z-index: -1;
+      @include phone {
+       display: none;
+      }
     }
     &__ul {
       display: flex;

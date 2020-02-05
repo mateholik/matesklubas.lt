@@ -25,10 +25,11 @@
         width: auto;
       }
     }
-    li {
+    li a {
       display: flex;
       justify-content: space-between;
       margin-bottom: 1.2rem;
+      color: #6d6d6d;
     }
   }
 }

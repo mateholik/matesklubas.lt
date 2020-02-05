@@ -12613,8 +12613,8 @@ module.exports = g;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/vladimir/Documents/sites/matesklubas/wp-content/themes/matesklubas/assets/javascript/main.js */"./assets/javascript/main.js");
-module.exports = __webpack_require__(/*! /Users/vladimir/Documents/sites/matesklubas/wp-content/themes/matesklubas/assets/sass/style.scss */"./assets/sass/style.scss");
+__webpack_require__(/*! /Users/vladimir/Sites/matesklubas/wp-content/themes/mstesklubas/assets/javascript/main.js */"./assets/javascript/main.js");
+module.exports = __webpack_require__(/*! /Users/vladimir/Sites/matesklubas/wp-content/themes/mstesklubas/assets/sass/style.scss */"./assets/sass/style.scss");
 
 
 /***/ })
