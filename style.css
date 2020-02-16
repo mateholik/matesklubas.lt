@@ -818,6 +818,84 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   border-color: #fe191a;
 }
 
+.product .onsale {
+  color: #d65227;
+  border-color: #d65227;
+}
+.product .price {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  color: #EFB447;
+  margin: 1.5rem 0 !important;
+}
+.product .price del {
+  color: #CF4B27;
+}
+.product .woocommerce-product-details__short-description {
+  margin-bottom: 1.5rem;
+}
+.product .customMeta {
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+.product .customMeta .posted_in, .product .customMeta .tagged_as {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+  color: #A4A4A4;
+}
+.product .customMeta .posted_in a, .product .customMeta .tagged_as a {
+  font-weight: 400;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
+.product .customMeta .posted_in a:hover, .product .customMeta .tagged_as a:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+.product .stock.in-stock {
+  padding: 1rem 0;
+  color: #CF4B27;
+}
+.product .stock.in-stock:before {
+  color: #EFB447;
+}
+.product .quantity .qty {
+  border: 1px solid #E5E5DF;
+  background: #fff;
+  box-shadow: none;
+}
+
+button.alt, input[type=button].alt, input[type=reset].alt, input[type=submit].alt, .button.alt, .widget-area .widget a.button.alt {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background: #CF4B27;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  padding: 0;
+  height: 4.7rem;
+  max-width: 18rem;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button.alt:hover, input[type=button].alt:hover, input[type=reset].alt:hover, input[type=submit].alt:hover, .button.alt:hover, .widget-area .widget a.button.alt:hover {
+  background: #e97d3c;
+}
+button.alt img, input[type=button].alt img, input[type=reset].alt img, input[type=submit].alt img, .button.alt img, .widget-area .widget a.button.alt img {
+  width: 2.6rem;
+  margin: 0;
+  margin-right: 1rem;
+}
+
 .postas-wrap {
   display: block;
 }

@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 ?>
-<div class="product_meta">
+<div class="product_meta customMeta">
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
 
@@ -35,8 +35,6 @@ global $product;
 
 	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 
-
-
     <?php
     productCustomTags($product->get_id(), 'salis', 'Kilmės šalis');
     productCustomTags($product->get_id(), 'sudetis', 'Sudėtis');
@@ -44,7 +42,6 @@ global $product;
     productCustomTags($product->get_id(), 'kiekis', 'Kiekis');
     productCustomTags($product->get_id(), 'paruosimo_budas', 'Rekomenduojamas paruošimo būdas');
     ?>
-
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 

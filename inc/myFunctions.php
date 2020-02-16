@@ -29,15 +29,15 @@ function productCustomTags($postID, $taxName, $pavadinimas){
     $terms_list = wp_get_post_terms($postID, $taxName);
     if(empty($terms_list)) return;
 
-    $output = $pavadinimas . ': ';
+    $output = '<span class="tagged_as">' . $pavadinimas . ': ';
     $i = 0;
     foreach($terms_list as $term){
         $i++;
         if($i>1){
             $output .= ', ';
         }
-        $output .= '<a href=" ' . get_term_link($term) . ' "> ' . $term->name .'</a>';
+        $output .= '<a href=" ' . get_term_link($term) . ' "> ' . $term->name .'</a></span>';
     }
-    echo $output . '<br>';
+    echo $output;
 }
 
