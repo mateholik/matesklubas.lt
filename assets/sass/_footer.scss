@@ -1,51 +1,76 @@
-
-.site-footer {
-  padding: 3rem 0;
-  background-color: #F7F8F5;
-  color: #6C7E57;
-  @include phone{
-    padding-bottom: 0;
+.footer {
+  position: relative;
+  background: #000;
+  color: #AAAAB0;
+  @include phone {
+    margin-top: 3rem;
   }
-  .row {
+  &:before {
+    content:url('./assets/img/bg-footer.svg');
+    display: block;
+    line-height: 0;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__top {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid #787676;
+  }
+  &__menus {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include phone{
-      display: block;
-      text-align: center;
+    @include phone {
+      flex-direction: column;
     }
-  }
-  .col {
-    width: auto;
-    &:first-of-type {
-      margin-right: 0;
-    }
-    &--copy {
-      @include phone{
-        background: #c9ccc3;
-      }
-    }
-    ul {
-      margin: 0;
-      display: flex;
-      list-style: none;
-      @include phone{
-        display: block;
-      }
-      li {
-        padding: 1rem;
+    .menu {
+      margin-right: 5rem;
+      @include phone {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        order: 2;
       }
       a {
-        color: #6C7E57;
-        text-decoration: none;
-        font-size: 1.8rem;
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        color: #AAAAB0;
+        &:hover {
+          transform: scale(1.01);
+          color: #fff;
+        }
       }
     }
-    .copy {
-      @include phone{
-        margin-top: 2rem;
-        padding: 2rem;
+    .about {
+      max-width: 35rem;
+      margin-left: auto;
+      @include phone {
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 2rem;
       }
+    }
+  }
+  &__title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #AAAAB0;
+  }
+  &__bottom {
+    p {
+      text-align: center;
+      padding: 2.5rem 0;
+      font-size: 1.2rem;
+      line-height: 2.8rem;
+      color: #AFACAC;
     }
   }
 }

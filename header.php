@@ -26,27 +26,22 @@
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
-
-    <?php include_once("svg/svgHeader.php"); ?>
     <header id="header" class="header">
         <div class="top">
-            <?php echo $bgTop; ?>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-top.jpg" alt="background">
             <div class="top__content">
                 <div class="top__left">
-                    <?php echo $mates; ?>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mates.svg" alt="mates">
                 </div>
-                <div class="top__center">
-                    <?php echo $logo; ?>
-                </div>
+                <a href="<?php echo home_url(); ?>" class="top__center">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
+                </a>
                 <div class="top__right">
-                    <?php echo $klubas; ?>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/klubas.svg" alt="klubas">
                 </div>
             </div>
         </div>
         <nav class="nav">
-            <div class="nav__bg">
-                <?php echo $bgNav; ?>
-            </div>
             <div class="container container--nav">
                 <?php
                 wp_nav_menu( array(

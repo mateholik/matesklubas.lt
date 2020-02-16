@@ -10,7 +10,7 @@ function unHookHeader(){
     remove_action('storefront_header', 'storefront_header_container_close', 41);
     remove_action('storefront_header', 'storefront_primary_navigation_wrapper', 42);
     remove_action('storefront_header', 'storefront_primary_navigation', 50);
-    remove_action('storefront_header', 'storefront_header_cart', 60);
+//    remove_action('storefront_header', 'storefront_header_cart', 60);
     remove_action('storefront_header', 'storefront_primary_navigation_wrapper_close', 68);
 }
 add_action('init', 'unHookHeader');

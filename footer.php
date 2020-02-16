@@ -8,55 +8,48 @@
  */
 
 ?>
-
-		</div><!-- .col-full -->
-	</div><!-- #content -->
-
-	<?php do_action( 'storefront_before_footer' ); ?>
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container container--no-padding">
-
-			<?php
-			/**
-			 * Functions hooked in to storefront_footer action
-			 *
-			 * @hooked storefront_footer_widgets - 10
-			 * @hooked storefront_credit         - 20
-			 */
-//			do_action( 'storefront_footer' );
-			?>
-
-          <div class="row">
-              <div class="col">
-                  <?php
-                  wp_nav_menu( array(
-                      'theme_location' => 'footer-menu',
-                      'container_class' => 'custom-menu-class' ) );
-                  ?>
-              </div>
-              <div class="col col--copy">
-                  <div class="copy">
-                      ©Ecochoice <?php echo date("Y"); ?>
-
-                  </div>
-              </div>
-          </div>
-		</div><!-- .col-full -->
-	</footer><!-- #colophon -->
-
-<!--	--><?php //do_action( 'storefront_after_footer' ); ?>
-
+</div> <!--container end -->
+<div style="clear: both"></div>
+<footer class="footer">
+   <div class="footer__top">
+       <div class="container">
+           <div class="footer__menus">
+               <div class="menu">
+                   <h3 class="footer__title">MATĖ</h3>
+                   <?php getSubCategories(24,'footer'); ?>
+<!--                   --><?php //getSubCategories(35,'footer'); ?>
+               </div>
+               <div class="menu">
+                   <h3 class="footer__title">KALABASOS</h3>
+<!--                   --><?php //getSubCategories(44,'footer'); ?>
+                   <?php getSubCategories(19,'footer'); ?>
+               </div>
+               <div class="menu">
+                   <h3 class="footer__title">BOMBILĖS</h3>
+<!--                   --><?php //getSubCategories(49,'footer'); ?>
+                   <?php getSubCategories(16,'footer'); ?>
+               </div>
+               <div class="menu">
+                   <h3 class="footer__title">PAGALBA PIRKėjui </h3>
+                   <?php
+                       wp_nav_menu( array(
+                           'theme_location' => 'footer-menu',
+                           'container_class' => 'custom-menu-class' ) );
+                   ?>
+               </div>
+               <div class="about">
+                   <h3 class="footer__title">Apie Mus</h3>
+                   <p class="footer__text">Esame arbatos mėgėjai atradę matės arbatas, todėl norime pasidalinti ir su Jumis. Mūsų produkcija išsiskiria skoniu bei kokybe, todėl siūlome begale skirtingų arbatų rūšių. </p>
+               </div>
+           </div>
+       </div>
+   </div>
+    <div class="footer__bottom">
+        <p>Matės Klubas © <?php echo date("Y"); ?> - Visos teisės saugomos</p>
+    </div>
+</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<?php
-$time = microtime();
-$time = explode(' ', $time);
-$time = $time[1] + $time[0];
-$finish = $time;
-$total_time = round(($finish - $start), 4);
-echo 'Page generated in '.$total_time.' seconds.';
-?>
 </body>
 </html>

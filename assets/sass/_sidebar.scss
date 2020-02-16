@@ -9,6 +9,7 @@
   &__btn {
     max-width: 25rem;
     margin-bottom: 4rem;
+    color: #fff;
   }
   &__block {
     margin-bottom: 3rem;
@@ -24,6 +25,10 @@
         margin-right: 0.5rem;
         width: auto;
       }
+    }
+    li:hover {
+      transform: scale(1.01);
+      color: #000;
     }
     li a {
       display: flex;
