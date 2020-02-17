@@ -1,4 +1,8 @@
+//post in archive
 .postas {
+  article {
+    margin-bottom: 2rem;
+  }
   &-wrap {
     display: block;
   }
@@ -60,10 +64,34 @@ width: 100%;
     max-width: 18rem;
     .btn {
       height: 4rem;
+      font-weight: 300;
+      font-size: 2.4rem;
+      line-height: 3.3rem;
+      color: #fff;
     }
   }
 }
+
+
+
+
+//post page
 //post feature img
 .hentry .wp-post-image {
-  margin-left: 0;
+  max-width: 50rem;
+}
+.post {
+  &__title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.2rem;
+    line-height: 5.7rem;
+    text-align: center;
+    color: #272727;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
 }

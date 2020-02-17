@@ -29,7 +29,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.2;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -205,7 +205,7 @@ img {
   transition: all 0.1s ease-in-out;
 }
 .btn:hover {
-  background: #304A0D;
+  background: #d65227;
 }
 .btn:active {
   border: 0 solid;
@@ -771,6 +771,7 @@ ul.custom a.button img {
 
 .storefront-breadcrumb {
   margin-bottom: 0;
+  padding: 1rem 0;
 }
 
 .cart-contents {
@@ -896,6 +897,9 @@ button.alt img, input[type=button].alt img, input[type=reset].alt img, input[typ
   margin-right: 1rem;
 }
 
+.postas article {
+  margin-bottom: 2rem;
+}
 .postas-wrap {
   display: block;
 }
@@ -965,10 +969,28 @@ button.alt img, input[type=button].alt img, input[type=reset].alt img, input[typ
 }
 .postas__btn .btn {
   height: 4rem;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  color: #fff;
 }
 
 .hentry .wp-post-image {
-  margin-left: 0;
+  max-width: 50rem;
+}
+
+.post__title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4.2rem;
+  line-height: 5.7rem;
+  text-align: center;
+  color: #272727;
+  margin-bottom: 2rem;
+}
+.post p {
+  margin-bottom: 2rem;
 }
 
 .contact .info {

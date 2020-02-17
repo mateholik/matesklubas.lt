@@ -78,3 +78,8 @@
     do_action( 'storefront_before_content' );
     ?>
     <div class="container">
+        <?php
+            if(is_single() && 'post' == get_post_type()) {
+                the_title('<h3 class="post__title">', '</h3>');
+            }
+        ?>
