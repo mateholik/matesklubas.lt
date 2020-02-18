@@ -18,53 +18,53 @@ add_action('init', 'unHookHeader');
 function customHeader() {
     ?>
 
-    <header id="header" class="header">
-        <div class="top">
-            <div class="top__bg">
-                <?php get_template_part('svg/inline', 'bgTop.svg'); ?>
-            </div>
-            <div class="top__content">
-                <div class="top__left">
-                    <?php get_template_part('svg/inline', 'mates.svg'); ?>
-                </div>
-                <div class="top__center">
-                    <?php get_template_part('svg/inline', 'logo.svg'); ?>
-                </div>
-                <div class="top__right">
-                    <?php get_template_part('svg/inline', 'klubas.svg'); ?>
-                </div>
-            </div>
-
-        </div>
-        <nav class="nav" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav.svg');">
-            <div class="container container--nav">
-                <?php
-                wp_nav_menu( array(
-                    'menu_class' => 'nav__ul',
-                    'theme_location' => 'primary',
-                    'container' => ''
-                ) );
-                ?>
-                <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">
-                    <div class="nav-icon" :class="{open: mobMenu}">
-                        <div></div>
-                    </div>
-                    MENIU
-                </div>
-            </div>
-
-                <div v-show="mobMenu" style="display: none;">
-                    <?php
-                    wp_nav_menu( array(
-                        'menu_class' => 'nav__ul--mob',
-                        'theme_location' => 'primary',
-                        'container' => ''
-                    ) );
-                    ?>
-                </div>
-
-        </nav>
-    </header>
+<!--    <header id="header" class="header">-->
+<!--        <div class="top">-->
+<!--            <div class="top__bg">-->
+<!--                --><?php //get_template_part('svg/inline', 'bgTop.svg'); ?>
+<!--            </div>-->
+<!--            <div class="top__content">-->
+<!--                <div class="top__left">-->
+<!--                    --><?php //get_template_part('svg/inline', 'mates.svg'); ?>
+<!--                </div>-->
+<!--                <div class="top__center">-->
+<!--                    --><?php //get_template_part('svg/inline', 'logo.svg'); ?>
+<!--                </div>-->
+<!--                <div class="top__right">-->
+<!--                    --><?php //get_template_part('svg/inline', 'klubas.svg'); ?>
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--        <nav class="nav" style="background-image: url('--><?php //echo get_stylesheet_directory_uri(); ?>/*/assets/img/bg-nav.svg');">*/
+/*            <div class="container container--nav">*/
+/*                */<?php
+//                wp_nav_menu( array(
+//                    'menu_class' => 'nav__ul',
+//                    'theme_location' => 'primary',
+//                    'container' => ''
+//                ) );
+//                ?>
+<!--                <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">-->
+<!--                    <div class="nav-icon" :class="{open: mobMenu}">-->
+<!--                        <div></div>-->
+<!--                    </div>-->
+<!--                    MENIU-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--                <div v-show="mobMenu" style="display: none;">-->
+<!--                    --><?php
+//                    wp_nav_menu( array(
+//                        'menu_class' => 'nav__ul--mob',
+//                        'theme_location' => 'primary',
+//                        'container' => ''
+//                    ) );
+//                    ?>
+<!--                </div>-->
+<!---->
+<!--        </nav>-->
+<!--    </header>-->
    <!--
     <div class="container container--nav">
        <div class="header__wrap">

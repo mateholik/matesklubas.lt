@@ -50,6 +50,23 @@
                     'container' => ''
                 ) );
                 ?>
+
+                <div class="nav__cart">
+                    <?php
+                    if ( storefront_is_woocommerce_activated() ) {?>
+                        <ul id="site-header-cart" class="site-header-cart menu">
+                            <li class="">
+                                <?php storefront_cart_link(); ?>
+                            </li>
+                            <li>
+                                <?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
+                            </li>
+                        </ul>
+                        <?php
+                    } ?>
+                </div>
+
+
                 <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">
                     <div class="nav-icon" :class="{open: mobMenu}">
                         <div></div>
@@ -68,6 +85,7 @@
             </div>
         </nav>
     </header>
+
     <?php
     /**
      * Functions hooked in to storefront_before_content

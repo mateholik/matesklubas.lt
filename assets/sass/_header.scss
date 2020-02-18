@@ -85,10 +85,95 @@
     .menu-toggle {
       display: none;
     }
+    &__cart {
+      position: absolute;
+      top: -6px;
+      right: 1.5rem;
+      z-index: 999;
+      background-image: url("./assets/img/bg-nav-cart.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        transform: scale(1.01);
+      }
+      @include phone {
+        background-image: none!important;
+        background: #CF4B27;
+        top: 0;
+      }
+      &-link {
+        display: flex;
+        align-items: center;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        color: #fff!important;
+        padding: 1.4rem 3.5rem;
+        box-sizing: border-box;
+        transition: 0.2s;
+        text-transform: uppercase;
+        @include phone {
+          padding: 0.75rem;
+        }
+        .img-wrap {
+          position: relative;
+          margin-right: 1rem;
+        }
+        .count {
+          position: absolute;
+          top: -10.7px;
+          left: 14px;
+          width: 2rem;
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          color: #B64526;
+          border-radius: 50%;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+        }
+        .krepselis {
+          @include phone {
+            display: none;
+          }
+        }
+      }
+      //cart in nav
+      .added_to_cart.alt, .added_to_cart, .widget a.button.checkout {
+        background: #CF4B27;
+      }
+      .cart-contents {
+        padding-left: 3rem!important;
+        padding-right: 3rem!important;
+      }
+      .site-header-cart .cart-contents::after {
+        margin-left: 1rem;
+      }
+      .widget_shopping_cart .product_list_widget li {
+        padding: 1rem;
+        background: #fff;
+        &:hover {
+          background: #f5a91d;
+          color: #000!important;
+          span, a {
+            color: #fff!important;
+          }
+          a:before {
+            color: #fff;
+          }
+        }
+      }
+      .site-header-cart:hover .widget_shopping_cart {
+        box-shadow: 0 1px 8px #9e9999;
+      }
+
+    }
     &__ul {
       display: flex;
       justify-content: flex-end;
       list-style: none;
+      padding-right: 20rem;
       @include phone {
         display: none;
       }

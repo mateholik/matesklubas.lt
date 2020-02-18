@@ -45,3 +45,25 @@ function custom_remove_woo_checkout_fields( $fields ) {
 
     return $fields;
 }
+
+//woo nav cart item
+if ( ! function_exists( 'storefront_cart_link' ) ) {
+    /**
+     * Cart Link
+     * Displayed a link to the cart including the number of items present and the cart total
+     *
+     * @return void
+     * @since  1.0.0
+     */
+    function storefront_cart_link() {
+        ?>
+        <a class="nav__cart-link" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
+            <span class="img-wrap">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cart.svg" alt="cart">
+                <span class="count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+            </span>
+            <span class="krepselis">krepšelis</span>
+        </a>
+        <?php
+    }
+}

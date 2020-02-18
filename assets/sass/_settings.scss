@@ -72,6 +72,7 @@ img {
     }
   }
   &--nav {
+    position: relative;
     @include phone{
       position: relative;
       height: 3.8rem;
