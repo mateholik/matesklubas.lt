@@ -143,7 +143,7 @@ get_header(); ?>
                 <section>
                     <div class="prods">
                         <h2 class="cats__title">Naujausi produktai</h2>
-                        <?php echo do_shortcode('[sale_products columns="3" limit="6"]'); ?>
+                        <?php echo do_shortcode('[recent_products columns="3" limit="6"]'); ?>
                     </div>
                 </section>
 
