@@ -84,7 +84,7 @@ img {
   padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 .container--full {
   padding-right: 0;
@@ -171,6 +171,15 @@ img {
   margin-right: auto;
   margin-left: auto;
   max-width: 128rem;
+}
+
+.woocommerce-breadcrumb {
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .woocommerce-breadcrumb {
+    margin-bottom: 1rem;
+  }
 }
 
 .woocommerce-checkout-review-order select {

@@ -97,8 +97,14 @@
     do_action( 'storefront_before_content' );
     ?>
     <div class="container">
-        <?php
-            if(is_single() && 'post' == get_post_type()) {
-                the_title('<h3 class="post__title">', '</h3>');
-            }
-        ?>
+<!--        --><?php
+//            if(is_single() && 'post' == get_post_type()) {
+//                the_title('<h3 class="post__title">', '</h3>');
+//            }
+//        ?>
+
+        <?php if( !is_checkout() && !is_cart() ) { ?>
+        <main class="main site-main">
+            <?php get_template_part('templates/sidebar'); ?>
+            <div class="main__content">
+        <?php }?>

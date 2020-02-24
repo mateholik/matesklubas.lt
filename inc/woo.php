@@ -73,4 +73,5 @@ if ( ! function_exists( 'storefront_cart_link' ) ) {
         </a>
         <?php
     }
-}
+};
+

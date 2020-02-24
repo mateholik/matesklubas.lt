@@ -134,14 +134,22 @@ add_action( 'storefront_header', 'customHeader', 1 );
 
 
 
-//add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs', 20 );
-//function jk_woocommerce_breadcrumbs() {
-//    return array(
-//        'wrap_before' => '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb">',
-//        'wrap_after'  => '</nav></div></div>',
-//    );
-//}	$defaults['wrap_before'] = '<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb">';
-//$defaults['wrap_after']  = '</nav></div></div>';
+/**
+ * Change several of the breadcrumb defaults
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
+function jk_woocommerce_breadcrumbs() {
+    return array(
+            'delimiter'   => ' &#47; ',
+            'wrap_before' => '<div class="container"><nav class="woocommerce-breadcrumb" itemprop="breadcrumb">',
+            'wrap_after'  => '</nav></div>',
+            'before'      => '',
+            'after'       => '',
+            'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+        );
+}
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs', 20 );
+
 
 function atg_menu_classes($classes, $item, $args) {
     if($args->theme_location == 'primary') {

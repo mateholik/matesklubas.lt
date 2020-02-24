@@ -8,6 +8,13 @@
  */
 
 ?>
+
+<?php if( !is_checkout() && !is_cart() ) { ?>
+    </div>
+    </main>
+<?php }?>
+
+
 </div> <!--container end -->
 <div style="clear: both"></div>
 <footer class="footer">
