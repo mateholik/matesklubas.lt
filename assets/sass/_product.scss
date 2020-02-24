@@ -151,10 +151,16 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   }
   //stock
   .stock.in-stock {
+    display: flex;
+    align-items: center;
     padding: 1rem 0;
     color: #CF4B27;
+    img {
+      margin-right: 0.5rem;
+      max-width: 2.5rem;
+    }
     &:before {
-      color: #EFB447;
+      display: none;
     }
   }
   //quantiti

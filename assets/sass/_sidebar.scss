@@ -13,7 +13,8 @@
   }
   &__block {
     margin-bottom: 3rem;
-    h3 {
+    &-title {
+      font-family: 'Open Sans Condensed', sans-serif;
       display: flex;
       align-items: center;
       font-weight: 300;
@@ -21,6 +22,9 @@
       line-height: 3.5rem;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
+      &:hover {
+        transform: scale(1.01);
+      }
       img {
         margin-right: 0.5rem;
         width: auto;

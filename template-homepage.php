@@ -97,24 +97,6 @@ get_header(); ?>
                         </div>
                     </h3>
                 </a>
-                <!--                        <a href="--><?php //categoryLink(49); ?><!--" class="block">-->
-                <a href="<?php categoryLink(16); ?>" class="block">
-                    <div class="block__bg-mob">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
-                    </div>
-                    <div class="block__img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bombilos.png" alt="mate">
-                    </div>
-                    <h3 class="block__text">
-                        <div class="block__text-bg">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-full.svg" alt="title-wrap">
-                        </div>
-                        <div class="block__text-content">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/bombiles.svg" alt="bombiles">
-                            <span>bombilai</span>
-                        </div>
-                    </h3>
-                </a>
                 <!--                        <a href="--><?php //categoryLink(44) ?><!--" class="block">-->
                 <a href="<?php categoryLink(19) ?>" class="block">
                     <div class="block__bg-mob">
@@ -129,7 +111,25 @@ get_header(); ?>
                         </div>
                         <div class="block__text-content">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/kalabasas.svg" alt="kalabasas">
-                            <span>kalabasai</span>
+                            <span>Kalabasos</span>
+                        </div>
+                    </h3>
+                </a>
+                <!--                        <a href="--><?php //categoryLink(49); ?><!--" class="block">-->
+                <a href="<?php categoryLink(16); ?>" class="block">
+                    <div class="block__bg-mob">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                    </div>
+                    <div class="block__img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bombilos.png" alt="mate">
+                    </div>
+                    <h3 class="block__text">
+                        <div class="block__text-bg">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-full.svg" alt="title-wrap">
+                        </div>
+                        <div class="block__text-content">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/bombiles.svg" alt="bombiles">
+                            <span>Bombilės</span>
                         </div>
                     </h3>
                 </a>

@@ -36,8 +36,9 @@ function productCustomTags($postID, $taxName, $pavadinimas){
         if($i>1){
             $output .= ', ';
         }
-        $output .= '<a href=" ' . get_term_link($term) . ' "> ' . $term->name .'</a></span>';
+        $output .= '<a href=" ' . get_term_link($term) . ' "> ' . $term->name .'</a>';
     }
+    $output .= '</span>';
     echo $output;
 }
 

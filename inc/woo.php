@@ -75,3 +75,12 @@ if ( ! function_exists( 'storefront_cart_link' ) ) {
     }
 };
 
+//zoom in product page
+add_filter( 'woocommerce_single_product_zoom_options', 'custom_single_product_zoom_options', 10, 3 );
+function custom_single_product_zoom_options( $zoom_options ) {
+    // Changing the magnification level:
+    $zoom_options['magnify'] = 0.8;
+
+    return $zoom_options;
+}
+
