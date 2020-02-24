@@ -28,7 +28,7 @@ get_header(); ?>
                     <a href="<?php echo get_permalink($latestPost[0]['ID']) ?>" class="news__block">
                         <div class="news__preview">
                             <?php echo get_the_post_thumbnail($latestPost[0]['ID'], 'home-news'); ?>
-                            <p class="news__category"">Naujausi Straipsniai</p>
+                            <p class="news__category"">Naujausias Straipsnis</p>
                             <div class="news__category-bg">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item.svg" alt="text-wrap">
                             </div>
