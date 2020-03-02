@@ -104,3 +104,10 @@ article.videos {
     text-align: center;
   }
 }
+.postas {
+  article.videos {
+    img {
+      display: block!important;
+    }
+  }
+}

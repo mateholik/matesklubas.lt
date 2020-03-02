@@ -1120,6 +1120,10 @@ article.videos p {
   text-align: center;
 }
 
+.postas article.videos img {
+  display: block !important;
+}
+
 .contact .info {
   line-height: 3rem;
 }

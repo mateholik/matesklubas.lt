@@ -237,4 +237,4 @@ add_action( 'init', 'customTax', 0 );
 
 
 //thumb size for homepage news
-add_image_size( 'home-news', 318, 212, true );
+add_image_size( 'home-news', 445, 297, true );
