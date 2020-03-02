@@ -95,3 +95,12 @@ width: 100%;
     margin-bottom: 2rem;
   }
 }
+//video post
+article.videos {
+  img {
+    display: none;
+  }
+  p {
+    text-align: center;
+  }
+}

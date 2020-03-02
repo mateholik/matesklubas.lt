@@ -1113,6 +1113,13 @@ button.alt img, input[type=button].alt img, input[type=reset].alt img, input[typ
   margin-bottom: 2rem;
 }
 
+article.videos img {
+  display: none;
+}
+article.videos p {
+  text-align: center;
+}
+
 .contact .info {
   line-height: 3rem;
 }
