@@ -41,6 +41,13 @@ global $product;
     productCustomTags($product->get_id(), 'skonio_intensyvumas', 'Skonio intensyvumas');
     productCustomTags($product->get_id(), 'kiekis', 'Kiekis');
     productCustomTags($product->get_id(), 'paruosimo_budas', 'Rekomenduojamas paruošimo būdas');
+    productCustomTags($product->get_id(), 'turis', 'Tūris');
+    productCustomTags($product->get_id(), 'aukstis', 'Aukštis');
+    productCustomTags($product->get_id(), 'skersmuo', 'Skersmuo');
+    productCustomTags($product->get_id(), 'medziaga', 'Medžiaga');
+    productCustomTags($product->get_id(), 'stilius', 'Stilius');
+    productCustomTags($product->get_id(), 'ilgis', 'Ilgis');
+    productCustomTags($product->get_id(), 'filtras', 'Filtras');
     ?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>

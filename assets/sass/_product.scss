@@ -137,7 +137,6 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
     .posted_in, .tagged_as {
       font-size: 1.6rem;
       line-height: 2.2rem;
-      text-transform: capitalize;
       color: #A4A4A4;
       a {
         font-weight: 400;
@@ -150,7 +149,7 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
     }
   }
   //stock
-  .stock.in-stock {
+  .stock.in-stock, .stock.out-of-stock {
     display: flex;
     align-items: center;
     padding: 1rem 0;
@@ -210,3 +209,4 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
 .woocommerce-tabs {
   padding-top: 0;
 }
+

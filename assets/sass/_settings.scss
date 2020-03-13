@@ -15,9 +15,9 @@ a, button {
   &:focus {
     outline: none;
   }
-  &:visited {
-    color: inherit;
-  }
+  //&:visited {
+  //  color: inherit;
+  //}
 }
 select, textarea, input {
   //background-color: #78A643;
@@ -27,6 +27,9 @@ select, textarea, input {
   &:focus {
     outline: none;
   }
+}
+textarea {
+  max-height: 8rem;
 }
 //a {
 //  color: #466323;
@@ -44,6 +47,9 @@ h2 {
   @include phone{
     padding: 2.5rem 0;
   }
+}
+h3 {
+  margin: 3rem auto 2rem;
 }
 ul {
   list-style: none;

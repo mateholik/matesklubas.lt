@@ -80,6 +80,10 @@ width: 100%;
 .hentry .wp-post-image {
   max-width: 50rem;
 }
+//post image
+.entry-content p img, .entry-content ul img, .entry-content ol img {
+  width: auto;
+}
 .post {
   &__title {
     font-family: 'Open Sans Condensed', sans-serif;

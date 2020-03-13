@@ -17,12 +17,54 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600&display=swap" rel="stylesheet">
 <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
-    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
+<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140396104-5"></script>
+    <script>
+      var host = window.location.hostname;
+      if(host != 'matesklubas.local') {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-140396104-5');
+        console.log('veikia');
+      } else {
+        console.log('neveikia');
+      }
+    </script>
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v6.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="696622920756854"
+         theme_color="#FA9511"
+         greeting_dialog_display="hide"
+         logged_in_greeting="Sveiki, kuom galime padėti? :)"
+         logged_out_greeting="Sveiki, kuom galime padėti? :)">
+    </div>
 
 <?php do_action( 'storefront_before_site' ); ?>
 

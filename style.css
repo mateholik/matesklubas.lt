@@ -37,15 +37,16 @@ body {
 a:focus, button:focus {
   outline: none;
 }
-a:visited, button:visited {
-  color: inherit;
-}
 
 select, textarea, input {
   outline: none;
 }
 select:focus, textarea:focus, input:focus {
   outline: none;
+}
+
+textarea {
+  max-height: 8rem;
 }
 
 p {
@@ -65,6 +66,10 @@ h2 {
   h2 {
     padding: 2.5rem 0;
   }
+}
+
+h3 {
+  margin: 3rem auto 2rem;
 }
 
 ul {
@@ -939,7 +944,6 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
 .product .customMeta .posted_in, .product .customMeta .tagged_as {
   font-size: 1.6rem;
   line-height: 2.2rem;
-  text-transform: capitalize;
   color: #A4A4A4;
 }
 .product .customMeta .posted_in a, .product .customMeta .tagged_as a {
@@ -951,7 +955,7 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
-.product .stock.in-stock {
+.product .stock.in-stock, .product .stock.out-of-stock {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -959,11 +963,11 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   padding: 1rem 0;
   color: #CF4B27;
 }
-.product .stock.in-stock img {
+.product .stock.in-stock img, .product .stock.out-of-stock img {
   margin-right: 0.5rem;
   max-width: 2.5rem;
 }
-.product .stock.in-stock:before {
+.product .stock.in-stock:before, .product .stock.out-of-stock:before {
   display: none;
 }
 .product .quantity .qty {
@@ -1097,6 +1101,10 @@ button.alt img, input[type=button].alt img, input[type=reset].alt img, input[typ
 
 .hentry .wp-post-image {
   max-width: 50rem;
+}
+
+.entry-content p img, .entry-content ul img, .entry-content ol img {
+  width: auto;
 }
 
 .post__title {
@@ -1388,8 +1396,52 @@ button img, input[type=button] img, input[type=reset] img, input[type=submit] im
   background-color: #cf4b26;
 }
 
-.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+.woocommerce-message, .woocommerce-info, .woocommerce-noreviews, p.no-comments {
   background-color: #2b9678;
+}
+
+.woocommerce-notices-wrapper .woocommerce-message, .woocommerce-notices-wrapper .woocommerce-error li, .woocommerce-notices-wrapper .woocommerce-info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .woocommerce-notices-wrapper .woocommerce-message, .woocommerce-notices-wrapper .woocommerce-error li, .woocommerce-notices-wrapper .woocommerce-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.woocommerce-message::before, .woocommerce-message::after, .woocommerce-info::before, .woocommerce-info::after, .woocommerce-error::before, .woocommerce-error::after, .woocommerce-noreviews::before, .woocommerce-noreviews::after, p.no-comments::before, p.no-comments::after {
+  display: none;
+}
+
+.woocommerce-message .button, .woocommerce-info .button, .woocommerce-error .button, .woocommerce-noreviews .button, p.no-comments .button {
+  margin: 0 1rem;
+  padding: 0;
+  border: 0;
+  padding-left: 0 !important;
+}
+@media (max-width: 768px) {
+  .woocommerce-message .button, .woocommerce-info .button, .woocommerce-error .button, .woocommerce-noreviews .button, p.no-comments .button {
+    margin: 0 1rem;
+  }
+}
+
+.woocommerce-error {
+  padding: 0;
+}
+
+.restore-item {
+  margin-right: 1rem;
 }
 
 #order_review {
@@ -1428,12 +1480,8 @@ table:not(.has-background) tbody td {
   margin-top: 0;
 }
 
-#payment .payment_methods li .payment_box fieldset .form-row {
-  margin-bottom: 0;
-}
-
-#payment .payment_methods li .payment_box {
-  padding-bottom: 0;
+.payment_box .payment_method_stripe input {
+  height: 5rem;
 }
 
 .woocommerce-terms-and-conditions-wrapper {
@@ -1443,4 +1491,17 @@ table:not(.has-background) tbody td {
 #payment .place-order {
   margin-top: 0;
   padding-top: 0;
+}
+
+#coupon_code {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+.button .wc-backward {
+  color: #fff !important;
+}
+
+#billing_country_field {
+  display: none;
 }

@@ -102,9 +102,6 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#header',
   data: {
     mobMenu: false
-  },
-  mounted: function mounted() {
-    console.log('atsasi');
   }
 });
 

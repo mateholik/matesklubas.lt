@@ -60,8 +60,36 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 .woocommerce-error {
   background-color: #cf4b26;
 }
-.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+.woocommerce-message, .woocommerce-info, .woocommerce-noreviews, p.no-comments {
   background-color: #2b9678;
+}
+.woocommerce-notices-wrapper .woocommerce-message, .woocommerce-notices-wrapper .woocommerce-error li, .woocommerce-notices-wrapper .woocommerce-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  @include phone{
+    flex-direction: column-reverse;
+  }
+}
+.woocommerce-message::before, .woocommerce-message::after, .woocommerce-info::before, .woocommerce-info::after, .woocommerce-error::before, .woocommerce-error::after, .woocommerce-noreviews::before, .woocommerce-noreviews::after, p.no-comments::before, p.no-comments::after {
+  display: none;
+}
+.woocommerce-message .button, .woocommerce-info .button, .woocommerce-error .button, .woocommerce-noreviews .button, p.no-comments .button {
+  margin: 0 1rem;
+    padding: 0;
+    border: 0;
+    padding-left: 0!important;
+  @include phone{
+    margin: 0 1rem;
+  }
+}
+.woocommerce-error {
+  padding: 0;
+}
+.restore-item {
+  margin-right: 1rem;
 }
 
 //order table
@@ -96,12 +124,12 @@ table:not( .has-background ) tbody td {
 .form-row .place-order {
   margin-top: 0;
 }
-#payment .payment_methods li .payment_box fieldset .form-row {
-  margin-bottom: 0;
+.payment_box .payment_method_stripe input{
+  height: 5rem;
 }
-#payment .payment_methods li .payment_box {
-  padding-bottom: 0;
-}
+//#payment .payment_methods li .payment_box {
+//  padding-bottom: 0;
+//}
 
 .woocommerce-terms-and-conditions-wrapper {
   display: none;
@@ -112,3 +140,17 @@ table:not( .has-background ) tbody td {
   padding-top: 0;
 }
 //stripe end
+
+
+//woo cart coupon btn
+#coupon_code {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+.button .wc-backward {
+  color: #fff!important;
+}
+
+#billing_country_field {
+  display: none;
+}

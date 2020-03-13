@@ -221,7 +221,7 @@ function customTax() {
         'parent_item' => null,
         'parent_item_colon' => null,
         'choose_from_most_used' => 'Pasirink filtra',
-        'menu_name' => 'filtra'
+        'menu_name' => 'filtras'
     );
     register_taxonomy('filtras','product',array(
         'hierarchical' => false,
