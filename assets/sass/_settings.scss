@@ -31,9 +31,9 @@ select, textarea, input {
 textarea {
   max-height: 8rem;
 }
-//a {
-//  color: #466323;
-//}
+a {
+  color: #2c2d33;
+}
 p {
   margin: 0;
 }
@@ -190,4 +190,8 @@ img {
 .site-main {
   padding: 0!important;
   margin: 0!important;
+}
+
+.storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content .woocommerce-products-header {
+  text-align: left;
 }

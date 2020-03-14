@@ -6,30 +6,34 @@
  */
 
 get_header(); ?>
+<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <br>
+<div class="about-page">
+    <p>Matės klubas - tai <strong>bendruomenė</strong> jungiati matės gerbėjus. Mes, Matės klubo iniciatoriai, pajutę matės suteikiamą naudą, nusprendėme žinią apie šį gėrimą kuo plačiau paskleisti visuomenėje.</p>
+    <p>Mūsų <strong>tikslas</strong> ir vizija yra sukurti patį <strong>informatyviausią matės puslapį</strong> lietuvių kalba bei suburti aktyvią matės entuziastų bendruomenę. Tikimės jog su laiku čia rasite viską ko tik gali prireikti pradėjus savo kelionę po egzotišką, galbūt daugeliui paslaptingą, tačiau nuostabios energijos kupiną matės pasaulį.</p>
 
-    <div class="contact">
-        <div class="row">
-            <div class="col form">
-                <h2>Parašyk mums!</h2>
-                <?php echo do_shortcode('[contact-form-7 id="118" title="Kontaktų forma 1"]') ?>
-            </div>
-            <div class="col info">
-             <h2>Muveris LT, MB</h2>
-                <p>
-                    <strong>Įmonės kodas:</strong> 304935175 <br>
-                    <strong>Vadovas:</strong> Martynas Burbulis<br>
-                    <strong>Adresas:</strong> Santariškių g. 75-34, LT-08457 Vilnius<br>
-                    <strong>Telefono nr.:</strong> <a href="tel:+37067699059"> +37067699059</a><br>
-                    <strong>El. paštas:</strong> <a href="mailto:info@muveris.lt"> info@muveris.lt</a><br>
-                </p>
-            </div>
-        </div>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-            the_content();
-        endwhile; else: ?>
-            <p>Sorry, no posts matched your criteria.</p>
-        <?php endif; ?>
-    </div>
+    <h3>Nori prisijungti į klubą o gal turi klausimų ir nori susisiekti su mumis?</h3>
 
-<?php
-get_footer();
+    <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+        Facebook grupė
+    </a>
+    <a href="https://www.facebook.com/matesklubass" target="_blank" rel="noopener noreferrer">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+        Facebook puslapis
+    </a>
+    <a href="mailto:mateholikai@gmail.com">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mail.svg" alt="mail-icon">
+        mateholikai@gmail.com
+    </a>
+    <a href="tel:+37067900146">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/phone.svg" alt="phone-icon">
+        +37067900146
+    </a>
+
+<!--    <p><strong>Kontaktinis asmuo:</strong> Andrius Vitkauskas</p>-->
+<!--    <p><strong>Individualios veiklos nr.:</strong> 947070</p>-->
+
+
+</div>
+<?php get_footer();

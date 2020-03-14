@@ -49,6 +49,10 @@ textarea {
   max-height: 8rem;
 }
 
+a {
+  color: #2c2d33;
+}
+
 p {
   margin: 0;
 }
@@ -203,6 +207,10 @@ img {
 .site-main {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content .woocommerce-products-header {
+  text-align: left;
 }
 
 .btn {
@@ -1022,23 +1030,22 @@ button.alt img, input[type=button].alt img, input[type=reset].alt img, input[typ
 }
 
 .postas article {
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 .postas-wrap {
   display: block;
 }
 .postas__title {
   display: block;
-  font-family: "Roboto Slab", serif;
-  font-size: 2.8rem;
-  color: #466323;
-  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
   .postas__title {
     font-size: 2rem;
   }
+}
+.postas__title h2 {
+  padding: 0;
 }
 .postas__block {
   display: -webkit-box;
@@ -1504,4 +1511,26 @@ table:not(.has-background) tbody td {
 
 #billing_country_field {
   display: none;
+}
+
+.about-page p {
+  margin-bottom: 1rem;
+}
+.about-page h3 {
+  margin-top: 3rem;
+}
+.about-page a {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+.about-page a img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.about-page a:hover {
+  -webkit-transform: scale(1.004);
+          transform: scale(1.004);
 }

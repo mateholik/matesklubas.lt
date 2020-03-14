@@ -21,7 +21,7 @@
 <div class="postas">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <a href="<?php the_permalink(); ?>" class="postas__title">
-            <?php the_title(); ?>
+            <h2><?php the_title(); ?></h2>
         </a>
         <div class="postas__block">
             <a href="<?php the_permalink(); ?>" class="postas__img">

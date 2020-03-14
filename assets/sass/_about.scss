@@ -1,0 +1,20 @@
+.about-page {
+  p {
+    margin-bottom: 1rem;
+  }
+  h3 {
+    margin-top: 3rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    img {
+      width: 2rem;
+      margin-right: 1rem;
+    }
+    &:hover {
+      transform: scale(1.004);
+    }
+  }
+}

@@ -1,20 +1,19 @@
 //post in archive
 .postas {
   article {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
   }
   &-wrap {
     display: block;
   }
   &__title {
     display: block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.8rem;
-    color: #466323;
-    text-transform: uppercase;
     margin-bottom: 1rem;
     @include phone{
       font-size: 2rem;
+    }
+    h2 {
+      padding: 0;
     }
   }
   &__block {
