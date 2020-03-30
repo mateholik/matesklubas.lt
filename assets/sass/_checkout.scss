@@ -137,7 +137,18 @@ table:not( .has-background ) tbody td {
 
 #payment .place-order {
   margin-top: 0;
-  padding-top: 0;
+}
+.wc-stripe-elements-field, .wc-stripe-iban-element-field {
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+.payment_method_stripe {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+  color: #FA9511;
 }
 //stripe end
 

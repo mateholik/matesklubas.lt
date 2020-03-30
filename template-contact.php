@@ -9,7 +9,7 @@ get_header(); ?>
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     <br>
 <div class="about-page">
-    <p>Matės klubas - tai <strong>bendruomenė</strong> jungiati matės gerbėjus. Mes, Matės klubo iniciatoriai, pajutę matės suteikiamą naudą, nusprendėme žinią apie šį gėrimą kuo plačiau paskleisti visuomenėje.</p>
+    <p>Matės klubas - tai <strong>bendruomenė</strong> jungianti matės gerbėjus. Mes, Matės klubo iniciatoriai, pajutę matės suteikiamą naudą, nusprendėme žinią apie šį gėrimą kuo plačiau paskleisti visuomenėje.</p>
     <p>Mūsų <strong>tikslas</strong> ir vizija yra sukurti patį <strong>informatyviausią matės puslapį</strong> lietuvių kalba bei suburti aktyvią matės entuziastų bendruomenę. Tikimės jog su laiku čia rasite viską ko tik gali prireikti pradėjus savo kelionę po egzotišką, galbūt daugeliui paslaptingą, tačiau nuostabios energijos kupiną matės pasaulį.</p>
 
     <h3>Nori prisijungti į klubą o gal turi klausimų ir nori susisiekti su mumis?</h3>

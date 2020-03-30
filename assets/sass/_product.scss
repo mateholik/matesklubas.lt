@@ -210,3 +210,27 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
   padding-top: 0;
 }
 
+
+//variants
+.variations {
+  tr {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: none;
+    .label {
+      margin-right: 2rem;
+    }
+    .value {
+      margin-bottom: 0!important;
+      select {
+        background: #fa95111f;
+      }
+    }
+  }
+}
+//remove prekes kodas in variants
+.sku_wrapper {
+  display: none!important;
+}

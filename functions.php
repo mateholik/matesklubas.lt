@@ -24,10 +24,10 @@ function sf_child_theme_dequeue_style() {
  */
 
 function addScripts() {
-    $cssTime = filemtime(get_stylesheet_directory() . '/style.css' );
+//    $cssTime = filemtime(get_stylesheet_directory() . '/style.css' );
     $jsTime = filemtime(get_stylesheet_directory() . '/main.js' );
     //TODO istrint stuliu registracija, nes defaultu storefront pakrauna is childo stilius. dbr palieku kad versijos skirtusi css failo
-    wp_enqueue_style( 'child-theme-style', get_template_directory_uri() . '/style.css', array(), $cssTime, false);
+//    wp_enqueue_style( 'child-theme-style', get_template_directory_uri() . '/style.css', array(), $cssTime, false);
     wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/main.js', array(), $jsTime, true);
 }
 add_action( 'wp_enqueue_scripts', 'addScripts' );

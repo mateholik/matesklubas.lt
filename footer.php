@@ -17,6 +17,37 @@
 
 </div> <!--container end -->
 <div style="clear: both"></div>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="696622920756854"
+     theme_color="#FA9511"
+     greeting_dialog_display="hide"
+     logged_in_greeting="Sveiki, kuo galime padėti? :)"
+     logged_out_greeting="Sveiki, kuo galime padėti? :)">
+</div>
+
+
 <footer class="footer">
    <div class="footer__top">
        <div class="container">
@@ -46,7 +77,7 @@
                </div>
                <div class="about">
                    <h3 class="footer__title">Apie Mus</h3>
-                   <p class="footer__text">Esame arbatos mėgėjai atradę matės arbatas, todėl norime pasidalinti ir su Jumis. Mūsų produkcija išsiskiria skoniu bei kokybe, todėl siūlome begale skirtingų arbatų rūšių. </p>
+                   <p class="footer__text">Mūsų <strong>tikslas</strong> ir vizija yra sukurti patį <strong>informatyviausią matės puslapį</strong> lietuvių kalba bei suburti aktyvią matės entuziastų bendruomenę. Tikimės jog su laiku čia rasite viską ko tik gali prireikti pradėjus savo kelionę po egzotišką, galbūt daugeliui paslaptingą, tačiau nuostabios energijos kupiną matės pasaulį </p>
                </div>
            </div>
        </div>
