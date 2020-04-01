@@ -1,6 +1,6 @@
 <div class="main__sidebar">
     <div class="sidebar">
-        <p class="sidebar__text">Mes galime tau padėti išsirinkti tau skirtą matę</p>
+        <p class="sidebar__text">Mes galime padėti išsirinkti tau skirtą matę</p>
         <div class="sidebar__btn">
             <a href="#" class="btn btn--sidebar">Negali išsirinkti?</a>
         </div>
