@@ -2,7 +2,7 @@
     <div class="sidebar">
         <p class="sidebar__text">Mes galime padėti išsirinkti tau skirtą matę</p>
         <div class="sidebar__btn">
-            <a href="#" class="btn btn--sidebar">Negali išsirinkti?</a>
+            <a href="https://matesklubas.lt/negali-issirinkti/" class="btn btn--sidebar">Negali išsirinkti?</a>
         </div>
         <div class="sidebar__block">
             <a href="https://matesklubas.lt/produkto-kategorija/mate/" class="sidebar__block-title">

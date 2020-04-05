@@ -9,7 +9,7 @@
 
 ?>
 
-<?php if( !is_checkout() && !is_cart() ) { ?>
+<?php if( !is_checkout() && !is_cart() && !is_page_template('template-quiz.php') ) { ?>
     </div>
     </main>
 <?php }?>

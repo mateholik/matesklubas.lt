@@ -13,19 +13,14 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
-<meta name="description" content="Matės klubas – tai bendruomenė jungiati matės gerbėjus."/>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600&display=swap" rel="stylesheet">
 <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
-<meta property="og:title"              content="Matė, kalabasos, bombilės, straipsniai, video ir dar daug visko!" />
-<meta property="og:description"        content="Matės klubas – tai bendruomenė jungiati matės gerbėjus." />
-<meta property="og:image"              content="https://matesklubas.lt/wp-content/uploads/2020/03/logo-fb.png" />
-
-<?php
-    $live = $_SERVER['SERVER_NAME'];
-    if($live == 'matesklubas.lt') { ?>
+    <?php
+    $env = $_SERVER['SERVER_NAME'];
+    if($env == 'matesklubas.lt') { ?>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -148,7 +143,7 @@
 //            }
 //        ?>
 
-        <?php if( !is_checkout() && !is_cart() ) { ?>
+        <?php if( !is_checkout() && !is_cart() && !is_page_template( 'template-quiz.php' ) ) { ?>
         <main class="main site-main">
             <?php get_template_part('templates/sidebar'); ?>
             <div class="main__content">
