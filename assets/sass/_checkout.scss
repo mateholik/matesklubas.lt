@@ -165,3 +165,8 @@ table:not( .has-background ) tbody td {
 #billing_country_field {
   display: none;
 }
+
+//cart in shipping methods
+.woocommerce-shipping-destination {
+  display: none;
+}

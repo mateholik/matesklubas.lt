@@ -19,6 +19,13 @@
 <div style="clear: both"></div>
 
 <footer class="footer">
+    <div class="footer--before">
+        <picture>
+            <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-footer.svg">
+            <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-footer.svg" alt="before">
+        </picture>
+    </div>
    <div class="footer__top">
        <div class="container">
            <div class="footer__menus">

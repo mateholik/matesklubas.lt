@@ -77,12 +77,20 @@ get_header(); ?>
             <h2 class="cats__title">Produktų kategorijos</h2>
             <div class="cats__wrap">
                 <div class="cats__bg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat.jpg" alt="bg">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat.jpg">
+                        <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat.jpg" alt="bg">
+                    </picture>
                 </div>
                 <!--                        <a href="--><?php //categoryLink(39) ?><!--" class="block">-->
                 <a href="<?php categoryLink(24) ?>" class="block">
                     <div class="block__bg-mob">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                            <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                        </picture>
                     </div>
                     <div class="block__img">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate.png" alt="mate">
@@ -100,7 +108,11 @@ get_header(); ?>
                 <!--                        <a href="--><?php //categoryLink(44) ?><!--" class="block">-->
                 <a href="<?php categoryLink(19) ?>" class="block">
                     <div class="block__bg-mob">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                            <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                        </picture>
                     </div>
                     <div class="block__img">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/kalabasas.png" alt="mate">
@@ -118,7 +130,11 @@ get_header(); ?>
                 <!--                        <a href="--><?php //categoryLink(49); ?><!--" class="block">-->
                 <a href="<?php categoryLink(16); ?>" class="block">
                     <div class="block__bg-mob">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                            <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+                        </picture>
                     </div>
                     <div class="block__img">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bombilos.png" alt="mate">

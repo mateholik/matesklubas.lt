@@ -49,7 +49,7 @@ if(document.getElementById('quiz')) {
         },
         {
           id: 4,
-          question: 'Kuris teiginys jus apibūdina tiksliausiai',
+          question: 'Kuris teiginys Jūs apibūdina tiksliausiai?',
           answers: [
             {string: 'Esu praktiškas žmogus, stengiuosi viską daryti kuo paprasčiau, be jokių ceremonijų', value: 0},
             {string: 'Mėgstu išbandyti naujus dalykus, norėčiau geriau pažinti matės kultūrą', value: 1},
@@ -61,7 +61,7 @@ if(document.getElementById('quiz')) {
           question: 'Kodėl geriate matę arba norite ją išbandyti?',
           answers: [
             {string: 'Ieškau alternatyvos kavai, gėrimo, kuris suteiktų energijos', value: 0},
-            {string: 'Labiausiai vertinu gydomasias matės savybes', value: 1},
+            {string: 'Labiausiai vertinu gydomąsias matės savybes', value: 1},
             {string: 'Reguliariai geriu matę, labiausiai vertinu jos skonį ir kokybę', value: 2}
           ]
         },

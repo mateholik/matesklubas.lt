@@ -69,20 +69,67 @@
 	<?php do_action( 'storefront_before_header' ); ?>
     <header id="header" class="header">
         <div class="top">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-top.jpg" alt="background">
-            <div class="top__content">
-                <div class="top__left">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mates.svg" alt="mates">
-                </div>
-                <a href="<?php echo home_url(); ?>" class="top__center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
-                </a>
-                <div class="top__right">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/klubas.svg" alt="klubas">
+           <div class="top--desktop">
+               <picture>
+                   <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-top.jpg">
+                   <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-top.jpg" alt="background">
+               </picture>
+               <div class="top__content">
+                   <div class="top__left">
+                       <picture>
+                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mates.svg">
+                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mates.svg" alt="mates">
+                       </picture>
+                   </div>
+                   <a href="<?php echo home_url(); ?>" class="top__center">
+                       <picture>
+                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg">
+                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
+                       </picture>
+                   </a>
+                   <div class="top__right">
+                       <picture>
+                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/klubas.svg">
+                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/klubas.svg" alt="klubas">
+                       </picture>
+                   </div>
+               </div>
+           </div>
+            <div class="top--mobile">
+                <a href="<?php echo home_url(); ?>" class="logo-link"></a>
+                <picture>
+                    <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                    <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-bg.jpg">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-bg.jpg" alt="background">
+                </picture>
+                <div class="top__content top__content--mobile">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                        <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-content.png">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-content.png" alt="mates klubas">
+                    </picture>
                 </div>
             </div>
         </div>
         <nav class="nav">
+            <div class="nav--before">
+                <picture>
+                    <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-top.svg">
+                    <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-top.svg" alt="before">
+                </picture>
+            </div>
+            <div class="nav--after">
+                <picture>
+                    <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-bottom.svg">
+                    <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-bottom.svg" alt="after">
+                </picture>
+            </div>
             <div class="container container--nav">
                 <?php
                 wp_nav_menu( array(
