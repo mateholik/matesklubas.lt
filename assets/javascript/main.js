@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+import VueScrollTo from 'vue-scrollto'
 new Vue({
   el: '#header',
   data: {
@@ -7,8 +7,18 @@ new Vue({
   }
 });
 
-
-
+if(document.getElementById('zodynas')) {
+  Vue.use(VueScrollTo)
+  new Vue({
+    el: '#zodynas',
+    mounted() {
+      var hash = window.location.hash;
+      var focusedWord = document.querySelector(hash)
+      focusedWord.classList.add('focus-text');
+      VueScrollTo.scrollTo(hash, { offset: -10 })
+    }
+  });
+}
 
 
 

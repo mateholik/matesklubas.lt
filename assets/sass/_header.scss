@@ -313,3 +313,46 @@
   transform: translateX(10px);
   opacity: 0;
 }
+
+
+//custom mobile shop cats icons
+
+.mob-nav-mate a {
+  display: flex!important;
+  align-items: center;
+  &:before {
+    display: block;
+    content: ' ';
+    background-image: url("./assets/img/icons/daigelis-white.svg");
+    background-size: 2.2rem 2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 1rem;
+  }
+}
+.mob-nav-kalabasas a {
+  display: flex!important;
+  align-items: center;
+  &:before {
+    display: block;
+    content: ' ';
+    background-image: url("./assets/img/icons/kalabasas-white.svg");
+    background-size: 2.2rem 2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 1rem;
+  }
+}
+.mob-nav-bombiles a {
+  display: flex!important;
+  align-items: center;
+  &:before {
+    display: block;
+    content: ' ';
+    background-image: url("./assets/img/icons/bombiles-white.svg");
+    background-size: 2.2rem 2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 1rem;
+  }
+}
