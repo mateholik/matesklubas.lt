@@ -20,9 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-$cartImg = get_stylesheet_directory_uri() . '/assets/img/icons/cart.svg';
+if (strlen($product->add_to_cart_text()) > 13) {
+    $cartImg ='';
+} else {
+    $cartImg ='<img src="'. get_stylesheet_directory_uri() . '/assets/img/icons/cart.svg" alt="cart">';
+}
+
 echo apply_filters( 'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
-	sprintf( '<div class="btn-wrap"><a href="%s" data-quantity="%s" class="%s" %s><img src="'. $cartImg .'" alt="cart">%s</a></div>',
+	sprintf( '<div class="btn-wrap"><a href="%s" data-quantity="%s" class="%s" %s>' . $cartImg . '%s</a></div>',
 		esc_url( $product->add_to_cart_url() ),
 		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
 		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),

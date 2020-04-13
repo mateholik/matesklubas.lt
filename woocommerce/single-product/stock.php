@@ -24,3 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate.svg" alt="klubas">
     <?php echo wp_kses_post( $availability ); ?>
 </p>
+<p class="shippin">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/truck.svg" alt="klubas">
+    <span>Nemokamas pristatymas nuo<span class="green"> 30 eu.</span></span>
+</p>

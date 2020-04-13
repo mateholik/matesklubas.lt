@@ -151,10 +151,13 @@ function jk_woocommerce_breadcrumbs() {
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs', 20 );
 
 
+register_nav_menu('mob_nav', 'Mobile Menu');
+
 function atg_menu_classes($classes, $item, $args) {
-    if($args->theme_location == 'primary') {
+    if($args->theme_location == 'primary' || $args->theme_location == 'mob_nav') {
         $classes[] = 'nav__li';
     }
     return $classes;
 }
 add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+

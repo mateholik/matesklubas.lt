@@ -5,7 +5,9 @@ ul.custom {
     border-radius: 0.2rem;
     transition: all 0.2s;
     @include phone {
-      margin-bottom: 2rem;
+      max-width: 30rem;
+      margin: 0 auto;
+      margin-bottom: 3rem;
     }
     &:hover {
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.17);
@@ -19,6 +21,9 @@ ul.custom {
       line-height: 2.2rem;
       color: #CF4B27;
       margin: 1rem 0 1.5rem!important;
+      @include phone {
+        margin: 1rem!important;
+      }
     }
   }
   h2 {
@@ -33,7 +38,9 @@ ul.custom {
     padding: 1.5rem 2rem;
     box-sizing: border-box;
     border-top: 1px solid #F2F2F2;
-
+    @include phone {
+      padding: 1rem;
+    }
   }
   a.button {
     height: 5.5rem;
@@ -160,6 +167,19 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
     }
     &:before {
       display: none;
+    }
+  }
+  //shipping
+  .shippin {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    img {
+      margin-right: 0.5rem;
+      max-width: 2.5rem;
+    }
+    .green {
+      color: #69a90f;
     }
   }
   //quantiti
