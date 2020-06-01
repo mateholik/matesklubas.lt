@@ -13,9 +13,11 @@ if(document.getElementById('zodynas')) {
     el: '#zodynas',
     mounted() {
       var hash = window.location.hash;
-      var focusedWord = document.querySelector(hash)
-      focusedWord.classList.add('focus-text');
-      VueScrollTo.scrollTo(hash, { offset: -10 })
+      if(hash) {
+        var focusedWord = document.querySelector(hash)
+        focusedWord.classList.add('focus-text');
+        VueScrollTo.scrollTo(hash, { offset: -10 })
+      }
     }
   });
 }
