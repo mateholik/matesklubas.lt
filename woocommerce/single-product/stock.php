@@ -26,5 +26,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 </p>
 <p class="shippin">
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/truck.svg" alt="klubas">
-    <span>Nemokamas pristatymas nuo<span class="green"> 30 eu.</span></span>
+    <span>Nemokamas pristatymas nuo<span class="green"> 20 €</span></span>
 </p>

@@ -52,9 +52,20 @@
                            'container_class' => 'custom-menu-class' ) );
                    ?>
                </div>
+               <style>
+
+                   .about img {
+                       max-width: 200px;
+                       padding: 4rem;
+                   }
+                   @media(max-width: 768px) {
+                       .about {
+                           display: none;
+                        }
+                   }
+               </style>
                <div class="about">
-                   <h3 class="footer__title">Apie Mus</h3>
-                   <p class="footer__text">Mūsų <strong>tikslas</strong> ir vizija yra sukurti patį <strong>informatyviausią matės puslapį</strong> lietuvių kalba bei suburti aktyvią matės entuziastų bendruomenę. Tikimės jog su laiku čia rasite viską ko tik gali prireikti pradėjus savo kelionę po egzotišką, galbūt daugeliui paslaptingą, tačiau nuostabios energijos kupiną matės pasaulį </p>
+                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mateHD.png" alt="mate">
                </div>
            </div>
        </div>

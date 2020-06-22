@@ -57,8 +57,10 @@ get_header(); ?>
                     </div>
                     <div v-if="showOffer === 'noob'">
                         <?php
+                        $noob_products_ids = get_field('noob');
+
                         $args = array(
-                            'include' => array( 77, 104, 28 ),
+                            'include' => $noob_products_ids,
                         );
                         $products = wc_get_products( $args ); ?>
 
@@ -83,8 +85,9 @@ get_header(); ?>
 
                     <div v-if="showOffer === 'medium'">
                         <?php
+                        $medium_products_ids = get_field('medium');
                         $args = array(
-                            'include' => array( 128, 143, 64 ),
+                            'include' => $medium_products_ids,
                         );
                         $products = wc_get_products( $args ); ?>
 
@@ -109,8 +112,9 @@ get_header(); ?>
 
                     <div v-if="showOffer === 'pro'">
                         <?php
+                        $pro_products_ids = get_field('pro');
                         $args = array(
-                            'include' => array( 68, 91, 137 ),
+                            'include' => $pro_products_ids,
                         );
                         $products = wc_get_products( $args ); ?>
 

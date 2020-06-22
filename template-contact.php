@@ -9,11 +9,10 @@ get_header(); ?>
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     <br>
 <div class="about-page">
-    <p>Matės klubas - tai <strong>bendruomenė</strong> jungianti matės gerbėjus. Mes, Matės klubo iniciatoriai, pajutę matės suteikiamą naudą, nusprendėme žinią apie šį gėrimą kuo plačiau paskleisti visuomenėje.</p>
-    <p>Mūsų <strong>tikslas</strong> ir vizija yra sukurti patį <strong>informatyviausią matės puslapį</strong> lietuvių kalba bei suburti aktyvią matės entuziastų bendruomenę. Tikimės jog su laiku čia rasite viską ko tik gali prireikti pradėjus savo kelionę po egzotišką, galbūt daugeliui paslaptingą, tačiau nuostabios energijos kupiną matės pasaulį.</p>
+    <p>Matės klubas - tai bendruomenė jungianti matės gerbėjus. Čia dalinamės naudinga informacija, patarimais ir receptais, o mūsų el. parduotuvėje galite įsigyti mūsų patikrintus gaminius malonioms akimirkoms su Mate arbata.</p>
+    <p>Tikimės, jog Matesklubas.lt rasite viską, ko tik gali prireikti kelionėje po egzotišką, galbūt daugeliui paslaptingą, tačiau nuostabios energijos kupiną matės pasaulį. </p>
 
-    <h3>Nori prisijungti į klubą o gal turi klausimų ir nori susisiekti su mumis?</h3>
-
+    <h3>Tapk klubo nariu:</h3>
     <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
         Facebook grupė
@@ -22,6 +21,8 @@ get_header(); ?>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
         Facebook puslapis
     </a>
+
+    <h3>Susisiekite su mumis: </h3>
     <a href="mailto:mateholikai@gmail.com">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mail.svg" alt="mail-icon">
         mateholikai@gmail.com
