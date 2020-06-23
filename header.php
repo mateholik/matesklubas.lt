@@ -163,7 +163,7 @@
 //            }
 //        ?>
 
-        <?php if( !is_checkout() && !is_cart() && !is_page_template( 'template-quiz.php' ) ) { ?>
+        <?php if( !is_checkout() && !is_cart() && !is_page_template( 'template-quiz.php' ) && !is_account_page() ) { ?>
         <main class="main site-main">
             <?php get_template_part('templates/sidebar'); ?>
             <div class="main__content">
