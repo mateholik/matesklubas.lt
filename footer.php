@@ -55,17 +55,43 @@
                <style>
 
                    .about img {
-                       max-width: 200px;
-                       padding: 4rem;
+                       width: 2rem;
+                       margin-right: 1rem;
+                   }
+                   .about a {
+                       display: flex;
+                       align-items: center; margin-bottom: 0.5rem;
+                       font-size: 1.4rem;
+                       line-height: 2.8rem;
+                       color: #AAAAB0;
+                   }
+                   .about a:hover {
+                       color: white;
                    }
                    @media(max-width: 768px) {
                        .about {
-                           display: none;
                         }
                    }
                </style>
                <div class="about">
-                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mateHD.png" alt="mate">
+                   <h3 class="footer__title">Sekite mus!</h3>
+
+                   <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
+                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+                       Facebook grupė
+                   </a>
+                   <a href="https://www.facebook.com/matesklubass" target="_blank" rel="noopener noreferrer">
+                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+                       Facebook puslapis
+                   </a>
+                   <a href="https://www.instagram.com/matesklubas" target="_blank" rel="noopener noreferrer">
+                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="instagram-icon">
+                       Instagram
+                   </a>
+                   <a href="https://www.youtube.com/channel/UCiL5qWJ7cer2tAvY7Y7sNwA" target="_blank" rel="noopener noreferrer">
+                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
+                       Youtube
+                   </a>
                </div>
            </div>
        </div>

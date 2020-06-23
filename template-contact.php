@@ -21,6 +21,15 @@ get_header(); ?>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
         Facebook puslapis
     </a>
+    <a href="https://www.instagram.com/matesklubas" target="_blank" rel="noopener noreferrer">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="instagram-icon">
+        Instagram
+    </a>
+    <a href="https://www.youtube.com/channel/UCiL5qWJ7cer2tAvY7Y7sNwA" target="_blank" rel="noopener noreferrer">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
+        Youtube
+    </a>
+
 
     <h3>Susisiekite su mumis: </h3>
     <a href="mailto:mateholikai@gmail.com">

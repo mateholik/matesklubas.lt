@@ -22,7 +22,8 @@ get_header(); ?>
                     <?php
                     $latestPost = wp_get_recent_posts(array(
                         'numberposts' => 1, // Number of recent posts thumbnails to display
-                        'post_status' => 'publish' // Show only the published posts
+                        'post_status' => 'publish', // Show only the published posts
+                        'category__not_in' => array(112)
                     ))
                     ;?>
                     <a href="<?php echo get_permalink($latestPost[0]['ID']) ?>" class="news__block">
