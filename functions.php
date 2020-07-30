@@ -111,3 +111,24 @@ function wc_register_guests( $order_id ) {
 //add this newly created function to the thank you page
 add_action( 'woocommerce_thankyou', 'wc_register_guests', 10, 1 );
 
+//add acf video iframe in video post
+add_action( 'storefront_single_post', 'video_post_iframe', 31 );
+function video_post_iframe() {
+    if(get_field('iframe')) {
+        echo '<div class="video-iframe">' . get_field('iframe') . '</div>';
+    }
+}
+
+//change user avatar
+add_filter( 'avatar_defaults', 'crunchifygravatar' );
+function crunchifygravatar ($avatar_defaults) {
+    $myavatar = get_stylesheet_directory_uri() . '/assets/img/mate_avatar.jpg';
+    $avatar_defaults[$myavatar] = "Bendra avatarke";
+    return $avatar_defaults;
+}
+
+//sale badge
+add_filter('woocommerce_sale_flash', 'my_custom_sale_flash');
+function my_custom_sale_flash($text) {
+    return '<div class="custom-badge"><span class="onsale">Akcija</span></div>';
+}

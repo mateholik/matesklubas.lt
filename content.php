@@ -33,7 +33,6 @@
                 </a>
                 <div class="postas__meta">
                     <span> Paskelbta: <?php the_time('F j, Y'); ?>. </span>
-                    <span>Kategorija: <?php the_category(); ?></span>
                 </div>
                 <div class="postas__btn">
                     <a href=" <?php the_permalink(); ?>" class="btn btn--simple">Plačiau</a>

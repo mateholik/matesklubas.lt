@@ -133,6 +133,12 @@ img {
   margin-right: 2.5rem;
   border-right: 1px solid #F2F2F2;
 }
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+	.main__sidebar {
+	  min-width: 22rem;
+	  width: auto;
+	}
+}
 @media (max-width: 768px) {
   .main__sidebar {
     display: none;
@@ -509,6 +515,11 @@ img {
   box-sizing: border-box;
   transition: 0.2s;
 }
+@media screen and (max-width: 1064px) and (min-width: 768px) {
+	.header .nav__li a {
+	  padding: 0.8rem 1.5rem;
+	}
+}
 @media (max-width: 768px) {
   .header .nav__li a {
     padding-bottom: 1.5rem;
@@ -860,6 +871,7 @@ img {
 }
 
 ul.custom li.product {
+  position: relative;
   border: 1px solid #EBEAEA;
   border-radius: 0.2rem;
   transition: all 0.2s;
@@ -1008,6 +1020,9 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   display: flex;
   align-items: center;
   padding: 1rem 0;
+  color: #69a90f;
+}
+.product .stock.out-of-stock {
   color: #CF4B27;
 }
 .product .stock.in-stock img, .product .stock.out-of-stock img {
@@ -1198,10 +1213,13 @@ button.alt img, input[type=button].alt img, input[type=reset].alt img, input[typ
 article.videos img {
   display: none;
 }
-article.videos p {
+/*article.videos p {*/
+/*  text-align: center;*/
+/*}*/
+.video-iframe {
   text-align: center;
+  padding-top: 2rem;
 }
-
 .postas article.videos img {
   display: block !important;
 }
@@ -1771,3 +1789,46 @@ table:not(.has-background) tbody td {
   opacity: 1;
   transform: translateX(0px);
 }
+
+/*badges*/
+.custom-badge {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+.custom-badge .onsale {
+  margin: 0;
+  transform: rotate(45deg);
+  background: red;
+  color: white;
+  position: absolute;
+  top: 11px;
+  right: -26px;
+  border-radius: 0;
+  width: 100%;
+}
+.custom-badge .onsale::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: -1;
+  border-color: #084993 transparent transparent #084993;
+  border-style: solid;
+  border-width: 3px;
+}
+.custom-badge .onsale::after {
+     content: "";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    border-color: #084993 #084993 transparent transparent;
+    border-style: solid;
+    border-width: 3px;
+}
+

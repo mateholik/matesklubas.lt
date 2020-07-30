@@ -8,7 +8,7 @@ function videosPostType() {
                 'name' => __( 'Video Postai' ),
                 'singular_name' => __( 'Video Postas' )
             ),
-            'supports' => array('title', 'editor', 'thumbnail'),
+            'supports' => array('title', 'editor', 'thumbnail', 'comments'),
             'taxonomies' => array('post_tag'),
             'public' => true,
             'has_archive' => true,

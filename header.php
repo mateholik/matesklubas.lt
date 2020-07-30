@@ -13,6 +13,8 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+<meta name="keywords" content="yerba, matė, yerbamate, mates arbata, matesklubas, kofeinas, energija, mates gerimas">
+<meta name="author" content="Vladis Vaisov">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,600&display=swap" rel="stylesheet">
