@@ -130,5 +130,14 @@ function crunchifygravatar ($avatar_defaults) {
 //sale badge
 add_filter('woocommerce_sale_flash', 'my_custom_sale_flash');
 function my_custom_sale_flash($text) {
-    return '<div class="custom-badge"><span class="onsale">Akcija</span></div>';
+    return '<div class="custom-badge"><span class="onsale-custom">Akcija</span></div>';
 }
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash' , 10);
+
+//sold badge
+add_action( 'woocommerce_before_shop_loop_item_title', function() {
+   global $product;
+   if ( !$product->is_in_stock() ) {
+       echo '<div class="custom-badge"><span class="soldout-custom">Baigėsi</span></div>';
+   }
+});

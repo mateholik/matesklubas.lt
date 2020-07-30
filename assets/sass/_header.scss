@@ -239,6 +239,9 @@
         padding: 0.8rem 3.5rem;
         box-sizing: border-box;
         transition: .2s;
+		@media screen and (max-width: 1064px) and (min-width: 768px){
+			  padding: 0.8rem 1.5rem;
+			}
         @include phone {
           padding-bottom: 1.5rem;
           padding-left: 1.5rem;
