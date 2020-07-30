@@ -132,6 +132,7 @@ add_filter('woocommerce_sale_flash', 'my_custom_sale_flash');
 function my_custom_sale_flash($text) {
     return '<div class="custom-badge"><span class="onsale-custom">Akcija</span></div>';
 }
+//remove sale badge from single product description
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash' , 10);
 
 //sold badge

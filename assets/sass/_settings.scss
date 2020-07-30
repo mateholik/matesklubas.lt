@@ -47,6 +47,10 @@ h2 {
   @include phone{
     padding: 2.5rem 0;
   }
+  img {
+	  width: 2rem;
+	  height: auto;
+  }
 }
 h3 {
   margin: 3rem auto 2rem;
@@ -198,4 +202,39 @@ img {
 
 .storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content .woocommerce-products-header {
   text-align: left;
+}
+
+
+//animation quiz, homepage products
+.animation-enter-active, .animation-leave-active {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+}
+.animation-enter-active {
+  transition-delay: 0.3s;
+}
+.animation-enter, .animation-leave-to {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+.animation-enter-to, .animation-leave {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }

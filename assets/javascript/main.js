@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
+
+//nav
 new Vue({
   el: '#header',
   data: {
@@ -7,6 +9,7 @@ new Vue({
   }
 });
 
+// scroll to specific word in zodynas
 if(document.getElementById('zodynas')) {
   Vue.use(VueScrollTo)
   new Vue({
@@ -22,11 +25,7 @@ if(document.getElementById('zodynas')) {
   });
 }
 
-
-
-
-
-
+//quiz
 if(document.getElementById('quiz')) {
   new Vue({
     el: '#quiz',
@@ -148,5 +147,16 @@ if(document.getElementById('quiz')) {
         }, 10);
       }
     }
+  });
+}
+
+//homepage recent_products
+if(document.getElementById('homepage-products')) {
+  Vue.use(VueScrollTo)
+  new Vue({
+    el: '#homepage-products',
+	data: {
+		show: 0
+	}
   });
 }

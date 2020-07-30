@@ -29,7 +29,7 @@ get_header(); ?>
                     <a href="<?php echo get_permalink($latestPost[0]['ID']) ?>" class="news__block">
                         <div class="news__preview">
                             <?php echo get_the_post_thumbnail($latestPost[0]['ID'], 'home-news'); ?>
-                            <p class="news__category"">Naujausias Straipsnis</p>
+                            <p class="news__category">Naujausias Straipsnis</p>
                             <div class="news__category-bg">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item.svg" alt="text-wrap">
                             </div>
@@ -75,7 +75,11 @@ get_header(); ?>
 
     <section>
         <div class="cats">
-            <h2 class="cats__title">Produktų kategorijos</h2>
+            <h2 class="cats__title">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+				Prekių kategorijos
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+			</h2>
             <div class="cats__wrap">
                 <div class="cats__bg">
                     <picture>
@@ -154,10 +158,40 @@ get_header(); ?>
         </div>
     </section>
 
-    <section>
+	<section>
+		<h2 class="cats__title">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+			Rinkiniai
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+		</h2>
+		<?php echo do_shortcode('[products columns="4" category="rinkiniai"]'); ?>
+	</section>
+
+    <section id="homepage-products">
         <div class="prods">
-            <h2 class="cats__title">Naujausi produktai</h2>
-            <?php echo do_shortcode('[recent_products columns="4" limit="8"]'); ?>
+			<h2 class="cats__title">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+				Prekės
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+			</h2>
+			<div class="prods__options">
+				<span v-on:click="show = 0" class="option" v-bind:class="{ active: show === 0 }">Populiariausios</span>
+				<span v-on:click="show = 1" class="option" v-bind:class="{ active: show === 1 }">Naujienos</span>
+				<span v-on:click="show = 2" class="option"  v-bind:class="{ active: show === 2 }">Išpardavimas</span>
+			</div>
+			<div class="prods__results">
+				<transition name="animation">
+		            <div v-if="show === 0" key=0>
+		            	<?php echo do_shortcode('[best_selling_products columns="4" limit="4"]'); ?>
+		            </div>
+					<div v-else-if="show === 1" key=1>
+		            	<?php echo do_shortcode('[recent_products columns="4" limit="4"]'); ?>
+					</div>
+					<div v-else-if="show === 2" key=2>
+		            	<?php echo do_shortcode('[sale_products columns="4" limit="4"]'); ?>
+					</div>
+				</transition>
+			</div>
         </div>
     </section>
 

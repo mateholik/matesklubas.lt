@@ -156,25 +156,5 @@
       0% { background-position: 0 0; }
       100% { background-position: 60px 0; }
     }
-
-
   }
 }
-
-
-.animation-enter-active, .animation-leave-active {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
-}
-.animation-enter-active {
-  transition-delay: 0.3s;
-}
-.animation-enter, .animation-leave-to {
-  opacity: 0;
-  transform: translateX(-10px);
-}
-.animation-enter-to, .animation-leave {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-
