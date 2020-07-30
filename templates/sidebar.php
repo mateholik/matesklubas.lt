@@ -33,5 +33,11 @@
                 <?php getSubCategories(16,'sidebar'); ?>
             </ul>
         </div>
+		<div class="sidebar__block">
+			<a href="https://www.matesklubas.lt/produkto-kategorija/rinkiniai/" class="sidebar__block-title">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/gift.svg" alt="dovana">
+				DOVANŲ RINKINIAI
+			</a>
+		</div>
     </div>
 </div>
