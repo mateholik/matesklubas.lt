@@ -182,16 +182,17 @@ get_header(); ?>
 			<div class="prods__results">
 				<transition name="animation">
 		            <div v-if="show === 0" key=0>
-		            	<?php echo do_shortcode('[best_selling_products columns="4" limit="4"]'); ?>
+		            	<?php echo do_shortcode('[best_selling_products columns="4" limit="8"]'); ?>
 		            </div>
 					<div v-else-if="show === 1" key=1>
-		            	<?php echo do_shortcode('[recent_products columns="4" limit="4"]'); ?>
+		            	<?php echo do_shortcode('[recent_products columns="4" limit="8"]'); ?>
 					</div>
 					<div v-else-if="show === 2" key=2>
-		            	<?php echo do_shortcode('[sale_products columns="4" limit="4"]'); ?>
+		            	<?php echo do_shortcode('[sale_products columns="4" limit="8"]'); ?>
 					</div>
 				</transition>
 			</div>
+			<a href="https://www.matesklubas.lt/parduotuve/" class="single_add_to_cart_button button alt" style="margin: 0 auto;">Visos prekės</a>
         </div>
     </section>
 

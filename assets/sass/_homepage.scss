@@ -231,16 +231,16 @@
 			font-weight: 600;
 		}
   	}
-	&__results {
-		max-height: 411px;
-		overflow: hidden;
-		padding-top: 5px;
-		@include phone{
-			max-height: none;
-    		overflow: visible;
-    		padding-top: 0;
-		}
-	}
+	// &__results {
+	// 	max-height: 411px;
+	// 	overflow: hidden;
+	// 	padding-top: 5px;
+	// 	@include phone{
+	// 		max-height: none;
+    // 		overflow: visible;
+    // 		padding-top: 0;
+	// 	}
+	// }
   }
   h2 {
   	display: flex;

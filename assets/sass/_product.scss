@@ -172,6 +172,9 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
       display: none;
     }
   }
+  .stock.in-stock {
+	  color: #0f834d;
+  }
   //shipping
   .shippin {
     display: flex;
