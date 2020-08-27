@@ -22,6 +22,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
+<?php 
+	function get_user_orders_total($user_id) {
+    // Use other args to filter more
+    $args = array(
+        'customer_id' => $user_id
+    );
+    // call WC API
+    $orders = wc_get_orders($args);
+
+    if (empty($orders) || !is_array($orders)) {
+        return false;
+    }
+
+    // One implementation of how to sum up all the totals
+    $total = array_reduce($orders, function ($carry, $order) {
+        $carry += (float)$order->get_total();
+
+        return $carry;
+    }, 0.0);
+
+    return $total;
+}
+	$id = get_current_user_id();
+	$totalOrders = get_user_orders_total($id);
+	dump($totalOrders);
+?>
+
 <p style="display: flex; align-items: center">
 <!--	--><?php
 //	printf(
@@ -31,7 +58,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 //		esc_url( wc_logout_url() )
 //	);
 //	?>
-    Labas! Kaip sekasi? Ar jau gėrei šiandien matę?
+    Labas! Kaip laikaisi? Ar jau gėrei šiandien matę?
+		<br>
+		Matės klube jau apsipirkai
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mate_dash.png" alt="mate">
 </p>
 
