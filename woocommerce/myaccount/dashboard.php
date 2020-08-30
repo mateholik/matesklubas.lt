@@ -23,33 +23,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php 
-	function get_user_orders_total($user_id) {
-    // Use other args to filter more
-    $args = array(
-        'customer_id' => $user_id
-    );
-    // call WC API
-    $orders = wc_get_orders($args);
+	 // Get all customer orders
+    $customer_orders = get_posts( array(
+        'numberposts' => -1,
+        'meta_key'    => '_customer_user',
+        'meta_value'  => get_current_user_id(),
+        'post_type'   => wc_get_order_types(),
+        'post_status' => array_keys( wc_get_order_statuses() ),
+    ) );
 
-    if (empty($orders) || !is_array($orders)) {
-        return false;
+    $completedOrders = count($customer_orders);
+    $remainingOrders = 6 - $completedOrders;
+    $user = 'noob';
+
+    if($completedOrders >= 6) {
+    	$user = 'pro';
     }
-
-    // One implementation of how to sum up all the totals
-    $total = array_reduce($orders, function ($carry, $order) {
-        $carry += (float)$order->get_total();
-
-        return $carry;
-    }, 0.0);
-
-    return $total;
-}
-	$id = get_current_user_id();
-	$totalOrders = get_user_orders_total($id);
-	dump($totalOrders);
 ?>
 
-<p style="display: flex; align-items: center">
+<style type="text/css">
+	.circle {
+		border: 2px solid orange;
+	    border-radius: 50%;
+	    padding: 1px;
+	    width: 3rem;
+	    height: 3rem;
+	    display: inline-block;
+	    text-align: center;
+	}
+</style>
+
+<p>
 <!--	--><?php
 //	printf(
 //		/* translators: 1: user display name 2: logout url */
@@ -58,10 +62,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 //		esc_url( wc_logout_url() )
 //	);
 //	?>
+
+
     Labas! Kaip laikaisi? Ar jau gėrei šiandien matę?
-		<br>
-		Matės klube jau apsipirkai
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mate_dash.png" alt="mate">
+	<br>
+	<?php 
+		if($user == 'noob') { ?>
+			Matės klube jau apsipirkai <span class="circle"><?php echo $completedOrders; ?></span> <?php echo $completedOrders == 1 ? 'kartą' : 'kartus'; ?>, už tai gauni <strong>5%</strong> nuolaidos kodą <strong>YTEA9QUE</strong> kitiems kartams!
+			<br>
+			Nori didesnės nuolaidos? Iki jos tau liko apsipirkti dar <span class="circle"><?php echo $remainingOrders; ?></span> <?php echo $remainingOrders == 1 ? 'kartą' : 'kartus'; ?>.
+		<?php
+		} else {?>
+			Matės klube jau apsipirkai <span class="circle"><?php echo $completedOrders; ?></span> <?php echo $completedOrders > 9 ? 'kartų' : 'kartus'; ?>, TU TIKRAS MATERA!!! už tai gauni <strong>10%</strong> nuolaidos kodą <strong>8K96XN76</strong> kitiems kartams!
+			<br>
+		<?php
+		} ?>
+
+
+
+		
+    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mate_dash.png" alt="mate"> -->
 </p>
 
 <p>
