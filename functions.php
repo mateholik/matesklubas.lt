@@ -139,6 +139,6 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 add_action( 'woocommerce_before_shop_loop_item_title', function() {
    global $product;
    if ( !$product->is_in_stock() ) {
-       echo '<div class="custom-badge"><span class="soldout-custom">Baigėsi</span></div>';
+       echo '<div class="custom-badge" style="z-index: 9999"><span class="soldout-custom">Išpirkta</span></div>';
    }
 });
