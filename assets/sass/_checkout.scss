@@ -1,7 +1,14 @@
-
 //form inputs
-input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='url'], input[type='password'], input[type='search'], textarea, .input-text {
-  transition: all .2s;
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.input-text {
+  transition: all 0.2s;
   //border: 1px solid #ffce96;
   border: 1px solid #888;
   background: #fff;
@@ -18,7 +25,8 @@ input[type='text'], input[type='number'], input[type='email'], input[type='tel']
     background: #f3e2ce3b;
   }
 }
-.woocommerce-billing-fields h3, .woocommerce-additional-fields h3 {
+.woocommerce-billing-fields h3,
+.woocommerce-additional-fields h3 {
   margin-bottom: 1rem;
 }
 .form-row.woocommerce-invalid input.input-text {
@@ -27,11 +35,16 @@ input[type='text'], input[type='number'], input[type='email'], input[type='tel']
 
 //sheckout btns
 //checkout btns
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.widget a.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FA9511;
+  background: #fa9511;
   color: #fff;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
@@ -54,34 +67,54 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 }
 
 //woo messages
-.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
   background-color: #ff8100e0;
 }
 .woocommerce-error {
   background-color: #cf4b26;
 }
-.woocommerce-message, .woocommerce-info, .woocommerce-noreviews, p.no-comments {
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
   background-color: #2b9678;
 }
-.woocommerce-notices-wrapper .woocommerce-message, .woocommerce-notices-wrapper .woocommerce-error li, .woocommerce-notices-wrapper .woocommerce-info {
+.woocommerce-notices-wrapper .woocommerce-message,
+.woocommerce-notices-wrapper .woocommerce-error li,
+.woocommerce-notices-wrapper .woocommerce-info {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
   padding: 1rem;
-  @include phone{
+  @include phone {
     flex-direction: column-reverse;
   }
 }
-.woocommerce-message::before, .woocommerce-message::after, .woocommerce-info::before, .woocommerce-info::after, .woocommerce-error::before, .woocommerce-error::after, .woocommerce-noreviews::before, .woocommerce-noreviews::after, p.no-comments::before, p.no-comments::after {
+.woocommerce-message::before,
+.woocommerce-message::after,
+.woocommerce-info::before,
+.woocommerce-info::after,
+.woocommerce-error::before,
+.woocommerce-error::after,
+.woocommerce-noreviews::before,
+.woocommerce-noreviews::after,
+p.no-comments::before,
+p.no-comments::after {
   display: none;
 }
-.woocommerce-message .button, .woocommerce-info .button, .woocommerce-error .button, .woocommerce-noreviews .button, p.no-comments .button {
+.woocommerce-message .button,
+.woocommerce-info .button,
+.woocommerce-error .button,
+.woocommerce-noreviews .button,
+p.no-comments .button {
   margin: 0 1rem;
-    padding: 0;
-    border: 0;
-    padding-left: 0!important;
-  @include phone{
+  padding: 0;
+  border: 0;
+  padding-left: 0 !important;
+  @include phone {
     margin: 0 1rem;
   }
 }
@@ -105,16 +138,17 @@ table {
 tr {
   box-shadow: 0 0 1px 0 #a2a2a2;
 }
-table:not( .has-background ) th {
+table:not(.has-background) th {
   background: #ffce96;
 }
 
-table:not( .has-background ) tbody td {
+table:not(.has-background) tbody td {
   background: #fff5e9;
 }
 
 //stripe header
-#payment .payment_methods > .woocommerce-PaymentMethod > label, #payment .payment_methods > .wc_payment_method > label {
+#payment .payment_methods > .woocommerce-PaymentMethod > label,
+#payment .payment_methods > .wc_payment_method > label {
   background: #ffce96;
   margin-left: 0;
 }
@@ -124,7 +158,7 @@ table:not( .has-background ) tbody td {
 .form-row .place-order {
   margin-top: 0;
 }
-.payment_box .payment_method_stripe input{
+.payment_box .payment_method_stripe input {
   height: 5rem;
 }
 //#payment .payment_methods li .payment_box {
@@ -138,20 +172,30 @@ table:not( .has-background ) tbody td {
 #payment .place-order {
   margin-top: 0;
 }
-.wc-stripe-elements-field, .wc-stripe-iban-element-field {
+.wc-stripe-elements-field,
+.wc-stripe-iban-element-field {
   padding: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 .payment_method_stripe {
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {
-  color: #FA9511;
+.star-rating span:before,
+.quantity .plus,
+.quantity .minus,
+p.stars a:hover:after,
+p.stars a:after,
+.star-rating span:before,
+#payment
+  .payment_methods
+  li
+  input[type="radio"]:first-child:checked
+  + label:before {
+  color: #fa9511;
 }
 //stripe end
-
 
 //woo cart coupon btn
 #coupon_code {
@@ -159,7 +203,7 @@ table:not( .has-background ) tbody td {
   margin-bottom: 2rem;
 }
 .button .wc-backward {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 #billing_country_field {

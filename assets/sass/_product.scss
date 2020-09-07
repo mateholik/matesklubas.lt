@@ -1,7 +1,7 @@
 //woo products archive
 ul.custom {
   li.product {
-    border: 1px solid #EBEAEA;
+    border: 1px solid #ebeaea;
     border-radius: 0.2rem;
     transition: all 0.2s;
     @include phone {
@@ -10,7 +10,7 @@ ul.custom {
       margin-bottom: 3rem;
     }
     &:hover {
-   	 transform: scale(0.95);
+      transform: scale(0.95);
     }
     img {
       margin-bottom: 0;
@@ -20,24 +20,24 @@ ul.custom {
       font-size: 1.6rem;
       line-height: 2.2rem;
       color: #69a90f;
-      margin: 1rem 0 1.5rem!important;
+      margin: 1rem 0 1.5rem !important;
       @include phone {
-        margin: 1rem!important;
+        margin: 1rem !important;
       }
     }
   }
   h2 {
-    font-size: 1.6rem!important;
+    font-size: 1.6rem !important;
     line-height: 2.2rem;
     text-transform: uppercase;
-    padding: 0 0.5rem!important;
-    margin-bottom: 0!important;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0 0.5rem !important;
+    margin-bottom: 0 !important;
+    font-family: "Open Sans", sans-serif;
   }
   .btn-wrap {
     padding: 1.5rem 2rem;
     box-sizing: border-box;
-    border-top: 1px solid #F2F2F2;
+    border-top: 1px solid #f2f2f2;
     @include phone {
       padding: 1rem;
     }
@@ -49,7 +49,7 @@ ul.custom {
     align-items: center;
     background: #fa9511;
     color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-weight: 300;
     font-size: 2rem;
     line-height: 3.3rem;
@@ -60,9 +60,9 @@ ul.custom {
       margin: 0;
       margin-right: 1rem;
       padding: 0;
-	  @media screen and (max-width: 1025px) and (min-width: 768px){
-	    display: none;
-	  }
+      @media screen and (max-width: 1025px) and (min-width: 768px) {
+        display: none;
+      }
     }
   }
 }
@@ -72,16 +72,16 @@ ul.custom {
   background-color: #fa9e39;
   color: #fff;
   &:hover {
-    background-color: #CF4B27;
+    background-color: #cf4b27;
     color: #fff;
   }
 }
 .woocommerce-pagination .page-numbers li .page-numbers.current {
-  background-color: #CF4B27;
+  background-color: #cf4b27;
   color: #fff;
 }
 .woocommerce-products-header {
-  padding-bottom: 2rem!important;
+  padding-bottom: 2rem !important;
 }
 
 //breadcrubs
@@ -103,7 +103,24 @@ ul.custom {
 }
 
 //todo CIA PAKEIST
-ul.products li.product h2, ul.products li.product h3, ul.products li.product .woocommerce-loop-product__title, ul.products li.product .wc-block-grid__product-title, ul.products .wc-block-grid__product h2, ul.products .wc-block-grid__product h3, ul.products .wc-block-grid__product .woocommerce-loop-product__title, ul.products .wc-block-grid__product .wc-block-grid__product-title, .wc-block-grid__products li.product h2, .wc-block-grid__products li.product h3, .wc-block-grid__products li.product .woocommerce-loop-product__title, .wc-block-grid__products li.product .wc-block-grid__product-title, .wc-block-grid__products .wc-block-grid__product h2, .wc-block-grid__products .wc-block-grid__product h3, .wc-block-grid__products .wc-block-grid__product .woocommerce-loop-product__title, .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
+ul.products li.product h2,
+ul.products li.product h3,
+ul.products li.product .woocommerce-loop-product__title,
+ul.products li.product .wc-block-grid__product-title,
+ul.products .wc-block-grid__product h2,
+ul.products .wc-block-grid__product h3,
+ul.products .wc-block-grid__product .woocommerce-loop-product__title,
+ul.products .wc-block-grid__product .wc-block-grid__product-title,
+.wc-block-grid__products li.product h2,
+.wc-block-grid__products li.product h3,
+.wc-block-grid__products li.product .woocommerce-loop-product__title,
+.wc-block-grid__products li.product .wc-block-grid__product-title,
+.wc-block-grid__products .wc-block-grid__product h2,
+.wc-block-grid__products .wc-block-grid__product h3,
+.wc-block-grid__products
+  .wc-block-grid__product
+  .woocommerce-loop-product__title,
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
   font-size: 2rem;
 }
 
@@ -114,7 +131,6 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   margin-top: 1rem;
 }
 
-
 //single product page
 .product {
   .onsale {
@@ -123,7 +139,6 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   }
   //title
   .product_title .entry-title {
-
   }
   //price
   .price {
@@ -131,9 +146,9 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
     font-size: 2.4rem;
     line-height: 3.3rem;
     color: #69a90f;
-    margin: 1.5rem 0!important;
+    margin: 1.5rem 0 !important;
     del {
-      color: #CF4B27;
+      color: #cf4b27;
     }
   }
   //description
@@ -142,16 +157,17 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   }
   //custom meta
   .customMeta {
-    padding-top: 0!important;
-    border-top: none!important;
-    .posted_in, .tagged_as {
+    padding-top: 0 !important;
+    border-top: none !important;
+    .posted_in,
+    .tagged_as {
       font-size: 1.6rem;
       line-height: 2.2rem;
-      color: #A4A4A4;
+      color: #a4a4a4;
       a {
         font-weight: 400;
-        text-decoration: none!important;
-        display: inline-block!important;
+        text-decoration: none !important;
+        display: inline-block !important;
         &:hover {
           transform: scale(1.01);
         }
@@ -159,11 +175,12 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
     }
   }
   //stock
-  .stock.in-stock, .stock.out-of-stock {
+  .stock.in-stock,
+  .stock.out-of-stock {
     display: flex;
     align-items: center;
     padding: 1rem 0;
-    color: #CF4B27;
+    color: #cf4b27;
     img {
       margin-right: 0.5rem;
       max-width: 2.5rem;
@@ -173,7 +190,7 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
     }
   }
   .stock.in-stock {
-	  color: #0f834d;
+    color: #0f834d;
   }
   //shipping
   .shippin {
@@ -191,18 +208,23 @@ ul.products li.product h2, ul.products li.product h3, ul.products li.product .wo
   //quantiti
   .quantity {
     .qty {
-      border: 1px solid #E5E5DF;
+      border: 1px solid #e5e5df;
       background: #fff;
       box-shadow: none;
     }
   }
 }
 
-button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+button.alt,
+input[type="button"].alt,
+input[type="reset"].alt,
+input[type="submit"].alt,
+.button.alt,
+.widget-area .widget a.button.alt {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #CF4B27;
+  background: #cf4b27;
   color: #fff;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
@@ -222,20 +244,32 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
     margin-right: 1rem;
   }
 }
-//description
-.woocommerce-tabs ul.tabs {
-  display: none;
-}
-.storefront-full-width-content .woocommerce-tabs .panel {
-  width: 100%;
-}
-.woocommerce-tabs .panel h2:first-of-type {
-  padding: 0;
-}
-.woocommerce-tabs {
-  padding-top: 0;
-}
+// description an comment tabs
+// .woocommerce-tabs ul.tabs {
+//   display: none;
+// }
+// .storefront-full-width-content .woocommerce-tabs .panel {
+//   width: 100%;
+// }
+// .woocommerce-tabs .panel h2:first-of-type {
+//   padding: 0;
+// }
+// .woocommerce-tabs {
+//   padding-top: 0;
+// }
 
+@media (min-width: 768px) {
+  .storefront-full-width-content .woocommerce-tabs ul.tabs {
+    width: 19%;
+  }
+  .storefront-full-width-content .woocommerce-tabs .panel {
+    width: 75%;
+  }
+}
+.single-product div.product .woocommerce-product-rating {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
 
 //variants
 .variations {
@@ -249,7 +283,7 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
       margin-right: 2rem;
     }
     .value {
-      margin-bottom: 0!important;
+      margin-bottom: 0 !important;
       select {
         background: #fa95111f;
       }
@@ -258,5 +292,5 @@ button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submi
 }
 //remove prekes kodas in variants
 .sku_wrapper {
-  display: none!important;
+  display: none !important;
 }
