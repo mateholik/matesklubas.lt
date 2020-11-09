@@ -142,3 +142,13 @@ add_action( 'woocommerce_before_shop_loop_item_title', function() {
        echo '<div class="custom-badge" style="z-index: 9999"><span class="soldout-custom">Išpirkta</span></div>';
    }
 });
+
+
+//remove shipping methods from cart page
+function disable_shipping_calc_on_cart( $show_shipping ) {
+    if( is_cart() ) {
+        return false;
+    }
+    return $show_shipping;
+}
+add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99 );
