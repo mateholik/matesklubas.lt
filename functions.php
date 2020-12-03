@@ -152,3 +152,28 @@ function disable_shipping_calc_on_cart( $show_shipping ) {
     return $show_shipping;
 }
 add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99 );
+
+
+//add terms checkbox in checkout
+add_action( 'woocommerce_review_order_before_submit', 'bt_add_checkout_checkbox', 10 );
+function bt_add_checkout_checkbox() {
+
+    woocommerce_form_field( 'checkout-checkbox', array( // CSS ID
+       'type'          => 'checkbox',
+       'class'         => array('form-row mycheckbox'), // CSS Class
+       'label_class'   => array('woocommerce-form__label woocommerce-form__label-for-checkbox checkbox'),
+       'input_class'   => array('woocommerce-form__input woocommerce-form__input-checkbox input-checkbox'),
+       'required'      => true, // Mandatory or Optional
+       'label'         => 'Sutinku su  <a href="https://www.matesklubas.lt/pirkimo-ir-pristatymo-salygos/" target="_blank" rel="noopener">pirkimo sąlygomis ir taisyklėmis</a>', // Label and Link
+    ));    
+}
+
+add_action( 'woocommerce_checkout_process', 'bt_add_checkout_checkbox_warning' );
+/**
+ * Alert if checkbox not checked
+ */ 
+function bt_add_checkout_checkbox_warning() {
+    if ( ! (int) isset( $_POST['checkout-checkbox'] ) ) {
+        wc_add_notice( __( 'Please acknowledge the Checkbox' ), 'error' );
+    }
+}
