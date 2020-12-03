@@ -174,6 +174,6 @@ add_action( 'woocommerce_checkout_process', 'bt_add_checkout_checkbox_warning' )
  */ 
 function bt_add_checkout_checkbox_warning() {
     if ( ! (int) isset( $_POST['checkout-checkbox'] ) ) {
-        wc_add_notice( __( 'Please acknowledge the Checkbox' ), 'error' );
+        wc_add_notice( __( 'Prašome sutinki su pirkimo sąlygomis ir taisyklėmis' ), 'error' );
     }
 }

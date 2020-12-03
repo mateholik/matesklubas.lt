@@ -94,6 +94,10 @@
                    </a>
                </div>
            </div>
+           <div class="card-logos">
+           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mastercard.png" alt="text-wrap">
+           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/visa.png" alt="text-wrap">
+           </div>
        </div>
    </div>
     <div class="footer__bottom">
