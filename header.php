@@ -125,6 +125,9 @@
                 </picture>
             </div>
             <div class="container container--nav">
+            	<div class="lang-switcher-desk">
+            	       <?php echo do_shortcode('[gtranslate]'); ?>
+                </div>
                 <?php
                 wp_nav_menu( array(
                     'menu_class' => 'nav__ul',
@@ -143,6 +146,9 @@
                             </li>
                         </ul>
                 </div>
+                
+
+
 
 
                 <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">
@@ -153,6 +159,9 @@
                 </div>
             </div>
             <div v-show="mobMenu" style="display: none;">
+            	<div class="lang-switcher-mob">
+            	<?php echo do_shortcode('[gtranslate]'); ?>
+            </div>
                 <?php
                 wp_nav_menu( array(
                     'menu_class' => 'nav__ul--mob',
