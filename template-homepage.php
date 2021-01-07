@@ -106,7 +106,7 @@ get_header(); ?>
                         </div>
                         <div class="block__text-content">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
-                            <span>Matė arbatos</span>
+                            <span>Matè arbatos</span>
                         </div>
                     </h3>
                 </a>

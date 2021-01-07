@@ -6,7 +6,7 @@
         <div class="sidebar__block">
             <a href="https://matesklubas.lt/produkto-kategorija/mate/" class="sidebar__block-title">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
-                MATĖ:
+                MATÈ:
             </a>
             <ul>
 <!--                --><?php //getSubCategories(39, 'sidebar'); ?>
