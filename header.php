@@ -43,7 +43,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
     <header id="header" class="header">
-        <div class="snowflakes" aria-hidden="true">
+        <!-- <div class="snowflakes" aria-hidden="true">
             <div class="snowflake">❅</div>
             <div class="snowflake">❆</div>
             <div class="snowflake">❅</div>
@@ -56,7 +56,7 @@
             <div class="snowflake">❆</div>
             <div class="snowflake">❅</div>
             <div class="snowflake">❆</div>
-        </div>
+        </div> -->
         <div class="top">
            <div class="top--desktop">
                <picture>
@@ -73,16 +73,16 @@
                        </picture>
                    </div>
                    <a href="<?php echo home_url(); ?>" class="top__center">
-                       <!-- <picture>
+                       <picture>
                            <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg">
                            <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
-                       </picture> -->
-                       <picture>
+                       </picture>
+                       <!-- <picture>
                            <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo-winter.png">
                            <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo-winter.png" alt="logo">
-                       </picture>
+                       </picture> -->
                    </a>
                    <div class="top__right">
                        <picture>
