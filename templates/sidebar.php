@@ -45,5 +45,11 @@
 				DOVANŲ RINKINIAI
 			</a>
 		</div>
+        <div class="sidebar__block">
+            <div class="sidebar__block-title title-for-fb">
+            Sekite naujienas Facebook'e:
+            </div>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmatesklubass&tabs=timeline&width=254&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=969696006719798" width="254" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		</div>
     </div>
 </div>
