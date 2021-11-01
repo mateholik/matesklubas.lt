@@ -24,11 +24,15 @@ function sf_child_theme_dequeue_style() {
  */
 
 function addScripts() {
-//    $cssTime = filemtime(get_stylesheet_directory() . '/style.css' );
-    $jsTime = filemtime(get_stylesheet_directory() . '/main.js' );
-    //TODO istrint stuliu registracija, nes defaultu storefront pakrauna is childo stilius. dbr palieku kad versijos skirtusi css failo
-//    wp_enqueue_style( 'child-theme-style', get_template_directory_uri() . '/style.css', array(), $cssTime, false);
-    wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/main.js', array(), $jsTime, true);
+    $cssTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/style.css' );
+    $jsTime = filemtime(get_stylesheet_directory() . '/assets/compiled/js/main.js' );
+
+    wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/assets/compiled/css/style.css', array(), $cssTime, false);
+    wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/assets/compiled/js/main.js', array(), $jsTime, true);
+    
+    if(is_page_template( 'template-introduction.php' )) {
+        wp_enqueue_script('introduction-script', get_stylesheet_directory_uri() . '/assets/compiled/js/introduction/main.js', array(), $jsTime, true);
+    }
 }
 add_action( 'wp_enqueue_scripts', 'addScripts' );
 

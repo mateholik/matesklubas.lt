@@ -2,12 +2,14 @@ import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
 
 //nav
-new Vue({
-  el: '#header',
-  data: {
-    mobMenu: false
-  }
-});
+if(document.getElementById('header')) {
+  new Vue({
+    el: '#header',
+    data: {
+      mobMenu: false
+    }
+  });
+}
 
 // scroll to specific word in zodynas
 if(document.getElementById('zodynas')) {

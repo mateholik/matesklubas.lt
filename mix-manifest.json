@@ -1,4 +1,6 @@
 {
-    "/main.js": "/main.js",
-    "/style.css": "/style.css"
+    "/assets/compiled/js/main.js": "/assets/compiled/js/main.js",
+    "/assets/compiled/js/introduction/main.js": "/assets/compiled/js/introduction/main.js",
+    "/assets/compiled/css/introduction/style.css": "/assets/compiled/css/introduction/style.css",
+    "/assets/compiled/css/style.css": "/assets/compiled/css/style.css"
 }
