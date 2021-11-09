@@ -24,6 +24,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "vue-cool-lightbox": "^2.7.4",
     "vue-scrollto": "^2.18.0"
   }
 }

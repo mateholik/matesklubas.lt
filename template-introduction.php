@@ -7,7 +7,11 @@
 
 get_header(); ?>
 
-<div id="introduction" class="intruduction">
+<script>
+    window.domain = JSON.stringify('<?php echo get_stylesheet_directory_uri(); ?>')
+</script>
+
+<div id="introduction" class="introduction">
     <introduction />
 </div>
 

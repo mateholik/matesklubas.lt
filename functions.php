@@ -27,11 +27,16 @@ function addScripts() {
     $cssTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/style.css' );
     $jsTime = filemtime(get_stylesheet_directory() . '/assets/compiled/js/main.js' );
 
-    wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/assets/compiled/css/style.css', array(), $cssTime, false);
+   
     wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/assets/compiled/js/main.js', array(), $jsTime, true);
     
+    if(!is_page_template( 'template-introduction.php' )) {
+        wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/assets/compiled/css/style.css', array(), $cssTime, false);
+    }
+
     if(is_page_template( 'template-introduction.php' )) {
-        wp_enqueue_script('introduction-script', get_stylesheet_directory_uri() . '/assets/compiled/js/introduction/main.js', array(), $jsTime, true);
+        wp_enqueue_style( 'introduction-style', get_stylesheet_directory_uri() . '/assets/compiled/css/introduction/style.css', array(), '', false);
+        wp_enqueue_script('introduction-script', get_stylesheet_directory_uri() . '/assets/compiled/js/introduction/main.js', array(), '', true);
     }
 }
 add_action( 'wp_enqueue_scripts', 'addScripts' );
