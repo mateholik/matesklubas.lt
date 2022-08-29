@@ -31,7 +31,7 @@ $block = ($product->get_stock_quantity()>0 ? '' : 'style="display: block;"');
     		<?php
 	    echo wp_kses_post( $availability );
 	} else {
-	    echo "Prekė išpirkta, greitu metu tūrėsime ją vėl! Rezervuok prekę iš anksto. Rašyk mums el. paštu <a href='mailto:mateholikai@gmail.com'>mateholikai@gmail.com</a> arba <a target='_blank' href='https://www.facebook.com/matesklubass'>facebook'e</a>.";
+	    echo "Prekė išpirkta, greitu metu turėsime ją vėl! Rezervuok prekę iš anksto. Rašyk mums el. paštu <a href='mailto:mateholikai@gmail.com'>mateholikai@gmail.com</a> arba <a target='_blank' href='https://www.facebook.com/matesklubass'>facebook'e</a>.";
 	}
     ?>
 </p>

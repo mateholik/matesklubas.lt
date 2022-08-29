@@ -16,6 +16,16 @@
 	</tr>
 </table>
 
+<?php
+$data = $this->order->data;
+$buyerName = $data['billing']['first_name'] . ' ' . $data['billing']['last_name'];
+// $buyerAddress = $data['billing']['address_1'];
+$buyerPhone = $data['billing']['phone'];
+$buyerEmail = $data['billing']['email'];
+$buyerPaymentMethod = $data['payment_method_title'];
+
+?>
+
 
 <div class="custom">
     <div class="center">
@@ -52,7 +62,9 @@
 			<?php } ?>
 			<?php if ( isset($this->settings['display_phone']) ) { ?>
 			<div class="billing-phone"><?php $this->billing_phone(); ?></div>
-			<?php } ?>
+			<?php } ?> <br>
+			<?php echo $buyerPhone; ?><br>
+			<?php echo $buyerEmail; ?>
 		</td>
 		<td class="address shipping-address">
 			<?php if ( isset($this->settings['display_shipping_address']) && $this->ships_to_different_address()) { ?>
