@@ -24,7 +24,6 @@ function sf_child_theme_dequeue_style() {
  */
 
 function addScripts() {
-    $cssTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/style.css' );
     $jsTime = filemtime(get_stylesheet_directory() . '/assets/compiled/js/main.js' );
 
    
@@ -37,7 +36,7 @@ function addScripts() {
 add_action( 'wp_enqueue_scripts', 'addScripts' );
 
 function addStyles() {
-
+    $cssTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/style.css' );
     if(!is_page_template( 'template-introduction.php' )) {
         wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/assets/compiled/css/style.css', array(), $cssTime, false);
     }
@@ -192,4 +191,9 @@ function bt_add_checkout_checkbox_warning() {
     if ( ! (int) isset( $_POST['checkout-checkbox'] ) ) {
         wc_add_notice( __( 'Prašome sutinki su pirkimo sąlygomis ir taisyklėmis' ), 'error' );
     }
+}
+
+add_action('after_setup_theme', 'register_navwalker');
+function register_navwalker() {
+    require('inc/MkNavWalker.php');
 }

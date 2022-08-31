@@ -63,73 +63,9 @@
 <?php if( !is_page_template( 'template-introduction.php' )) { ?>
 
 	<?php do_action( 'storefront_before_header' ); ?>
+  <?php /*
     <header id="header" class="header">
-        <!-- <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-            <div class="snowflake">❅</div>
-            <div class="snowflake">❆</div>
-        </div> -->
-        <div class="top">
-           <div class="top--desktop">
-               <picture>
-                   <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-top.jpg">
-                   <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-top.jpg" alt="background">
-               </picture>
-               <div class="top__content">
-                   <div class="top__left">
-                       <picture>
-                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mates.svg">
-                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mates.svg" alt="mates">
-                       </picture>
-                   </div>
-                   <a href="<?php echo home_url(); ?>" class="top__center">
-                       <picture>
-                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg">
-                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
-                       </picture>
-                       <!-- <picture>
-                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo-winter.png">
-                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo-winter.png" alt="logo">
-                       </picture> -->
-                   </a>
-                   <div class="top__right">
-                       <picture>
-                           <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/klubas.svg">
-                           <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/klubas.svg" alt="klubas">
-                       </picture>
-                   </div>
-               </div>
-           </div>
-            <div class="top--mobile">
-                <a href="<?php echo home_url(); ?>" class="logo-link"></a>
-                <picture>
-                    <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                    <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-bg.jpg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-bg.jpg" alt="background">
-                </picture>
-                <div class="top__content top__content--mobile">
-                    <picture>
-                        <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                        <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-content.png">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/header-mob-content.png" alt="mates klubas">
-                    </picture>
-                </div>
-            </div>
-        </div>
+  
         <nav class="nav">
             <div class="nav--before">
                 <picture>
@@ -167,11 +103,7 @@
                             </li>
                         </ul>
                 </div>
-                
-
-
-
-
+              
                 <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">
                     <div class="nav-icon" :class="{open: mobMenu}">
                         <div></div>
@@ -192,6 +124,59 @@
                 ?>
             </div>
         </nav>
+    </header>
+     */ ?>
+    <header class="header">
+      <div class="container">
+        <div class="wrapper">
+          <a href="<?php echo home_url(); ?>" class="logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo">
+          </a>
+          <nav class="desktop">
+            <?php
+              wp_nav_menu( array(
+                  'menu_class' => '',
+                  'theme_location' => 'primary',
+                  'container' => '',
+                  'walker' => new mk_wp_nav_menu_walker()
+              ) );
+              ?>
+          </nav>
+          <div class="right">
+            <nav class="desktop">
+            <?php $permalink = get_permalink( 9 ); ?>
+            <ul>
+              <li>
+                <a href="<?php echo $permalink ?>"> <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?>
+                </a>
+              </li>
+            </ul>
+            </nav>
+            <div class="cart">
+              <div class="cta">
+                <?php storefront_cart_link(); ?>
+              </div>
+              <div class="dropdown">
+                <?php the_widget( 'WC_Widget_Cart','title=' ); ?>
+              </div>
+            </div>
+          </div>
+          <div id="hamburger" class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="mobile">
+        <?php
+          wp_nav_menu( array(
+            'menu_class' => '',
+            'theme_location' => 'primary',
+            'container' => ''
+          ) );
+        ?>
+      </nav>
     </header>
 
     <?php

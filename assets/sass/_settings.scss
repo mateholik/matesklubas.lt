@@ -1,17 +1,28 @@
 @mixin phone {
-  @media (max-width: 768px) { @content; }
+  @media (max-width: 768px) {
+    @content;
+  }
 }
+@mixin center($justify: flex-start, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+$black: #000;
+$white: #fff;
+
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-a, button {
+a,
+button {
   &:focus {
     outline: none;
   }
@@ -19,7 +30,9 @@ a, button {
   //  color: inherit;
   //}
 }
-select, textarea, input {
+select,
+textarea,
+input {
   //background-color: #78A643;
   //border: 0.1rem solid #638D33;
   outline: none;
@@ -37,19 +50,24 @@ a {
 p {
   margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans Condensed', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans Condensed", sans-serif;
   color: #222;
   margin: 0;
 }
 h2 {
   padding: 3rem 0;
-  @include phone{
+  @include phone {
     padding: 2.5rem 0;
   }
   img {
-	  width: 2rem;
-	  height: auto;
+    width: 2rem;
+    height: auto;
   }
 }
 h3 {
@@ -77,13 +95,13 @@ img {
     max-width: 100%;
   }
   &--no-padding {
-    @include phone{
+    @include phone {
       padding: 0;
     }
   }
   &--nav {
     position: relative;
-    @include phone{
+    @include phone {
       position: relative;
       height: 5rem;
       display: flex;
@@ -118,8 +136,6 @@ img {
 //  }
 //}
 
-
-
 .main {
   display: flex;
   margin-top: 1.5rem;
@@ -130,11 +146,11 @@ img {
     max-width: 28rem;
     width: 100%;
     margin-right: 2.5rem;
-    border-right: 1px solid #F2F2F2;
-	@media screen and (max-width: 1200px) and (min-width: 768px){
-	    min-width: 22rem;
-	    width: auto;
-	}
+    border-right: 1px solid #f2f2f2;
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+      min-width: 22rem;
+      width: auto;
+    }
     @media (max-width: 768px) {
       display: none;
     }
@@ -189,34 +205,41 @@ img {
   }
 }
 .entry-header {
-  display : none;
+  display: none;
 }
-.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
   background-color: #78a643;
 }
 
 .site-main {
-  padding: 0!important;
-  margin: 0!important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content .woocommerce-products-header {
+.storefront-full-width-content.woocommerce-cart .entry-header,
+.storefront-full-width-content.woocommerce-checkout .entry-header,
+.storefront-full-width-content.woocommerce-account .entry-header,
+.storefront-full-width-content .woocommerce-products-header {
   text-align: left;
 }
 
-
 //animation quiz, homepage products
-.animation-enter-active, .animation-leave-active {
+.animation-enter-active,
+.animation-leave-active {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease;
 }
 .animation-enter-active {
   transition-delay: 0.3s;
 }
-.animation-enter, .animation-leave-to {
+.animation-enter,
+.animation-leave-to {
   opacity: 0;
   transform: translateX(-10px);
 }
-.animation-enter-to, .animation-leave {
+.animation-enter-to,
+.animation-leave {
   opacity: 1;
   transform: translateX(0px);
 }
