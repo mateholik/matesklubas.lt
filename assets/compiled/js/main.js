@@ -211,30 +211,24 @@ document.addEventListener("DOMContentLoaded", function () {
   burger.addEventListener("click", function () {
     this.classList.toggle("is-active");
     menu.classList.toggle("is-active");
-    handleClick(menu);
+    setClicks(menu);
   });
 
-  function handleClick(block) {
+  function setClicks(block) {
+    console.log("handle click");
     var items = block.querySelectorAll(":scope > ul > li");
-
-    if (items) {
-      Array.from(items).forEach(function (item) {
-        var submenu = item.querySelector(":scope > .sub-menu");
-
-        if (submenu) {
-          item.addEventListener("click", function (e) {
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            submenu.classList.add("is-active");
-            console.log(0);
-            handleClick(item);
-            console.log(1);
-          });
-        } else {
-          console.log("no submenu");
-        }
+    if (!items) return;
+    Array.from(items).forEach(function (item) {
+      var submenu = item.querySelector(":scope > .sub-menu");
+      var itemLink = item.querySelector(":scope > a");
+      if (!submenu) return;
+      itemLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        submenu.classList.toggle("is-active");
+        setClicks(item);
       });
-    }
+    });
   }
 });
 
