@@ -226,6 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         e.stopImmediatePropagation();
         submenu.classList.toggle("is-active");
+        itemLink.classList.toggle("is-active");
         setClicks(item);
       });
     });

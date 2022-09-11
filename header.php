@@ -126,6 +126,7 @@
         </nav>
     </header>
      */ ?>
+      <?php $loginPermalink = get_permalink( 9 ); ?>
     <header class="header">
       <div class="container">
         <div class="wrapper">
@@ -144,10 +145,11 @@
           </nav>
           <div class="right">
             <nav class="desktop">
-            <?php $permalink = get_permalink( 9 ); ?>
             <ul>
               <li>
-                <a href="<?php echo $permalink ?>"> <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?>
+                <a class="login" href="<?php echo $loginPermalink ?>">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/login.svg" alt="login">
+                  <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?>
                 </a>
               </li>
             </ul>
@@ -176,6 +178,22 @@
             'container' => ''
           ) );
         ?>
+         <ul>
+         <li>
+            <a class="login" href="<?php echo $loginPermalink ?>">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/login.svg" alt="login">
+              <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?>
+            </a>
+          </li>
+        </ul>
+        <div class="cart">
+          <div class="cta">
+            <?php storefront_cart_link(); ?>
+          </div>
+          <div class="dropdown">
+            <?php the_widget( 'WC_Widget_Cart','title=' ); ?>
+          </div>
+        </div>
       </nav>
     </header>
 

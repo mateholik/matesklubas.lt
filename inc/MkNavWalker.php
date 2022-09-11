@@ -10,10 +10,12 @@ class mk_wp_nav_menu_walker extends Walker_Nav_menu {
         if($item-> title == "Straipsniai") {
             $output .= "<li class='blog'> <a href=" . esc_url($item-> url) . ">" . $item-> title . "</a>";
             $output .= "<div class='dropdown blog-dropdown'>";
+            $output .= "<div class='inner-wrapper'>";
             $output .= "<div class='content'><div class='title'>Straipsnių kategorijos</div>";
         } else if($item-> title == "Parduotuvė") {
             $output .= "<li class='shop'> <a href=" . esc_url($item-> url) . ">" . $item-> title . "</a>";
             $output .= "<div class='dropdown shop-dropdown'>";
+            $output .= "<div class='inner-wrapper'>";
             $output .= "<div class='title'>Prekių kategorijos</div>";
         } else {
             $output .= "<li> <a href=" . esc_url($item-> url) . ">" . $item-> title . "</a>";
@@ -24,9 +26,9 @@ class mk_wp_nav_menu_walker extends Walker_Nav_menu {
         if($item-> title == "Straipsniai") {
             $output .= "</div>";
             $output .= "<img src=" . get_stylesheet_directory_uri() . "/assets/img/straipsniai-bg.jpeg" . ">";
-            $output .= "</div></li>";
+            $output .= "</div></div></li>";
         } else if($item-> title == "Parduotuvė") {
-            $output .= "</div></li>";
+            $output .= "</div></div></li>";
         } else {
             $output .= "</li>";
         }
