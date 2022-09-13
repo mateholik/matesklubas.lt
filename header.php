@@ -63,70 +63,8 @@
 <?php if( !is_page_template( 'template-introduction.php' )) { ?>
 
 	<?php do_action( 'storefront_before_header' ); ?>
-  <?php /*
-    <header id="header" class="header">
-  
-        <nav class="nav">
-            <div class="nav--before">
-                <picture>
-                    <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-top.svg">
-                    <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-top.svg" alt="before">
-                </picture>
-            </div>
-            <div class="nav--after">
-                <picture>
-                    <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-bottom.svg">
-                    <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-nav-bottom.svg" alt="after">
-                </picture>
-            </div>
-            <div class="container container--nav">
-            	<div class="lang-switcher-desk">
-            	       <?php echo do_shortcode('[gtranslate]'); ?>
-                </div>
-                <?php
-                wp_nav_menu( array(
-                    'menu_class' => 'nav__ul',
-                    'theme_location' => 'primary',
-                    'container' => ''
-                ) );
-                ?>
 
-                <div class="nav__cart">
-                        <ul id="site-header-cart" class="site-header-cart menu">
-                            <li class="">
-                                <?php storefront_cart_link(); ?>
-                            </li>
-                            <li>
-                                <?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
-                            </li>
-                        </ul>
-                </div>
-              
-                <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">
-                    <div class="nav-icon" :class="{open: mobMenu}">
-                        <div></div>
-                    </div>
-                    MENIU
-                </div>
-            </div>
-            <div v-show="mobMenu" style="display: none;">
-            	<div class="lang-switcher-mob">
-            	<?php echo do_shortcode('[gtranslate]'); ?>
-            </div>
-                <?php
-                wp_nav_menu( array(
-                    'menu_class' => 'nav__ul--mob',
-                    'theme_location' => 'mob_nav',
-                    'container' => ''
-                ) );
-                ?>
-            </div>
-        </nav>
-    </header>
-     */ ?>
-      <?php $loginPermalink = get_permalink( 9 ); ?>
+    <?php $loginPermalink = get_permalink( 9 ); ?>
     <header class="header">
       <div class="container">
         <div class="wrapper">

@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
 @mixin center($justify: flex-start, $align: center) {
   display: flex;
   justify-content: $justify;
