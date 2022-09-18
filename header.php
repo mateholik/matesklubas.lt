@@ -96,7 +96,7 @@
               <div class="cta">
                 <?php storefront_cart_link(); ?>
               </div>
-              <div class="dropdown">
+              <div class="dropdown-cart">
                 <?php the_widget( 'WC_Widget_Cart','title=' ); ?>
               </div>
             </div>
@@ -128,7 +128,7 @@
           <div class="cta">
             <?php storefront_cart_link(); ?>
           </div>
-          <div class="dropdown">
+          <div class="dropdown-cart">
             <?php the_widget( 'WC_Widget_Cart','title=' ); ?>
           </div>
         </div>
