@@ -14,6 +14,29 @@
 
 get_header(); ?>
 
+<div class="homepage2">
+    <section class="hero">
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper__content">
+                    <h1>Matės klubas - tai bendruomenė</h1>
+                    <p>Susitikimai, patarimai, matės pasaulio naujienos, matės rūšių apžvalgos, receptai bei daug kitų įdomybių</p>
+                    <div class="btn__holder">
+                        <div class="btn btn--secondary">prisijungti</div>
+                    </div>
+                </div>
+                <div class="wrapper__img">
+                    <img class="desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-desktop.png" alt="text-wrap">
+                    <img class="mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-mobile.png" alt="text-wrap">
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<?php
+/*
 <div class="homepage">
     <section>
         <div class="news">
@@ -197,5 +220,6 @@ get_header(); ?>
     </section>
 
 </div>
+*/ ?>
 <?php
 get_footer();

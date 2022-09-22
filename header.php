@@ -144,12 +144,13 @@
      */
     do_action( 'storefront_before_content' );
     ?>
+    <?php if( !is_page_template( 'template-homepage.php' )) { ?>
     <div class="container">
-
+    <?php }?>
 <?php }?>
 
 
-<?php if( !is_checkout() && !is_cart() && !is_page_template( 'template-quiz.php' ) && !is_page_template( 'template-introduction.php' ) && !is_account_page() ) { ?>
+<?php if( !is_checkout() && !is_cart() && !is_page_template( 'template-homepage.php' ) && !is_page_template( 'template-quiz.php' ) && !is_page_template( 'template-introduction.php' ) && !is_account_page() ) { ?>
     <main class="main site-main">
         <?php get_template_part('templates/sidebar'); ?>
         <div class="main__content">

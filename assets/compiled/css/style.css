@@ -349,15 +349,19 @@ p.no-comments {
 
 .btn {
   outline: none;
-  width: 100%;
+  padding: 0 2.4rem;
   height: 5.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  background-color: #CF4B27;
+  background-color: #cf4b27;
   font-family: "Open Sans Condensed", sans-serif;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.btn__holder {
+  display: flex;
 }
 .btn:hover {
   background: #d65227;
@@ -365,18 +369,27 @@ p.no-comments {
 .btn:active {
   border: 0 solid;
 }
-.btn--sidebar {
-  background-color: #FA9511;
-  border-bottom: 0.5rem solid #CF7D10;
-  height: 6.5rem;
-  font-size: 2.4rem;
-  line-height: 3/3rem;
+.btn--secondary {
+  height: unset;
+  background-color: #fa9511;
+  border-bottom: 0.5rem solid #cf7d10;
+  font-size: 2.2rem;
+  padding: 1.2rem 2.4rem;
   text-transform: uppercase;
+  line-height: 3.2rem;
+  font-weight: 600;
 }
-.btn--sidebar:hover {
+@media (max-width: 768px) {
+  .btn--secondary {
+    font-size: 1.6rem;
+    padding: 0.6rem 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+.btn--secondary:hover {
   background: #ef8e10;
 }
-.btn--sidebar:active {
+.btn--secondary:active {
   border: 0 solid;
 }
 
@@ -858,7 +871,7 @@ header.header .is-active {
   font-size: 1.8rem;
   line-height: 2.5rem;
   text-transform: capitalize;
-  color: #CF4B27;
+  color: #cf4b27;
   padding-left: 2.5rem;
   padding-top: 1.3rem;
 }
@@ -1093,6 +1106,151 @@ header.header .is-active {
 }
 .homepage h2 img:nth-child(2) {
   transform: scaleX(-1);
+}
+
+.homepage2 {
+  margin-bottom: 6rem;
+  position: relative;
+  margin-top: -4rem;
+}
+@media (max-width: 768px) {
+  .homepage2 {
+    margin-bottom: 4rem;
+  }
+}
+.homepage2 section.hero {
+  position: relative;
+}
+.homepage2 section.hero:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 60%;
+  height: 100%;
+  width: 50%;
+  z-index: -2;
+  background-color: #eb9365;
+}
+@media (max-width: 768px) {
+  .homepage2 section.hero:after {
+    display: none;
+  }
+}
+.homepage2 .wrapper {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper {
+    margin-right: -1.5rem;
+  }
+}
+.homepage2 .wrapper:before {
+  position: absolute;
+  content: "";
+  top: -3rem;
+  left: -31rem;
+  background-image: url("./../../img/hero-bg-left.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 44rem;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper:before {
+    top: 1rem;
+    left: -7rem;
+    height: 11rem;
+    width: 8rem;
+  }
+}
+.homepage2 .wrapper:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -9rem;
+  background-image: url("./../../img/hero-bg-right.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 69rem;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper:after {
+    display: none;
+  }
+}
+.homepage2 .wrapper__content {
+  padding: 10.2rem 0;
+  width: 66.6%;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__content {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__content {
+    padding-bottom: 0;
+    padding-top: 3.2rem;
+  }
+}
+.homepage2 .wrapper__content h1 {
+  font-size: 5.6rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.6rem;
+  }
+}
+.homepage2 .wrapper__content p {
+  font-size: 2.8rem;
+  margin-bottom: 3.2rem;
+  max-width: 648px;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__content p {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.homepage2 .wrapper__img {
+  width: 33.33%;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__img {
+    width: 13rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+.homepage2 .wrapper__img img.desktop {
+  width: 39.5rem;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__img img.desktop {
+    display: none;
+  }
+}
+.homepage2 .wrapper__img img.mobile {
+  width: 39.5rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  .homepage2 .wrapper__img img.mobile {
+    display: block;
+  }
 }
 
 .focus-text {

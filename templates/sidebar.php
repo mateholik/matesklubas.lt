@@ -1,7 +1,7 @@
 <div class="main__sidebar">
     <div class="sidebar">
         <div class="sidebar__btn">
-            <a href="https://matesklubas.lt/negali-issirinkti/" class="btn btn--sidebar">ATLIK TESTĄ</a>
+            <a href="https://matesklubas.lt/negali-issirinkti/" class="btn btn--secondary">ATLIK TESTĄ</a>
         </div>
         <div class="sidebar__block">
             <a href="https://matesklubas.lt/produkto-kategorija/mate/" class="sidebar__block-title">
