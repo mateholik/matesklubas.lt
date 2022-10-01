@@ -263,6 +263,56 @@
   @include phone {
     margin-bottom: 4rem;
   }
+  section {
+    .title {
+      @include center(center);
+      margin-bottom: 4rem;
+      @include phone {
+        margin-bottom: 2.4rem;
+      }
+      h2 {
+        position: relative;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include phone {
+          font-size: 2rem;
+        }
+        &:before,
+        &:after {
+          position: absolute;
+          content: "";
+          background-image: url("./../../img/icons/title-icon.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 3rem;
+          width: 3rem;
+          @include phone {
+            height: 2.2rem;
+            width: 2.2rem;
+          }
+        }
+        &:before {
+          top: 50%;
+          transform: translate(calc(-100% - 1.6rem), -50%);
+          left: 0;
+          @include phone {
+            transform: translate(calc(-100% - 0.8rem), -50%);
+          }
+        }
+        &:after {
+          top: 50%;
+          transform: translate(calc(100% + 1.6rem), -50%);
+          right: 0;
+          @include phone {
+            transform: translate(calc(100% + 0.8rem), -50%);
+          }
+        }
+      }
+    }
+  }
   section.hero {
     position: relative;
     &:after {
@@ -278,99 +328,121 @@
         display: none;
       }
     }
-  }
-  .wrapper {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    @include phone {
-      margin-right: -1.5rem;
-    }
-    &:before {
-      position: absolute;
-      content: "";
-      top: -3rem;
-      left: -31rem;
-      background-image: url("./../../img/hero-bg-left.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 44rem;
-      z-index: -1;
+    .wrapper {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
       @include phone {
-        top: 1rem;
-        left: -7rem;
-        height: 11rem;
-        width: 8rem;
+        margin-right: -1.5rem;
       }
-    }
-    &:after {
-      position: absolute;
-      content: "";
-      top: 0;
-      right: -9rem;
-      background-image: url("./../../img/hero-bg-right.jpeg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 69rem;
-      z-index: -1;
-      @include phone {
-        display: none;
-      }
-    }
-    &__content {
-      padding: 10.2rem 0;
-      width: 66.6%;
-      @include phone {
-        width: 75%;
-      }
-      @include phone {
-        padding-bottom: 0;
-        padding-top: 3.2rem;
-      }
-      h1 {
-        font-size: 5.6rem;
-        font-weight: 600;
-        margin-bottom: 2.4rem;
-        text-transform: uppercase;
-        @include phone {
-          font-size: 2.8rem;
-          margin-bottom: 1.6rem;
-        }
-      }
-      p {
-        font-size: 2.8rem;
-        margin-bottom: 3.2rem;
-        max-width: 648px;
-        @include phone {
-          font-size: 1.6rem;
-          margin-bottom: 2.4rem;
-        }
-      }
-    }
-    &__img {
-      width: 33.33%;
-      @include phone {
-        width: 13rem;
+      &:before {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        content: "";
+        top: -3rem;
+        left: -31rem;
+        background-image: url("./../../img/hero-bg-left.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 44rem;
         z-index: -1;
+        @include phone {
+          top: 1rem;
+          left: -7rem;
+          height: 11rem;
+          width: 8rem;
+        }
       }
-      img.desktop {
-        width: 39.5rem;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -9rem;
+        background-image: url("./../../img/hero-bg-right.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 69rem;
+        z-index: -1;
         @include phone {
           display: none;
         }
       }
-      img.mobile {
-        width: 39.5rem;
-        display: none;
+      &__content {
+        padding: 10.2rem 0;
+        width: 66.6%;
         @include phone {
-          display: block;
+          width: 75%;
+        }
+        @include phone {
+          padding-bottom: 0;
+          padding-top: 3.2rem;
+        }
+        h1 {
+          font-size: 5.6rem;
+          font-weight: 600;
+          margin-bottom: 2.4rem;
+          text-transform: uppercase;
+          @include phone {
+            font-size: 2.8rem;
+            margin-bottom: 1.6rem;
+          }
+        }
+        p {
+          font-size: 2.8rem;
+          margin-bottom: 3.2rem;
+          max-width: 648px;
+          @include phone {
+            font-size: 1.6rem;
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+      &__img {
+        width: 33.33%;
+        @include phone {
+          width: 13rem;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: -1;
+        }
+        img.desktop {
+          width: 39.5rem;
+          @include phone {
+            display: none;
+          }
+        }
+        img.mobile {
+          width: 39.5rem;
+          display: none;
+          @include phone {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  section.news {
+    .wrapper {
+      @include center(space-between);
+      .block {
+        height: 38.4rem;
+        overflow: auto;
+        margin-bottom: 1.2rem;
+        flex: 1;
+        &:first-of-type {
+          margin-right: 6%;
+        }
+        h3 {
+          font-size: 2.6rem;
+          font-weight: 600;
+          margin-bottom: 0.12rem;
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 0;
         }
       }
     }
