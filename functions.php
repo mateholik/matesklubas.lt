@@ -44,9 +44,9 @@ function addStyles() {
     if(is_page_template( 'template-introduction.php' )) {
         wp_enqueue_style( 'introduction-style', get_stylesheet_directory_uri() . '/assets/compiled/css/introduction/style.css', array(), '', false);
     }
-
+    $cssHomepageTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/homepage/style.css' );
     if( is_front_page()) {
-        wp_enqueue_style( 'homepage-style', get_stylesheet_directory_uri() . '/assets/compiled/css/homepage/style.css', array(), $cssTime, false);
+        wp_enqueue_style( 'homepage-style', get_stylesheet_directory_uri() . '/assets/compiled/css/homepage/style.css', array(), $cssHomepageTime, false);
     }
 }
 add_action( 'wp_enqueue_scripts', 'addStyles', 99 );

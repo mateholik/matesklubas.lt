@@ -14,10 +14,6 @@
 
 get_header(); ?>
 
-<div>
-  <h1>numfmt_get_attribute</h1>
-</div>
-
 <div class="homepage2">
   <section class="hero">
     <div class="container">
@@ -205,23 +201,144 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
-
-  <section class="newsletter">
+  <section class="help distortion-bg ">
     <div class="container">
-      <div class="title-white">
-        <h2>prenumeruoti naujienlaiškį</h2>
-      </div>
-      <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
       <div class="wrapper">
-        <input type="email" placeholder="Įveskite el. pašto adresą">
-
-        <div class="btn__holder">
-          <div class="btn btn--secondary">prenumeruoti</div>
+        <div class="block">
+          <div class="title">
+            <h3>negali išsirinkti?</h3>
+          </div>
+          <p>Matės pasaulyje esi naujokas? Nori išbandyti mate bei jos aksesuarus, bet nežinai ką išsirinkti? Atlik
+            testą ir gauk asmeninę rekomendaciją</p>
+          <div class="btn__holder">
+            <div class="btn btn--secondary">testas</div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="title">
+            <h3>visa informacija naujokui</h3>
+          </div>
+          <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuom skiriasi medinis nuo
+            moliūgo kalabasas? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
+          <div class="btn__holder">
+            <div class="btn btn--secondary">instrukcija</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <?php
+/*
+  <section>
+    <div class="cats">
+      <h2 class="cats__title">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+  Prekių kategorijos
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate-title.jpg" alt="title-img">
+  </h2>
+  <div class="cats__wrap">
+    <div class="cats__bg">
+      <picture>
+        <source media="(min-width: 769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat.jpg">
+        <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat.jpg" alt="bg">
+      </picture>
+    </div>
+    <!--                        <a href="--><?php //categoryLink(39) ?>
+    <!--" class="block">-->
+    <a href="<?php categoryLink(24) ?>" class="block">
+      <div class="block__bg-mob">
+        <picture>
+          <source media="(min-width: 769px)"
+            srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+          <source media="(max-width: 768px)"
+            srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+        </picture>
+      </div>
+      <div class="block__img">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate.png" alt="mate">
+      </div>
+      <h3 class="block__text">
+        <div class="block__text-bg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-full.svg" alt="title-wrap">
+        </div>
+        <div class="block__text-content">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
+          <span>Matè arbatos</span>
+        </div>
+      </h3>
+    </a>
+    <!--                        <a href="--><?php //categoryLink(44) ?>
+    <!--" class="block">-->
+    <a href="<?php categoryLink(19) ?>" class="block">
+      <div class="block__bg-mob">
+        <picture>
+          <source media="(min-width: 769px)"
+            srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+          <source media="(max-width: 768px)"
+            srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+        </picture>
+      </div>
+      <div class="block__img">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/kalabasas.png" alt="mate">
+      </div>
+      <h3 class="block__text">
+        <div class="block__text-bg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-full.svg" alt="title-wrap">
+        </div>
+        <div class="block__text-content">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/kalabasas.svg" alt="kalabasas">
+          <span>Kalabasos</span>
+        </div>
+      </h3>
+    </a>
+    <!--                        <a href="--><?php //categoryLink(49); ?>
+    <!--" class="block">-->
+    <a href="<?php categoryLink(16); ?>" class="block">
+      <div class="block__bg-mob">
+        <picture>
+          <source media="(min-width: 769px)"
+            srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
+          <source media="(max-width: 768px)"
+            srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-mob.jpg" alt="title-mob-wrap">
+        </picture>
+      </div>
+      <div class="block__img">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bombilos.png" alt="mate">
+      </div>
+      <h3 class="block__text">
+        <div class="block__text-bg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-item-full.svg" alt="title-wrap">
+        </div>
+        <div class="block__text-content">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/bombiles.svg" alt="bombiles">
+          <span>Bombilės</span>
+        </div>
+      </h3>
+    </a>
+  </div>
+</div>
+</section>
+*/
+?>
+<section class="newsletter distortion-bg">
+  <div class="container">
+    <div class="title-white">
+      <h2>prenumeruoti naujienlaiškį</h2>
+    </div>
+    <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
+    <div class="wrapper">
+      <input type="email" placeholder="Įveskite el. pašto adresą">
+
+      <div class="btn__holder">
+        <div class="btn btn--secondary">prenumeruoti</div>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
 
 <?php
