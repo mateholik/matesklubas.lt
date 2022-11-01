@@ -1317,8 +1317,6 @@ header.header .is-active {
   align-items: center;
 }
 .homepage2 section.news .wrapper .block {
-  height: 38.4rem;
-  overflow: auto;
   margin-bottom: 1.2rem;
   flex: 1;
 }
@@ -1332,6 +1330,54 @@ header.header .is-active {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
+}
+.homepage2 section.news .wrapper .block__items {
+  height: 38.4rem;
+  overflow: auto;
+}
+.homepage2 section.news .wrapper .block__card {
+  display: flex;
+}
+.homepage2 section.news .wrapper .block__card .image {
+  max-width: 16.6rem;
+  margin-right: 1.6rem;
+  position: relative;
+}
+.homepage2 section.news .wrapper .block__card .image .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage2 section.newsletter {
+  background-color: #000;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.homepage2 section.newsletter .title-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage2 section.newsletter .title-white h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+.homepage2 section.newsletter .title-white h2:before {
+  content: "";
+  position: absolute;
+  width: 4.8rem;
+  height: 3.2rem;
+  background-color: red;
 }
 
 .focus-text {
