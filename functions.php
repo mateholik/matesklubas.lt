@@ -37,12 +37,16 @@ add_action( 'wp_enqueue_scripts', 'addScripts' );
 
 function addStyles() {
     $cssTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/style.css' );
-    if(!is_page_template( 'template-introduction.php' )) {
+    if(!is_page_template( 'template-introduction.php' ) && !is_front_page()) {
         wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/assets/compiled/css/style.css', array(), $cssTime, false);
     }
 
     if(is_page_template( 'template-introduction.php' )) {
         wp_enqueue_style( 'introduction-style', get_stylesheet_directory_uri() . '/assets/compiled/css/introduction/style.css', array(), '', false);
+    }
+
+    if( is_front_page()) {
+        wp_enqueue_style( 'homepage-style', get_stylesheet_directory_uri() . '/assets/compiled/css/homepage/style.css', array(), $cssTime, false);
     }
 }
 add_action( 'wp_enqueue_scripts', 'addStyles', 99 );

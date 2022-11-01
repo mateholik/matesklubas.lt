@@ -239,9 +239,12 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!********************************!*\
   !*** ./assets/sass/style.scss ***!
   \********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected \"}\".\n    ╷\n502 │ }\n    │  ^\n    ╵\n  assets/sass/_homepage.scss 502:2  @import\n  /Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/assets/sass/style.scss 30:9                        root stylesheet\n    at processResult (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/webpack/lib/NormalModule.js:751:19)\n    at /Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/webpack/lib/NormalModule.js:853:5\n    at /Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass-loader/dist/index.js:73:7\n    at Function.call$2 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:96399:16)\n    at render_closure1.call$2 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:82305:12)\n    at _RootZone.runBinary$3$3 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:28284:18)\n    at _FutureListener.handleError$1 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:26806:21)\n    at _Future__propagateToListeners_handleError.call$0 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:27113:49)\n    at Object._Future__propagateToListeners (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:12137:77)\n    at _Future._completeError$2 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:26959:9)\n    at _AsyncAwaitCompleter.completeError$2 (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:26618:12)\n    at Object._asyncRethrow (/Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:11940:17)\n    at /Applications/XAMPP/xamppfiles/htdocs/matesklubas/wp-content/themes/mate/node_modules/sass/sass.dart.js:15783:20");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -249,6 +252,19 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /*!*********************************************!*\
   !*** ./assets/sass/introduction/style.scss ***!
   \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./assets/sass/homepage/style.scss":
+/*!*****************************************!*\
+  !*** ./assets/sass/homepage/style.scss ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12987,7 +13003,9 @@ Vue.compile = compileToFunctions;
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/assets/compiled/js/main": 0,
-/******/ 			"assets/compiled/css/introduction/style": 0
+/******/ 			"assets/compiled/css/homepage/style": 0,
+/******/ 			"assets/compiled/css/introduction/style": 0,
+/******/ 			"assets/compiled/css/style": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -13037,9 +13055,10 @@ Vue.compile = compileToFunctions;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/introduction/style"], () => (__webpack_require__("./assets/javascript/main.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/introduction/style"], () => (__webpack_require__("./assets/sass/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/compiled/css/introduction/style"], () => (__webpack_require__("./assets/sass/introduction/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/javascript/main.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/introduction/style.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/homepage/style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

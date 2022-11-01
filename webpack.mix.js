@@ -19,3 +19,5 @@ mix
   .options({
     processCssUrls: false,
   });
+
+mix.sass("assets/sass/homepage/style.scss", "assets/compiled/css/homepage");

@@ -51,33 +51,155 @@ get_header(); ?>
           <div class="block__items">
             <div class="block__card">
               <div class="image">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
                 <div class="icon">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
                 </div>
               </div>
-              <div>
+              <div class="content">
                 <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
                 <span>plačiau »</span>
               </div>
             </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="block">
-          <h3>video</h3>
+          <h3>Straipsniai</h3>
           <div class="block__items">
             <div class="block__card">
               <div class="image">
-                <img src="" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
                 <div class="icon">
-                  <img src="" alt="">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
                 </div>
               </div>
-              <div>
+              <div class="content">
                 <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
                 <span>plačiau »</span>
               </div>
             </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/placeholder-news.jpg" alt="thumb">
+                <div class="icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                </div>
+              </div>
+              <div class="content">
+                <p>Naujas būdas ruošti matė arbatą pridedant kitų žolelių pridedant kitų žolelių </p>
+                <span>plačiau »</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -85,18 +207,21 @@ get_header(); ?>
   </section>
 
 
-	<section class="newsletter">
-		<div class="container">
-			<div class="title-white">
-				<h2>prenumeruoti naujienlaiškį</h2>
-			</div>
-			<p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
-			<div>
-				<input type="email" placeholder="Įveskite el. pašto adresą">
-				<div class="">prenumeruoti</div>
-			</div>
-		</div>
-	</section>
+  <section class="newsletter">
+    <div class="container">
+      <div class="title-white">
+        <h2>prenumeruoti naujienlaiškį</h2>
+      </div>
+      <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
+      <div class="wrapper">
+        <input type="email" placeholder="Įveskite el. pašto adresą">
+
+        <div class="btn__holder">
+          <div class="btn btn--secondary">prenumeruoti</div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <?php
