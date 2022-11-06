@@ -201,6 +201,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <?php get_template_part('templates/categories'); ?>
   <section class="help distortion-bg ">
     <div class="container">
       <div class="wrapper">
@@ -223,6 +224,47 @@ get_header(); ?>
           <div class="btn__holder">
             <div class="btn btn--secondary">instrukcija</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="community">
+    <div class="container">
+      <div class="title">
+        <h2>tapk bendruomenės dalimi</h2>
+      </div>
+      <div class="wrapper">
+        <div class="contacts">
+          <p>Prisijunk prie svetainės ir rink nuolaidas mūsų el. parduotuvėje! <a href="">Prisijunk!</a></p>
+          <p>Užsisakyk naujienlaiškį ir gauk informaciją apie naujas prekes bei straipsnius! <a href="">užsisakyk!!</a>
+          </p>
+          <div class="social">
+            <div class="subtitle">Sekite mus!</div>
+            <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+              Facebook grupė
+            </a>
+            <a href="https://www.facebook.com/matesklubass" target="_blank" rel="noopener noreferrer">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+              Facebook puslapis
+            </a>
+            <a href="https://www.instagram.com/matesklubas" target="_blank" rel="noopener noreferrer">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg"
+                alt="instagram-icon">
+              Instagram
+            </a>
+            <a href="https://www.youtube.com/channel/UCiL5qWJ7cer2tAvY7Y7sNwA" target="_blank"
+              rel="noopener noreferrer">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
+              Youtube
+            </a>
+          </div>
+        </div>
+        <div class="image">
+          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-community.jpeg"
+            alt="fb-icon">
+          <img class="person" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/footbal-player.png"
+            alt="fb-icon">
         </div>
       </div>
     </div>
