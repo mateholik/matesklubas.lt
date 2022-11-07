@@ -13,17 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-scrollto */ "./node_modules/vue-scrollto/vue-scrollto.js");
 /* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_scrollto__WEBPACK_IMPORTED_MODULE_0__);
 
- //nav
-
-if (document.getElementById("header")) {
-  new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
-    el: "#header",
-    data: {
-      mobMenu: false
-    }
-  });
-} // scroll to specific word in zodynas
-
+ // scroll to specific word in zodynas
 
 if (document.getElementById("zodynas")) {
   vue__WEBPACK_IMPORTED_MODULE_1__["default"].use((vue_scrollto__WEBPACK_IMPORTED_MODULE_0___default()));
@@ -192,20 +182,14 @@ if (document.getElementById("quiz")) {
       }
     }
   });
-} //homepage recent_products
-
-
-if (document.getElementById("homepage-products")) {
-  vue__WEBPACK_IMPORTED_MODULE_1__["default"].use((vue_scrollto__WEBPACK_IMPORTED_MODULE_0___default()));
-  new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
-    el: "#homepage-products",
-    data: {
-      show: 0
-    }
-  });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  mobileMenu();
+  productsToggle();
+});
+
+function mobileMenu() {
   var burger = document.getElementById("hamburger");
   var menu = document.getElementById("mobileMenu");
   burger.addEventListener("click", function () {
@@ -231,7 +215,35 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-});
+}
+
+function productsToggle() {
+  var products = document.getElementById("products");
+  var options = products.getElementsByClassName("options")[0].children;
+  var results = products.getElementsByClassName("results")[0].children;
+
+  var _loop = function _loop(i) {
+    options[i].addEventListener("click", function () {
+      options[i].to;
+
+      for (var j = 0; j < results.length; j++) {
+        if (j === i) {
+          results[j].style.display = "block";
+          options[j].classList.add("active");
+        } else {
+          results[j].style.display = "none";
+          options[j].classList.remove("active");
+        }
+      }
+    });
+  };
+
+  for (var i = 0; i < options.length; i++) {
+    _loop(i);
+  }
+
+  console.log("options", options);
+}
 
 /***/ }),
 
