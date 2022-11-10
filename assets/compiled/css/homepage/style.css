@@ -1045,29 +1045,39 @@ header.header .is-active {
 .homepage2 section h2 {
   padding: 0;
 }
-.homepage2 section .title {
+.homepage2 section .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 1.6rem;
   margin-bottom: 4rem;
 }
 @media (max-width: 768px) {
-  .homepage2 section .title {
+  .homepage2 section .section-title {
     margin-bottom: 2.4rem;
   }
 }
-.homepage2 section .title h2,
-.homepage2 section .title h3 {
-  position: relative;
-  text-align: center;
+.homepage2 section .section-title h2 {
   font-size: 3.2rem;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 0 1.6rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
-  .homepage2 section .title h2,
-.homepage2 section .title h3 {
+  .homepage2 section .section-title h2 {
     font-size: 2.4rem;
+    padding: 0 0.8rem;
+  }
+}
+.homepage2 section .section-title img {
+  height: 3rem;
+  width: 3rem;
+}
+@media (max-width: 768px) {
+  .homepage2 section .section-title img {
+    height: 2.2rem;
+    width: 2.2rem;
   }
 }
 .homepage2 section .title h2:before, .homepage2 section .title h2:after,
@@ -1399,11 +1409,11 @@ header.header .is-active {
     margin-top: 0.8rem;
   }
 }
-.homepage2 section.categories .title {
+.homepage2 section.categories .section-title {
   margin-bottom: 17rem;
 }
 @media (max-width: 768px) {
-  .homepage2 section.categories .title {
+  .homepage2 section.categories .section-title {
     margin-bottom: 2.4rem;
   }
 }
@@ -1536,48 +1546,49 @@ header.header .is-active {
     padding: 4rem 0;
   }
 }
-.homepage2 section.newsletter .title-white {
+.homepage2 section.newsletter .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.homepage2 section.newsletter .title-white h2 {
+.homepage2 section.newsletter .section-title h2 {
   color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 2.4rem;
 }
-@media (max-width: 768px) {
-  .homepage2 section.newsletter .title-white h2 {
-    margin-bottom: 1.6rem;
-  }
-}
-.homepage2 section.newsletter .title-white h2:before, .homepage2 section.newsletter .title-white h2:after {
-  position: absolute;
-  content: "";
-  background-image: url("./../../../img/icons/title-icon-mate.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.homepage2 section.newsletter .section-title h2 img {
   width: 4.4rem;
   height: 2.8rem;
-  top: 50%;
 }
 @media (max-width: 768px) {
-  .homepage2 section.newsletter .title-white h2:before, .homepage2 section.newsletter .title-white h2:after {
+  .homepage2 section.newsletter .section-title h2 img {
     height: 2.2rem;
     width: 2.2rem;
   }
 }
-.homepage2 section.newsletter .title-white h2:before {
-  transform: translateX(-100%) translateY(-50%);
-  left: -1.6rem;
+.homepage2 section.newsletter .section-title h2:before, .homepage2 section.newsletter .section-title h2:after {
+  width: 4.4rem;
+  height: 2.8rem;
 }
-.homepage2 section.newsletter .title-white h2:after {
-  transform: translateX(100%) translateY(-50%) scaleX(-1);
-  right: -1.6rem;
+@media (max-width: 768px) {
+  .homepage2 section.newsletter .section-title h2:before, .homepage2 section.newsletter .section-title h2:after {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+}
+.homepage2 section.newsletter .section-title h2:after {
+  transform: scaleX(-1);
+}
+.homepage2 section.newsletter .section-title img {
+  width: 4.8rem;
+  height: 3.2rem;
+}
+@media (max-width: 768px) {
+  .homepage2 section.newsletter .section-title img {
+    width: 2.4rem;
+    height: 1.6rem;
+  }
+}
+.homepage2 section.newsletter .section-title img:last-of-type {
+  transform: scaleX(-1);
 }
 .homepage2 section.newsletter p {
   font-size: 1.8rem;
@@ -1755,12 +1766,10 @@ header.header .is-active {
     padding: 4rem 0;
   }
 }
-.homepage2 section.help .title {
-  margin-bottom: 0;
-}
-.homepage2 section.help .title h3 {
-  margin: 0;
+.homepage2 section.help .section-title {
   margin-bottom: 1.6rem;
+}
+.homepage2 section.help .section-title h2 {
   color: #fff;
 }
 .homepage2 section.help .wrapper {

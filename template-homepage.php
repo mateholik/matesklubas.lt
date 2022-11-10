@@ -39,9 +39,9 @@ get_header(); ?>
   </section>
   <section class="news">
     <div class="container">
-      <div class="title">
-        <h2>naujienos</h2>
-      </div>
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'naujienos' ) 
+     ); ?>
+
       <div class="wrapper">
         <div class="block">
           <h3>video</h3>
@@ -205,8 +205,10 @@ get_header(); ?>
   <?php get_template_part('templates/categories'); ?>
   <section class="newsletter distortion-bg">
     <div class="container">
-      <div class="title-white">
+      <div class="section-title">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
         <h2>prenumeruoti naujienlaiškį</h2>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
       </div>
       <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
       <div class="wrapper">
@@ -220,9 +222,8 @@ get_header(); ?>
   </section>
   <section id="products" class="products">
     <div class="container">
-      <div class="title">
-        <h2>prekės</h2>
-      </div>
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'prekės' ) 
+     ); ?>
       <div class="options">
         <span class="active">Populiariausios</span>
         <span>Naujienos</span>
@@ -252,9 +253,7 @@ get_header(); ?>
     <div class="container">
       <div class="wrapper">
         <div class="block">
-          <div class="title">
-            <h3>negali išsirinkti?</h3>
-          </div>
+          <?php get_template_part( 'templates/title', null, array( 'title' => 'negali išsirinkti?' ) ); ?>
           <p>Matės pasaulyje esi naujokas? Nori išbandyti mate bei jos aksesuarus, bet nežinai ką išsirinkti? Atlik
             testą ir gauk asmeninę rekomendaciją</p>
           <div class="btn__holder">
@@ -262,9 +261,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="block">
-          <div class="title">
-            <h3>visa informacija naujokui</h3>
-          </div>
+          <?php get_template_part( 'templates/title', null, array( 'title' => 'visa informacija naujokui' ) ); ?>
           <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuom skiriasi medinis nuo
             moliūgo kalabasas? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
           <div class="btn__holder">
@@ -276,9 +273,7 @@ get_header(); ?>
   </section>
   <section class="community">
     <div class="container">
-      <div class="title">
-        <h2>tapk bendruomenės dalimi</h2>
-      </div>
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'tapk bendruomenės dalimi' ) ); ?>
       <div class="wrapper">
         <div class="contacts">
           <p>Prisijunk prie svetainės ir rink nuolaidas mūsų el. parduotuvėje! <a href="">Prisijunk!</a></p>

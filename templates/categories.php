@@ -1,8 +1,7 @@
 <section class="categories">
   <div class="container">
-    <div class="title">
-      <h2>prekių kategorijos</h2>
-    </div>
+    <?php get_template_part( 'templates/title', null, array( 'title' => 'prekių kategorijos' ) 
+     ); ?>
     <div class="wrapper">
       <img class="background" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cats.jpeg"
         alt="title-mob-wrap">
