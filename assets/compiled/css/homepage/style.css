@@ -1080,50 +1080,6 @@ header.header .is-active {
     width: 2.2rem;
   }
 }
-.homepage2 section .title h2:before, .homepage2 section .title h2:after,
-.homepage2 section .title h3:before,
-.homepage2 section .title h3:after {
-  position: absolute;
-  content: "";
-  background-image: url("./../../../img/icons/title-icon.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 3rem;
-  width: 3rem;
-}
-@media (max-width: 768px) {
-  .homepage2 section .title h2:before, .homepage2 section .title h2:after,
-.homepage2 section .title h3:before,
-.homepage2 section .title h3:after {
-    height: 2.2rem;
-    width: 2.2rem;
-  }
-}
-.homepage2 section .title h2:before,
-.homepage2 section .title h3:before {
-  top: 50%;
-  transform: translate(calc(-100% - 1.6rem), -50%);
-  left: 0;
-}
-@media (max-width: 768px) {
-  .homepage2 section .title h2:before,
-.homepage2 section .title h3:before {
-    transform: translate(calc(-100% - 0.8rem), -50%);
-  }
-}
-.homepage2 section .title h2:after,
-.homepage2 section .title h3:after {
-  top: 50%;
-  transform: translate(calc(100% + 1.6rem), -50%);
-  right: 0;
-}
-@media (max-width: 768px) {
-  .homepage2 section .title h2:after,
-.homepage2 section .title h3:after {
-    transform: translate(calc(100% + 0.8rem), -50%);
-  }
-}
 .homepage2 section.hero {
   position: relative;
   margin-bottom: 6rem;
