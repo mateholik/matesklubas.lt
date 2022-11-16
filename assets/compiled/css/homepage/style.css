@@ -1392,6 +1392,8 @@ header.header .is-active {
 .homepage2 section.categories .wrapper .background {
   position: absolute;
   z-index: -2;
+  top: -40px;
+  left: 0;
 }
 @media (max-width: 768px) {
   .homepage2 section.categories .wrapper .background {
@@ -1424,6 +1426,8 @@ header.header .is-active {
   position: absolute;
   bottom: -4.8rem;
   z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media (max-width: 768px) {
   .homepage2 section.categories .category .parent .image .bg {
@@ -1469,7 +1473,7 @@ header.header .is-active {
   margin-right: 0.6rem;
 }
 .homepage2 section.categories .category .parent:hover .subtitle {
-  transform: translateX(0.2rem);
+  transform: translatey(-0.2rem);
 }
 .homepage2 section.categories .category .children {
   margin-top: 2rem;
@@ -1478,7 +1482,7 @@ header.header .is-active {
 }
 .homepage2 section.categories .category .children a {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 2rem;
   margin-bottom: 1.6rem;
@@ -1495,6 +1499,15 @@ header.header .is-active {
 .homepage2 section.categories .category .children a img {
   width: 1.8rem;
   margin-right: 0.8rem;
+}
+.homepage2 section.categories .category:nth-child(4) .parent .image .preview {
+  position: relative;
+  left: 5rem;
+}
+@media (max-width: 768px) {
+  .homepage2 section.categories .category:nth-child(4) .parent .image .preview {
+    left: 2rem;
+  }
 }
 .homepage2 section.newsletter {
   background-color: #000;

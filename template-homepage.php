@@ -38,7 +38,22 @@ get_header(); ?>
     </div>
   </section>
   <?php get_template_part('templates/latestNews'); ?>
-  <?php get_template_part('templates/categories'); ?>
+
+  <section class="categories">
+    <div class="container">
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'prekių kategorijos' ) 
+     ); ?>
+      <div class="wrapper">
+        <img class="background" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cats.jpeg"
+          alt="title-mob-wrap">
+        <?php get_template_part('templates/category', null, array( 'category' => 'mate', 'title' => 'Matė arbatos' )); ?>
+        <?php get_template_part('templates/category', null, array( 'category' => 'kalabasos', 'title' => 'Kalabasos' )); ?>
+        <?php get_template_part('templates/category', null, array( 'category' => 'bombiles', 'title' => 'Bombilės' )); ?>
+        <?php get_template_part('templates/category', null, array( 'category' => 'kita', 'title' => 'Kita' )); ?>
+
+      </div>
+    </div>
+  </section>
   <section class="newsletter distortion-bg">
     <div class="container">
       <div class="section-title">
