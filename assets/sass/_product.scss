@@ -47,8 +47,8 @@ ul.custom {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fa9511;
-    color: #fff;
+    background: $primaryColor;
+    color: $white;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -70,15 +70,15 @@ ul.custom {
 //pagination
 .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
   background-color: #fa9e39;
-  color: #fff;
+  color: $white;
   &:hover {
-    background-color: #cf4b27;
-    color: #fff;
+    background-color: $secondaryColor;
+    color: $white;
   }
 }
 .woocommerce-pagination .page-numbers li .page-numbers.current {
-  background-color: #cf4b27;
-  color: #fff;
+  background-color: $secondaryColor;
+  color: $white;
 }
 .woocommerce-products-header {
   padding-bottom: 2rem !important;
@@ -148,7 +148,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     color: #69a90f;
     margin: 1.5rem 0 !important;
     del {
-      color: #cf4b27;
+      color: $secondaryColor;
     }
   }
   //description
@@ -180,7 +180,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     display: flex;
     align-items: center;
     padding: 1rem 0;
-    color: #cf4b27;
+    color: $secondaryColor;
     img {
       margin-right: 0.5rem;
       max-width: 2.5rem;
@@ -209,7 +209,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
   .quantity {
     .qty {
       border: 1px solid #e5e5df;
-      background: #fff;
+      background: $white;
       box-shadow: none;
     }
   }
@@ -221,28 +221,7 @@ input[type="reset"].alt,
 input[type="submit"].alt,
 .button.alt,
 .widget-area .widget a.button.alt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #cf4b27;
-  color: #fff;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 3.3rem;
-  padding: 0;
-  height: 4.7rem;
-  max-width: 18rem;
-  width: 100%;
-  transition: 0.2s;
-  &:hover {
-    background: #e97d3c;
-  }
-  img {
-    width: 2.6rem;
-    margin: 0;
-    margin-right: 1rem;
-  }
+  @include button;
 }
 // description an comment tabs
 // .woocommerce-tabs ul.tabs {
@@ -277,7 +256,7 @@ input[type="submit"].alt,
     display: flex;
     align-items: center;
     padding: 0.5rem;
-    background: #fff;
+    background: $white;
     box-shadow: none;
     .label {
       margin-right: 2rem;
@@ -285,7 +264,7 @@ input[type="submit"].alt,
     .value {
       margin-bottom: 0 !important;
       select {
-        background: #fa95111f;
+        background: $primaryColor;
       }
     }
   }

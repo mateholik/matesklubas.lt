@@ -10,7 +10,7 @@
     &:before {
       position: absolute;
       content: "";
-      background-image: url("./../../../img/bg-distortion.svg");
+      background-image: url("./../../img/bg-distortion.svg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     &:after {
       position: absolute;
       content: "";
-      background-image: url("./../../../img/bg-distortion.svg");
+      background-image: url("./../../img/bg-distortion.svg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -67,6 +67,12 @@
         }
       }
     }
+    .btn {
+      &__holder {
+        display: flex;
+      }
+      @include button($lander: true);
+    }
   }
   section.hero {
     position: relative;
@@ -99,7 +105,7 @@
         content: "";
         top: -3rem;
         left: -31rem;
-        background-image: url("./../../../img/hero-bg-left.jpeg");
+        background-image: url("./../../img/hero-bg-left.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -118,7 +124,7 @@
         content: "";
         top: 0;
         right: -9rem;
-        background-image: url("./../../../img/hero-bg-right.jpeg");
+        background-image: url("./../../img/hero-bg-right.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -233,7 +239,7 @@
             background: #ffe0bd;
           }
           &::-webkit-scrollbar-thumb {
-            background: #fa9511;
+            background: $primaryColor;
           }
         }
         &__card {
@@ -287,7 +293,7 @@
               font-size: 1.4rem;
             }
             span {
-              color: $primaryColor;
+              color: $secondaryColor;
               font-size: 1.4rem;
               text-transform: uppercase;
               display: block;
@@ -427,7 +433,7 @@
     }
   }
   section.newsletter {
-    background-color: #000;
+    background-color: $black;
     margin: 6rem 0;
     padding: 6.4rem 0;
     position: relative;
@@ -679,7 +685,7 @@
           margin-bottom: 0.8rem;
         }
         a {
-          color: #fa9511;
+          color: $primaryColor;
           text-transform: uppercase;
           font-weight: 600;
         }
@@ -691,7 +697,7 @@
         }
         .subtitle {
           font-size: 2.2rem;
-          color: #fa9511;
+          color: $primaryColor;
           margin-bottom: 1.6rem;
           font-weight: 600;
         }
@@ -802,7 +808,7 @@
             font-size: 2rem;
             margin-bottom: 0;
             del {
-              color: #cf4b27;
+              color: $secondaryColor;
             }
           }
           .star-rating span:before,
@@ -816,7 +822,7 @@
             li
             input[type="radio"]:first-child:checked
             + label:before {
-            color: #fa9511;
+            color: $primaryColor;
           }
         }
         .btn-wrap {
@@ -824,21 +830,7 @@
           border: 0.1rem solid #f2f2f2;
           border-top: none;
           .button {
-            background: #cf4b27;
-            color: $white;
-            @include center(center);
-            text-transform: uppercase;
-            font-size: 2.2rem;
-            font-weight: 700;
-            padding: 1.2rem;
-            font-family: "Open Sans Condensed", sans-serif;
-            margin-bottom: 0;
-            img {
-              width: 2.4rem;
-              height: 2.4rem;
-              margin: 0;
-              margin-right: 0.8rem;
-            }
+            @include button;
           }
         }
       }
@@ -850,6 +842,9 @@
     }
     .btn__holder {
       @include center(center);
+      .btn {
+        @include button($lander: true, $theme: secondary);
+      }
     }
   }
 }

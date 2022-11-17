@@ -15,7 +15,8 @@
 }
 $black: #000;
 $white: #fff;
-$primaryColor: #cf4b27;
+$primaryColor: #fa9511;
+$secondaryColor: #cf4b27;
 
 html {
   font-size: 62.5%;
@@ -42,7 +43,7 @@ input {
   //background-color: #78A643;
   //border: 0.1rem solid #638D33;
   outline: none;
-  //color: #fff;
+  //color: $white;
   &:focus {
     outline: none;
   }

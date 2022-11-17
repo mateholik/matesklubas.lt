@@ -20,4 +20,4 @@ mix
     processCssUrls: false,
   });
 
-mix.sass("assets/sass/homepage/style.scss", "assets/compiled/css/homepage");
+// mix.sass("assets/sass/homepage/style.scss", "assets/compiled/css/homepage");

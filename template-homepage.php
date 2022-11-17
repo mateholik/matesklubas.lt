@@ -24,7 +24,7 @@ get_header(); ?>
           <p>Susitikimai, patarimai, matės pasaulio naujienos, matės rūšių apžvalgos, receptai bei daug kitų
             įdomybių</p>
           <div class="btn__holder">
-            <div class="btn btn--secondary">prisijungti</div>
+            <div class="btn">prisijungti</div>
           </div>
         </div>
         <div class="wrapper__img">
@@ -66,7 +66,7 @@ get_header(); ?>
         <input type="email" placeholder="Įveskite el. pašto adresą">
 
         <div class="btn__holder">
-          <div class="btn btn--secondary">prenumeruoti</div>
+          <div class="btn">prenumeruoti</div>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ get_header(); ?>
         </div>
       </div>
       <div class="btn__holder">
-        <a href="https://www.matesklubas.lt/parduotuve/" class="btn btn--secondary">
+        <a href="https://www.matesklubas.lt/parduotuve/" class="btn">
           Visos prekės
         </a>
       </div>
@@ -108,7 +108,7 @@ get_header(); ?>
           <p>Matės pasaulyje esi naujokas? Nori išbandyti mate bei jos aksesuarus, bet nežinai ką išsirinkti? Atlik
             testą ir gauk asmeninę rekomendaciją</p>
           <div class="btn__holder">
-            <div class="btn btn--secondary">testas</div>
+            <div class="btn">testas</div>
           </div>
         </div>
         <div class="block">
@@ -116,7 +116,7 @@ get_header(); ?>
           <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuom skiriasi medinis nuo
             moliūgo kalabasas? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
           <div class="btn__holder">
-            <div class="btn btn--secondary">instrukcija</div>
+            <div class="btn">instrukcija</div>
           </div>
         </div>
       </div>

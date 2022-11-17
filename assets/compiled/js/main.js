@@ -274,19 +274,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./assets/sass/homepage/style.scss":
-/*!*****************************************!*\
-  !*** ./assets/sass/homepage/style.scss ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-scrollto/vue-scrollto.js":
 /*!***************************************************!*\
   !*** ./node_modules/vue-scrollto/vue-scrollto.js ***!
@@ -13016,7 +13003,6 @@ Vue.compile = compileToFunctions;
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/assets/compiled/js/main": 0,
-/******/ 			"assets/compiled/css/homepage/style": 0,
 /******/ 			"assets/compiled/css/introduction/style": 0,
 /******/ 			"assets/compiled/css/style": 0
 /******/ 		};
@@ -13068,10 +13054,9 @@ Vue.compile = compileToFunctions;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/javascript/main.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/introduction/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/compiled/css/homepage/style","assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/homepage/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/javascript/main.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/style.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/compiled/css/introduction/style","assets/compiled/css/style"], () => (__webpack_require__("./assets/sass/introduction/style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

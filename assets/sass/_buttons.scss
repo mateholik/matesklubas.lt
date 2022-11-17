@@ -1,45 +1,66 @@
-.btn {
-  &__holder {
-    display: flex;
-  }
+@mixin button($lander: false, $theme: primary, $size: normal) {
   outline: none;
-  // width: 100%;
-  padding: 0 2.4rem;
-  height: 5.5rem;
+  user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background-color: #cf4b27;
+  color: $white;
+  height: unset;
+  @if $theme == primary {
+    background-color: $primaryColor;
+  } @else {
+    background-color: $secondaryColor;
+  }
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  line-height: 3.2rem;
+  font-weight: 600;
   font-family: "Open Sans Condensed", sans-serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
-  &:hover {
-    background: #d65227;
-  }
-  &:active {
-    box-shadow: 0 0 0 0 #cf7d10;
-  }
-  &--secondary {
-    height: unset;
-    background-color: #fa9511;
-    // border-bottom: 0.5rem solid #cf7d10;
-    box-shadow: 0 0.5rem 0.2rem -0.2rem #cf7d10;
+  @if $lander {
     font-size: 2.2rem;
     padding: 1.2rem 2.4rem;
-    text-transform: uppercase;
-    line-height: 3.2rem;
-    font-weight: 600;
-    @include phone {
+    @if $theme == primary {
+      box-shadow: 0 0.5rem 0.2rem -0.2rem darken($primaryColor, 5%);
+    } @else {
+      box-shadow: 0 0.5rem 0.2rem -0.2rem darken($secondaryColor, 5%);
+    }
+  }
+  @include phone {
+    @if $size == normal {
       font-size: 1.6rem;
       padding: 0.6rem 1.6rem;
       line-height: 2.8rem;
-    }
-    &:hover {
-      background: #ef8e10;
-    }
-    &:active {
-      border: 0 solid;
+    } @else {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      line-height: 3.2rem;
     }
   }
+  &:hover {
+    @if $theme == primary {
+      background: darken($primaryColor, 5%);
+    } @else {
+      background: darken($secondaryColor, 5%);
+    }
+    color: $white;
+  }
+  &:active {
+    box-shadow: none;
+  }
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 0.8rem 0 0 !important;
+    @include phone {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+}
+
+.button.loading:hover {
+  background: $primaryColor;
 }
