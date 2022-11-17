@@ -172,7 +172,10 @@ if (document.getElementById("quiz")) {
 
 document.addEventListener("DOMContentLoaded", function () {
   mobileMenu();
-  productsToggle();
+  const products = document.getElementById("products");
+  if (products) {
+    productsToggle(products);
+  }
 });
 
 function mobileMenu() {
@@ -203,7 +206,6 @@ function mobileMenu() {
   }
 }
 function productsToggle() {
-  const products = document.getElementById("products");
   const options = products.getElementsByClassName("options")[0].children;
   const results = products.getElementsByClassName("results")[0].children;
 
@@ -221,6 +223,4 @@ function productsToggle() {
       }
     });
   }
-
-  console.log("options", options);
 }
