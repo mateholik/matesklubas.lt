@@ -1,13 +1,14 @@
 @mixin phone {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     @content;
   }
 }
 @mixin tablet {
-  @media (max-width: 900px) {
+  @media (max-width: 1023px) {
     @content;
   }
 }
+
 @mixin center($justify: flex-start, $align: center) {
   display: flex;
   justify-content: $justify;

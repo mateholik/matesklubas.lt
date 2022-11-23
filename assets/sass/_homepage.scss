@@ -138,10 +138,12 @@
       &__content {
         padding: 10.2rem 0;
         width: 66.6%;
+        // @include tablet {
+        //   width: 66.6%;
+        //   padding: 6rem 0;
+        // }
         @include phone {
           width: 75%;
-        }
-        @include phone {
           padding-bottom: 0;
           padding-top: 3.2rem;
         }
@@ -153,6 +155,7 @@
           @include phone {
             font-size: 2.8rem;
             margin-bottom: 1.6rem;
+            max-width: 36rem;
           }
         }
         p {
@@ -231,6 +234,9 @@
           }
           &::-webkit-scrollbar {
             width: 1.6rem;
+            @include tablet {
+              width: 1.2rem;
+            }
             @include phone {
               width: 0.8rem;
             }
@@ -328,8 +334,11 @@
       .background {
         position: absolute;
         z-index: -2;
-        top: -40px;
+        top: -4rem;
         left: 0;
+        @include tablet {
+          top: -4.6rem;
+        }
         @include phone {
           display: none;
         }
@@ -348,16 +357,19 @@
           .preview {
             max-width: 19.2rem;
             margin: 0 auto;
-            @include phone {
+            @include tablet {
               max-width: 15rem;
             }
           }
           .bg {
             position: absolute;
-            bottom: -4.8rem;
+            bottom: -7.8rem;
             z-index: -1;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
             @include phone {
               bottom: -6.4rem;
             }
@@ -373,6 +385,9 @@
           text-transform: uppercase;
           font-family: "Open Sans Condensed", sans-serif;
           transition: 0.2s;
+          @include tablet {
+            margin-bottom: 0;
+          }
           @include phone {
             height: 6.4rem;
             font-size: 2rem;
@@ -404,6 +419,9 @@
         margin-top: 2rem;
         display: flex;
         justify-content: center;
+        @include tablet {
+          margin-top: 0;
+        }
         a {
           @include center(flex-start, center);
           font-size: 2rem;
@@ -430,10 +448,34 @@
           }
         }
       }
+      &:nth-child(3) {
+        .parent .image .bg {
+          left: 45%;
+          @include phone {
+            left: 50%;
+          }
+        }
+      }
+      &:nth-child(4) {
+        .parent .image .bg {
+          left: 45%;
+          @include phone {
+            left: 50%;
+          }
+        }
+      }
+      &:nth-child(5) {
+        .parent .image .bg {
+          left: 40%;
+          @include phone {
+            left: 50%;
+          }
+        }
+      }
     }
   }
   section.newsletter {
-    background-color: $black;
+    background-color: #000;
     margin: 6rem 0;
     padding: 6.4rem 0;
     position: relative;
@@ -640,12 +682,15 @@
       }
     }
     .wrapper {
-      @include center;
+      display: flex;
       @include phone {
         display: block;
       }
       .block {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &:first-of-type {
           margin-right: 6%;
           @include phone {
@@ -653,17 +698,24 @@
             margin-bottom: 4rem;
           }
         }
-        p {
-          font-size: 1.8rem;
-          margin-bottom: 5.6rem;
-          @include phone {
-            font-size: 1.6rem;
-            margin-bottom: 2.4rem;
+        .top {
+          p {
+            font-size: 1.8rem;
+            margin-bottom: 5.6rem;
+            @include phone {
+              font-size: 1.6rem;
+              margin-bottom: 2.4rem;
+            }
           }
         }
         .btn__holder {
           display: flex;
           justify-content: center;
+        }
+        .section-title h2 {
+          @include tablet {
+            font-size: 2.6rem;
+          }
         }
       }
     }
@@ -776,6 +828,9 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 2.4rem;
       margin-bottom: 4rem;
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
       @include phone {
         grid-template-columns: minmax(29rem, 36rem);
         justify-content: center;

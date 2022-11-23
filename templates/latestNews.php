@@ -19,15 +19,12 @@
 
     <div class="wrapper">
       <div class="block">
-        <h3>video</h3>
+        <h3>Straipsniai</h3>
         <div class="block__items">
-          <?php foreach ($latestVideos as $item) { ?>
+          <?php foreach ($latestPosts as $item) { ?>
           <a href="<?php echo get_permalink($item['ID']) ?>" class="block__card">
             <div class="image">
               <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
-              <div class="icon">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
-              </div>
             </div>
             <div class="content">
               <p> <?php echo $item['post_title'] ?> </p>
@@ -38,12 +35,15 @@
         </div>
       </div>
       <div class="block">
-        <h3>Straipsniai</h3>
+        <h3>video</h3>
         <div class="block__items">
-          <?php foreach ($latestPosts as $item) { ?>
+          <?php foreach ($latestVideos as $item) { ?>
           <a href="<?php echo get_permalink($item['ID']) ?>" class="block__card">
             <div class="image">
               <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
+              <div class="icon">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+              </div>
             </div>
             <div class="content">
               <p> <?php echo $item['post_title'] ?> </p>

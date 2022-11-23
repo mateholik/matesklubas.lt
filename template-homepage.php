@@ -104,17 +104,21 @@ get_header(); ?>
     <div class="container">
       <div class="wrapper">
         <div class="block">
-          <?php get_template_part( 'templates/title', null, array( 'title' => 'negali išsirinkti?' ) ); ?>
-          <p>Matės pasaulyje esi naujokas? Nori išbandyti mate bei jos aksesuarus, bet nežinai ką išsirinkti? Atlik
-            testą ir gauk asmeninę rekomendaciją</p>
+          <div class="top">
+            <?php get_template_part( 'templates/title', null, array( 'title' => 'negali išsirinkti?' ) ); ?>
+            <p>Matės pasaulyje esi naujokas? Nori išbandyti mate bei jos aksesuarus, bet nežinai ką išsirinkti? Atlik
+              testą ir gauk asmeninę rekomendaciją</p>
+          </div>
           <div class="btn__holder">
             <div class="btn">testas</div>
           </div>
         </div>
         <div class="block">
-          <?php get_template_part( 'templates/title', null, array( 'title' => 'visa informacija naujokui' ) ); ?>
-          <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuom skiriasi medinis nuo
-            moliūgo kalabasas? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
+          <div class="top">
+            <?php get_template_part( 'templates/title', null, array( 'title' => 'visa informacija naujokui' ) ); ?>
+            <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuom skiriasi medinis nuo
+              moliūgo kalabasas? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
+          </div>
           <div class="btn__holder">
             <div class="btn">instrukcija</div>
           </div>

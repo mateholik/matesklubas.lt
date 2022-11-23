@@ -52,7 +52,7 @@ h6 {
 h2 {
   padding: 3rem 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h2 {
     padding: 2.5rem 0;
   }
@@ -90,7 +90,7 @@ img {
   padding-left: 0;
   max-width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container--no-padding {
     padding: 0;
   }
@@ -98,7 +98,7 @@ img {
 .container--nav {
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container--nav {
     position: relative;
     height: 5rem;
