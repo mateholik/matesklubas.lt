@@ -823,73 +823,7 @@
         color: #272727;
       }
     }
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2.4rem;
-      margin-bottom: 4rem;
-      @include tablet {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @include phone {
-        grid-template-columns: minmax(29rem, 36rem);
-        justify-content: center;
-      }
-      &:before {
-        content: none;
-      }
-      .product {
-        border-radius: 0.2rem;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        & > a {
-          border: 0.1rem solid #f2f2f2;
-          padding: 2.4rem 1rem 1.6rem;
-          display: block;
-          height: 100%;
-          img {
-            max-width: 14rem;
-            margin-bottom: 1.6rem;
-          }
-          h2 {
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
-            font-family: "Open Sans", sans-serif;
-            text-transform: uppercase;
-          }
-          .price {
-            color: #69a90f;
-            font-size: 2rem;
-            margin-bottom: 0;
-            del {
-              color: $secondaryColor;
-            }
-          }
-          .star-rating span:before,
-          .quantity .plus,
-          .quantity .minus,
-          p.stars a:hover:after,
-          p.stars a:after,
-          .star-rating span:before,
-          #payment
-            .payment_methods
-            li
-            input[type="radio"]:first-child:checked
-            + label:before {
-            color: $primaryColor;
-          }
-        }
-        .btn-wrap {
-          padding: 1.6rem;
-          border: 0.1rem solid #f2f2f2;
-          border-top: none;
-          .button {
-            @include button;
-          }
-        }
-      }
-    }
+
     .results {
       & > div:not(:first-of-type) {
         display: none;
