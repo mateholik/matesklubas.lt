@@ -3111,31 +3111,135 @@ ul.order_details {
     margin-bottom: 2.4rem;
   }
 }
-.homepage2 section.newsletter .wrapper {
+.homepage2 section.newsletter .wrapper form {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 !important;
 }
 @media (max-width: 767px) {
-  .homepage2 section.newsletter .wrapper {
+  .homepage2 section.newsletter .wrapper form {
     display: block;
+    margin-bottom: 0;
   }
 }
-.homepage2 section.newsletter .wrapper input {
+.homepage2 section.newsletter .wrapper form .mailpoet_paragraph {
+  margin: 0 !important;
+  position: relative;
+}
+.homepage2 section.newsletter .wrapper form .mailpoet_paragraph:first-of-type {
+  max-width: 68rem;
+  width: 100%;
+  margin-right: 3.2rem !important;
+}
+@media (max-width: 767px) {
+  .homepage2 section.newsletter .wrapper form .mailpoet_paragraph:first-of-type {
+    margin-bottom: 2.4rem !important;
+  }
+}
+.homepage2 section.newsletter .wrapper form .mailpoet_paragraph:last-of-type {
+  margin: 0;
+}
+.homepage2 section.newsletter .wrapper form input[type=email] {
   max-width: 68rem;
   width: 100%;
   background: #fff;
-  margin-right: 3.2rem;
+  border-radius: 0;
   height: 5.6rem;
+  padding: 2.4rem !important;
 }
 @media (max-width: 767px) {
-  .homepage2 section.newsletter .wrapper input {
+  .homepage2 section.newsletter .wrapper form input[type=email] {
     margin-right: 0;
     margin-bottom: 2.4rem;
     height: 4.8rem;
   }
 }
-.homepage2 section.newsletter .wrapper .btn__holder {
+.homepage2 section.newsletter .wrapper form input[type=submit] {
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: unset;
+  background-color: #fa9511;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  line-height: 3.2rem;
+  font-weight: 600;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  font-size: 2.2rem;
+  padding: 1.2rem 2.4rem;
+  box-shadow: 0 0.5rem 0.2rem -0.2rem #ed8805;
+  padding: 1rem 2rem !important;
+}
+@media (max-width: 767px) {
+  .homepage2 section.newsletter .wrapper form input[type=submit] {
+    font-size: 1.6rem;
+    padding: 0.6rem 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+.homepage2 section.newsletter .wrapper form input[type=submit]:hover {
+  background: #ed8805;
+  color: #fff;
+}
+.homepage2 section.newsletter .wrapper form input[type=submit]:active {
+  box-shadow: none;
+}
+.homepage2 section.newsletter .wrapper form input[type=submit] img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 0.8rem 0 0 !important;
+}
+@media (max-width: 767px) {
+  .homepage2 section.newsletter .wrapper form input[type=submit] img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .homepage2 section.newsletter .wrapper form input[type=submit] {
+    width: auto !important;
+    margin: 0 auto !important;
+  }
+}
+.homepage2 section.newsletter .wrapper form .parsley-errors-list,
+.homepage2 section.newsletter .wrapper form .mailpoet_form_loading {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  transform: translateY(100%);
+  width: auto !important;
+}
+.homepage2 section.newsletter .wrapper form .parsley-errors-list span,
+.homepage2 section.newsletter .wrapper form .mailpoet_form_loading span {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: orange !important;
+}
+.homepage2 section.newsletter .wrapper form .parsley-errors-list,
+.homepage2 section.newsletter .wrapper form .parsley-required,
+.homepage2 section.newsletter .wrapper form .parsley-custom-error-message {
+  color: red !important;
+}
+.homepage2 section.newsletter .wrapper form .mailpoet_validate_success {
+  font-size: 2.4rem !important;
+  color: #54c854 !important;
+}
+@media (max-width: 767px) {
+  .homepage2 section.newsletter .wrapper form .mailpoet_validate_success {
+    font-size: 1.8rem !important;
+  }
+}
+.homepage2 section.newsletter .wrapper form .btn__holder {
   display: flex;
   justify-content: center;
 }

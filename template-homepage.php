@@ -63,11 +63,12 @@ get_header(); ?>
       </div>
       <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
       <div class="wrapper">
-        <input type="email" placeholder="Įveskite el. pašto adresą">
+        <?php echo do_shortcode('[mailpoet_form id=1]'); ?>
+        <!-- <input type="email" placeholder="Įveskite el. pašto adresą">
 
         <div class="btn__holder">
           <div class="btn">prenumeruoti</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

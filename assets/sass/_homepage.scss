@@ -529,21 +529,72 @@
         margin-bottom: 2.4rem;
       }
     }
-    .wrapper {
+    .wrapper form {
       @include center(center);
       @include phone {
         display: block;
+        margin-bottom: 0;
       }
-      input {
+      padding: 0 !important;
+      .mailpoet_paragraph {
+        margin: 0 !important;
+        position: relative;
+        &:first-of-type {
+          max-width: 68rem;
+          width: 100%;
+          margin-right: 3.2rem !important;
+          @include phone {
+            margin-bottom: 2.4rem !important;
+          }
+        }
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+      input[type="email"] {
         max-width: 68rem;
         width: 100%;
         background: $white;
-        margin-right: 3.2rem;
+        border-radius: 0;
         height: 5.6rem;
+        padding: 2.4rem !important;
         @include phone {
           margin-right: 0;
           margin-bottom: 2.4rem;
           height: 4.8rem;
+        }
+      }
+      input[type="submit"] {
+        @include button($lander: true);
+        padding: 1rem 2rem !important;
+        @include phone {
+          width: auto !important;
+          margin: 0 auto !important;
+        }
+      }
+      .parsley-errors-list,
+      .mailpoet_form_loading {
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        transform: translateY(100%);
+        width: auto !important;
+        span {
+          width: 10px !important;
+          height: 10px !important;
+          background-color: orange !important;
+        }
+      }
+      .parsley-errors-list,
+      .parsley-required,
+      .parsley-custom-error-message {
+        color: red !important;
+      }
+      .mailpoet_validate_success {
+        font-size: 2.4rem !important;
+        color: #54c854 !important;
+        @include phone {
+          font-size: 1.8rem !important;
         }
       }
       .btn__holder {

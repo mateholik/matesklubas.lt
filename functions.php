@@ -201,3 +201,8 @@ add_action('after_setup_theme', 'register_navwalker');
 function register_navwalker() {
     require('inc/MkNavWalker.php');
 }
+
+function remove_image_zoom_support_webtalkhub() {
+    remove_theme_support( 'wc-product-gallery-zoom' );
+}
+add_action( 'wp', 'remove_image_zoom_support_webtalkhub', 100 );
