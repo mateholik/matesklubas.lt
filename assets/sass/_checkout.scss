@@ -30,7 +30,7 @@ textarea,
   margin-bottom: 1rem;
 }
 .form-row.woocommerce-invalid input.input-text {
-  box-shadow: inset 0px 0 9px #e2401c;
+  box-shadow: 0 0 0 1px #e2401c;
 }
 
 //sheckout btns
@@ -52,6 +52,8 @@ p.no-comments {
 }
 .woocommerce-error {
   background-color: #cf4b26;
+  margin-left: 0 !important;
+  padding: 1em 2em 1em 3.5em !important;
 }
 .woocommerce-message,
 .woocommerce-info,
