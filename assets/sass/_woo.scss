@@ -1,0 +1,222 @@
+article ul {
+  list-style: disc !important;
+  margin: 0 0 1.41575em 3em !important;
+  padding: 0 !important;
+}
+.my_account_orders .button,
+.woocommerce-MyAccount-downloads .button {
+  font-size: 1.6rem;
+}
+ul.order_details {
+  list-style: none !important;
+  position: relative;
+  margin: 3.706325903em 0 !important;
+}
+.woocommerce-form-login button,
+.woocommerce-form-register button {
+  margin: 1rem 0;
+}
+#shipping_method {
+  margin-left: 0 !important;
+  list-style: none !important;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+/* //checkout terms checkbox */
+.woocommerce-terms-and-conditions-wrapper {
+  display: block;
+}
+.woocommerce-invalid #checkout-checkbox {
+  outline: 2px solid $secondaryColor;
+}
+.mycheckbox {
+  padding-bottom: 2rem;
+}
+.woocommerce-error {
+  margin-left: 0 !important;
+}
+
+/* //footer logos */
+.card-logos {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+.card-logos img {
+  width: 5rem;
+  height: auto;
+  margin-right: 2rem;
+}
+
+/* //captcha */
+.g-recaptcha {
+  margin: 2rem 0;
+}
+
+/* // */
+.header .nav__li a {
+  padding: 0.8rem 2rem;
+}
+@media screen and (max-width: 1064px) and (min-width: 768px) {
+  .header .nav__li a {
+    padding: 0.8rem 1.5rem;
+  }
+}
+.kuponas {
+  background: $primaryColor;
+}
+
+/* winter */
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.top__center {
+	animation: App-logo-spin infinite 20s linear;
+} */
+
+.header .top__left {
+  margin-right: 0;
+}
+.header .top__right {
+  margin-left: 0;
+}
+.top__center img {
+  padding: 0 15%;
+}
+.snowflake {
+  color: $white;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px $black;
+}
+
+/* lang switcher */
+@media (max-width: 768px) {
+  .lang-switcher-desk {
+    display: none;
+  }
+}
+.lang-switcher-desk img {
+  width: auto;
+  margin-right: 0.2rem !important;
+}
+.lang-switcher-mob {
+  border-top: 1px solid #2c2c2c;
+  padding: 1.5rem;
+}
+.lang-switcher-mob img {
+  width: auto;
+  margin-right: 0.8rem !important;
+}
+
+#google_translate_element2 {
+  display: none;
+}
+.container--nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1170px) {
+  .header .nav__li a {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+.title-for-fb {
+  text-transform: none;
+  font-size: 2rem;
+  color: #2c2d33;
+}
+.term-description {
+  margin-top: 15px;
+}
+//above shit from theme styles =========================
+
+//fixing global buttons ======
+.wc-forward::after,
+.woocommerce-Button--next::after {
+  display: none;
+}
+.added_to_cart.alt:hover,
+.added_to_cart:hover,
+.widget a.button.checkout:hover {
+  background-color: darken($secondaryColor, 5%) !important;
+}
+
+//cart in nav =======
+.added_to_cart.alt,
+.added_to_cart,
+.widget a.button.checkout {
+  background: $secondaryColor;
+}
+.cart-contents {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.site-header-cart .cart-contents::after {
+  margin-left: 1rem;
+}
+.widget_shopping_cart .product_list_widget li {
+  padding: 1rem;
+  padding-left: 3.2rem;
+  background: $white;
+  transition: 0.2s;
+  &:hover {
+    background: lighten($primaryColor, 5%);
+    color: $black !important;
+    span,
+    a {
+      color: $white !important;
+    }
+    a:before {
+      color: $white;
+    }
+  }
+}
+.site-header-cart:hover .widget_shopping_cart {
+  box-shadow: 0 1px 8px #9e9999;
+}
+.header .cart:hover .widget_shopping_cart .wc-forward {
+  margin: 0 auto;
+  max-width: 22rem;
+  margin-bottom: 1rem;
+}
+
+//single product page add to cart form
+.single-product div.product form.cart {
+  display: flex;
+  align-items: center;
+  .quantity input {
+    margin-bottom: 0;
+  }
+  .button {
+    @include button($size: large);
+  }
+}
+
+//checkout discount apply btn
+#pwgc-redeem-button {
+  @include button($theme: secondary);
+  width: auto;
+}
+#place_order {
+  @include button($size: large, $theme: primary);
+}
+
+//admin order page btns
+.hentry .entry-content a.button {
+  margin-bottom: 1rem;
+}

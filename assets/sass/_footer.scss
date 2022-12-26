@@ -1,12 +1,12 @@
 .footer {
   position: relative;
-  background: #000;
-  color: #AAAAB0;
+  background: $black;
+  color: #aaaab0;
   @include phone {
     margin-top: 3rem;
   }
   &--before {
-    @include phone {
+    @include tablet {
       display: none;
     }
   }
@@ -30,10 +30,10 @@
         display: block;
         font-size: 1.4rem;
         line-height: 2.8rem;
-        color: #AAAAB0;
+        color: #aaaab0;
         &:hover {
           transform: scale(1.01);
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -48,17 +48,17 @@
     }
   }
   &__title {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 2.4rem;
     line-height: 3.3rem;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 0.5rem;
   }
   &__text {
     font-size: 1.4rem;
     line-height: 2.8rem;
-    color: #AAAAB0;
+    color: #aaaab0;
   }
   &__bottom {
     p {
@@ -66,7 +66,7 @@
       padding: 2.5rem 0;
       font-size: 1.2rem;
       line-height: 2.8rem;
-      color: #AFACAC;
+      color: #afacac;
     }
   }
 }

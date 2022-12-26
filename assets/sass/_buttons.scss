@@ -1,35 +1,66 @@
-.btn {
+@mixin button($lander: false, $theme: primary, $size: normal) {
   outline: none;
-  width: 100%;
-  height: 5.5rem;
+  user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background-color:#CF4B27;
-  font-family: 'Open Sans Condensed', sans-serif;
-  transition: all .1s ease-in-out;
-  //@include phone {
-  //  height: 5rem;
-  //}
+  color: $white;
+  height: unset;
+  @if $theme == primary {
+    background-color: $primaryColor;
+  } @else {
+    background-color: $secondaryColor;
+  }
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  line-height: 3.2rem;
+  font-weight: 600;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  @if $lander {
+    font-size: 2.2rem;
+    padding: 1.2rem 2.4rem;
+    @if $theme == primary {
+      box-shadow: 0 0.5rem 0.2rem -0.2rem darken($primaryColor, 5%);
+    } @else {
+      box-shadow: 0 0.5rem 0.2rem -0.2rem darken($secondaryColor, 5%);
+    }
+  }
+  @include phone {
+    @if $size == normal {
+      font-size: 1.6rem;
+      padding: 0.6rem 1.6rem;
+      line-height: 2.8rem;
+    } @else {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      line-height: 3.2rem;
+    }
+  }
   &:hover {
-    background: #d65227;
+    @if $theme == primary {
+      background: darken($primaryColor, 5%);
+    } @else {
+      background: darken($secondaryColor, 5%);
+    }
+    color: $white;
   }
   &:active {
-    border: 0 solid;
+    box-shadow: none;
   }
-  &--sidebar {
-    background-color: #FA9511;
-    border-bottom: 0.5rem solid #CF7D10;
-    height: 6.5rem;
-    font-size: 2.4rem;
-    line-height: 3/3rem;
-    text-transform: uppercase;
-    &:hover {
-      background: #ef8e10;
-    }
-    &:active {
-      border: 0 solid;
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 0.8rem 0 0 !important;
+    @include phone {
+      width: 1.6rem;
+      height: 1.6rem;
     }
   }
+}
+
+.button.loading:hover {
+  background: $primaryColor;
 }

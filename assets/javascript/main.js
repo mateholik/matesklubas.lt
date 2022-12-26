@@ -1,16 +1,6 @@
 import Vue from "vue";
 import VueScrollTo from "vue-scrollto";
 
-//nav
-if (document.getElementById("header")) {
-  new Vue({
-    el: "#header",
-    data: {
-      mobMenu: false,
-    },
-  });
-}
-
 // scroll to specific word in zodynas
 if (document.getElementById("zodynas")) {
   Vue.use(VueScrollTo);
@@ -180,18 +170,15 @@ if (document.getElementById("quiz")) {
   });
 }
 
-//homepage recent_products
-if (document.getElementById("homepage-products")) {
-  Vue.use(VueScrollTo);
-  new Vue({
-    el: "#homepage-products",
-    data: {
-      show: 0,
-    },
-  });
-}
-
 document.addEventListener("DOMContentLoaded", function () {
+  mobileMenu();
+  const products = document.getElementById("products");
+  if (products) {
+    productsToggle(products);
+  }
+});
+
+function mobileMenu() {
   const burger = document.getElementById("hamburger");
   const menu = document.getElementById("mobileMenu");
   burger.addEventListener("click", function () {
@@ -217,4 +204,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-});
+}
+function productsToggle() {
+  const options = products.getElementsByClassName("options")[0].children;
+  const results = products.getElementsByClassName("results")[0].children;
+
+  for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", function () {
+      options[i].to;
+      for (let j = 0; j < results.length; j++) {
+        if (j === i) {
+          results[j].style.display = "block";
+          options[j].classList.add("active");
+        } else {
+          results[j].style.display = "none";
+          options[j].classList.remove("active");
+        }
+      }
+    });
+  }
+}

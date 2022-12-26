@@ -3,6 +3,238 @@ html {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+select,
+textarea,
+input {
+  outline: none;
+}
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  max-height: 8rem;
+}
+
+a {
+  color: #2c2d33;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #222;
+  margin: 0;
+}
+
+h2 {
+  padding: 3rem 0;
+}
+@media (max-width: 767px) {
+  h2 {
+    padding: 2.5rem 0;
+  }
+}
+h2 img {
+  width: 2rem;
+  height: auto;
+}
+
+h3 {
+  margin: 3rem auto 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+.container--full {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .container--no-padding {
+    padding: 0;
+  }
+}
+.container--nav {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .container--nav {
+    position: relative;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.main {
+  display: flex;
+  margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .main {
+    display: block;
+  }
+}
+.main__sidebar {
+  max-width: 28rem;
+  width: 100%;
+  margin-right: 2.5rem;
+  border-right: 1px solid #f2f2f2;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .main__sidebar {
+    min-width: 22rem;
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .main__sidebar {
+    display: none;
+  }
+}
+.main__content {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+}
+.row__col {
+  width: 50%;
+}
+.row__col:first-of-type {
+  margin-right: 1.5rem;
+}
+@media (max-width: 768px) {
+  .row__col:first-of-type {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .row__col {
+    width: 100%;
+  }
+}
+
+.storefront-breadcrumb .col-full {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 128rem;
+}
+
+.woocommerce-breadcrumb {
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .woocommerce-breadcrumb {
+    margin-bottom: 1rem;
+  }
+}
+
+.woocommerce-checkout-review-order select {
+  width: 100%;
+  border: 1px solid #404e2e;
+}
+
+.entry-header {
+  display: none;
+}
+
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+  background-color: #78a643;
+}
+
+.site-main {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.storefront-full-width-content.woocommerce-cart .entry-header,
+.storefront-full-width-content.woocommerce-checkout .entry-header,
+.storefront-full-width-content.woocommerce-account .entry-header,
+.storefront-full-width-content .woocommerce-products-header {
+  text-align: left;
+}
+
+.animation-enter-active,
+.animation-leave-active {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.animation-enter-active {
+  transition-delay: 0.3s;
+}
+
+.animation-enter,
+.animation-leave-to {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.animation-enter-to,
+.animation-leave {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
   font-family: "Open Sans", sans-serif !important;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -11,7 +243,7 @@ body {
 }
 
 .introduction {
-  background: linear-gradient(116.82deg, #000000 75.52%, #4e1d10 100%);
+  background: linear-gradient(116.82deg, #000 75.52%, #4e1d10 100%);
   letter-spacing: 0.3px;
 }
 @media (max-width: 768px) {

@@ -3,18 +3,18 @@
   &__text {
     line-height: 2.2rem;
     color: #272727;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     margin-bottom: 1rem;
   }
   &__btn {
     max-width: 25rem;
     margin-bottom: 4rem;
-    color: #fff;
+    color: $white;
   }
   &__block {
     margin-bottom: 3rem;
     &-title {
-      font-family: 'Open Sans Condensed', sans-serif;
+      font-family: "Open Sans Condensed", sans-serif;
       display: flex;
       align-items: center;
       font-weight: 300;
@@ -27,13 +27,13 @@
       }
       img {
         margin-right: 0.5rem;
-		width: 2.4rem;
-	    height: 2.4rem;
+        width: 2.4rem;
+        height: 2.4rem;
       }
     }
     li:hover {
       transform: scale(1.01);
-      color: #000;
+      color: $black;
     }
     li a {
       display: flex;
