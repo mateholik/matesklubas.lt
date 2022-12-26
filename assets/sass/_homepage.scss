@@ -1,4 +1,4 @@
-.homepage2 {
+.homepage {
   margin-bottom: 6rem;
   position: relative;
   margin-top: -4rem;
@@ -558,6 +558,7 @@
         border-radius: 0;
         height: 5.6rem;
         padding: 2.4rem !important;
+        font-family: "Open Sans", sans-serif;
         @include phone {
           margin-right: 0;
           margin-bottom: 2.4rem;
