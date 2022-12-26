@@ -7,9 +7,9 @@
     margin-bottom: 1rem;
   }
   &__btn {
-    max-width: 25rem;
-    margin-bottom: 4rem;
-    color: $white;
+    @include button($size: large, $theme: primary);
+    margin: 0;
+    margin-bottom: 3rem;
   }
   &__block {
     margin-bottom: 3rem;
