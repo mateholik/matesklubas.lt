@@ -25,7 +25,7 @@ class mk_wp_nav_menu_walker extends Walker_Nav_menu {
     function end_el(&$output, $item, $depth = 0, $args = null) {
         if($item-> title == "Straipsniai") {
             $output .= "</div>";
-            $output .= "<img src=" . get_stylesheet_directory_uri() . "/assets/img/straipsniai-bg.jpeg" . ">";
+            $output .= "<img loading='lazy' alt=background' width='691' height='423'  src=" . get_stylesheet_directory_uri() . "/assets/img/straipsniai-bg.jpeg" . ">";
             $output .= "</div></div></li>";
         } else if($item-> title == "Parduotuvė") {
             $output .= "</div></div></li>";

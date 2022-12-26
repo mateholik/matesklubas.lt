@@ -42,7 +42,8 @@
             <div class="image">
               <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
               <div class="icon">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
+                <img width="20" height="20"
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
               </div>
             </div>
             <div class="content">

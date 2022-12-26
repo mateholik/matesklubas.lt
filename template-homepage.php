@@ -27,10 +27,10 @@ get_header(); ?>
           </div>
         </div>
         <div class="wrapper__img">
-          <img class="desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-desktop.png"
-            alt="text-wrap">
-          <img class="mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-mobile.png"
-            alt="text-wrap">
+          <img class="desktop" width="390" height="404"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-desktop.png" alt="text-wrap">
+          <img class="mobile" width="130" height="248"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-mobile.png" alt="text-wrap">
         </div>
 
       </div>
@@ -43,8 +43,8 @@ get_header(); ?>
       <?php get_template_part( 'templates/title', null, array( 'title' => 'prekių kategorijos' ) 
      ); ?>
       <div class="wrapper">
-        <img class="background" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cats.jpeg"
-          alt="title-mob-wrap">
+        <img width="1170" height="177" class="background"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cats.jpeg" alt="title-mob-wrap">
         <?php get_template_part('templates/category', null, array( 'category' => 'mate', 'title' => 'Matė arbatos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'kalabasos', 'title' => 'Kalabasos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'bombiles', 'title' => 'Bombilės' )); ?>
@@ -56,9 +56,11 @@ get_header(); ?>
   <section id="newsletter" class="newsletter distortion-bg">
     <div class="container">
       <div class="section-title">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
+        <img width="48" height="32"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
         <h2>prenumeruoti naujienlaiškį</h2>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
+        <img width="48" height="32"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
       </div>
       <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
       <div class="wrapper">
@@ -134,30 +136,33 @@ get_header(); ?>
           <div class="social">
             <div class="subtitle">Sekite mus!</div>
             <a href="https://www.facebook.com/matesklubass" target="_blank" rel="noopener noreferrer">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+              <img width="24" height="24"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
               Facebook puslapis
             </a>
             <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+              <img width="24" height="24"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
               Facebook grupė
             </a>
             <a href="https://www.instagram.com/matesklubas" target="_blank" rel="noopener noreferrer">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg"
-                alt="instagram-icon">
+              <img width="24" height="24"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="instagram-icon">
               Instagram
             </a>
             <a href="https://www.youtube.com/channel/UCiL5qWJ7cer2tAvY7Y7sNwA" target="_blank"
               rel="noopener noreferrer">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
+              <img width="24" height="24"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
               Youtube
             </a>
           </div>
         </div>
         <div class="image">
-          <img class="bg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-community.jpeg"
-            alt="fb-icon">
-          <img class="person" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/footbal-player.png"
-            alt="fb-icon">
+          <img width="421" height="399" class="bg"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-community.jpeg" alt="fb-icon">
+          <img width="190" height="439" class="person"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/footbal-player.png" alt="fb-icon">
         </div>
       </div>
     </div>
