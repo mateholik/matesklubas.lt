@@ -32,16 +32,14 @@
       </ul>
     </div>
     <div class="sidebar__block">
-      <a href="https://www.matesklubas.lt/produkto-kategorija/guayusa/" class="sidebar__block-title">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/ajavaska.svg" alt="ajavaska">
-        GUAYUSA
+      <a href="https://matesklubas.lt/produkto-kategorija/kita/" class="sidebar__block-title">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/gift.svg" alt="kita">
+        KITA:
       </a>
-    </div>
-    <div class="sidebar__block">
-      <a href="https://www.matesklubas.lt/produkto-kategorija/rinkiniai/" class="sidebar__block-title">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/gift.svg" alt="dovana">
-        DOVANŲ RINKINIAI
-      </a>
+      <ul>
+        <!--                --><?php //getSubCategories(49,'sidebar'); ?>
+        <?php getSubCategories(187,'sidebar'); ?>
+      </ul>
     </div>
     <div class="sidebar__block">
       <div class="sidebar__block-title title-for-fb">

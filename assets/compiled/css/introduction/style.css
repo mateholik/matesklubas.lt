@@ -305,6 +305,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(200px, 300px) minmax(70%, 1024px);
+  margin-top: 0;
 }
 @media (max-width: 768px) {
   .introduction .main {
@@ -329,15 +330,16 @@ body {
   }
 }
 .introduction .sidebar .logo {
-  display: flex;
-  justify-content: center;
+  display: block;
+  max-width: 20rem;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 @media (max-width: 768px) {
   .introduction .sidebar .logo {
-    margin-bottom: 0;
-    width: 60px;
-    height: 60px;
+    max-width: 14.4rem;
+    margin: 0;
   }
 }
 .introduction .sidebar nav {

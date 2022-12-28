@@ -206,3 +206,18 @@ function remove_image_zoom_support_webtalkhub() {
     remove_theme_support( 'wc-product-gallery-zoom' );
 }
 add_action( 'wp', 'remove_image_zoom_support_webtalkhub', 100 );
+
+
+// function get_the_excerpt( $post_id ){
+//     global $post;  
+//     $save_post = $post;
+//     $post = get_post($post_id);
+//     setup_postdata( $post );
+//     $output = get_the_excerpt();
+//     $post = $save_post;
+//     return $output;
+// }
+
+function get_excerpt_by_id( $post_id ) {
+    return apply_filters( 'get_the_excerpt', wp_trim_excerpt( get_post_field( 'post_excerpt', $post_id ), $post_id ), $post_id );
+}

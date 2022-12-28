@@ -16,6 +16,7 @@
   }
   &__menus {
     display: flex;
+    justify-content: space-between;
     @include phone {
       flex-direction: column;
     }
@@ -23,7 +24,7 @@
       margin-right: 5rem;
       @include phone {
         margin-right: 0;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
         order: 2;
       }
       a {
@@ -37,13 +38,21 @@
         }
       }
     }
-    .about {
-      max-width: 35rem;
-      margin-left: auto;
-      @include phone {
-        order: 1;
-        margin-left: 0;
-        margin-bottom: 2rem;
+  }
+  .about {
+    img {
+      width: 2rem;
+      margin-right: 1rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      color: #aaaab0;
+      &:hover {
+        color: white;
       }
     }
   }

@@ -21,17 +21,20 @@
       <div class="block">
         <h3>Straipsniai</h3>
         <div class="block__items">
-          <?php foreach ($latestPosts as $item) { ?>
+          <?php foreach ($latestPosts as $item) {   ?>
           <a href="<?php echo get_permalink($item['ID']) ?>" class="block__card">
             <div class="image">
               <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
             </div>
             <div class="content">
-              <p> <?php echo $item['post_title'] ?> </p>
-              <span>plačiau »</span>
+              <div class="title"> <?php echo $item['post_title'] ?> </div>
+              <div class="excerpt"><?php echo substr(get_excerpt_by_id($item['ID']),0,70).'...'; ?></div>
             </div>
           </a>
           <?php } ?>
+        </div>
+        <div class="btn__holder">
+          <a href="#" class="btn">Visi straipsniai</a>
         </div>
       </div>
       <div class="block">
@@ -47,11 +50,14 @@
               </div>
             </div>
             <div class="content">
-              <p> <?php echo $item['post_title'] ?> </p>
-              <span>plačiau »</span>
+              <div class="title"> <?php echo $item['post_title'] ?> </div>
+              <div class="excerpt"><?php echo substr(get_excerpt_by_id($item['ID']),0,70).'...'; ?></div>
             </div>
           </a>
           <?php } ?>
+        </div>
+        <div class="btn__holder">
+          <a href="#" class="btn">Visi video</a>
         </div>
       </div>
     </div>

@@ -99,14 +99,16 @@ ul.order_details {
 }
 
 /* lang switcher */
-@media (max-width: 768px) {
-  .lang-switcher-desk {
-    display: none;
+.lang-switcher-desk {
+  display: flex;
+  margin-top: 2rem;
+  @include phone {
+    margin-top: 1rem;
   }
 }
 .lang-switcher-desk img {
   width: auto;
-  margin-right: 0.2rem !important;
+  margin-right: 0.4rem !important;
 }
 .lang-switcher-mob {
   border-top: 1px solid #2c2c2c;

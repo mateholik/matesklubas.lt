@@ -113,8 +113,8 @@ get_header(); ?>
         <div class="block">
           <div class="top">
             <?php get_template_part( 'templates/title', null, array( 'title' => 'visa informacija naujokui' ) ); ?>
-            <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuom skiriasi medinis nuo
-              moliūgo kalabasas? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
+            <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuo skiriasi medinė ir moliūgo
+              kalabasa? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
           </div>
           <div class="btn__holder">
             <a href="<?php echo get_permalink( 681 ); ?>" class="btn">instrukcija</a>

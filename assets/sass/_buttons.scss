@@ -31,7 +31,7 @@
   @include phone {
     @if $size == normal {
       font-size: 1.6rem;
-      padding: 0.6rem 1.6rem;
+      padding: 0.8rem 1.6rem;
       line-height: 2.8rem;
     } @else {
       font-size: 2rem;

@@ -3528,11 +3528,14 @@ var render = function () {
         : _vm._e(),
       _vm._v(" "),
       _c("div", { staticClass: "sidebar" }, [
-        _c("div", { staticClass: "logo" }, [
-          _c("img", {
-            attrs: { src: _vm.domain + "/assets/img/introduction/logo.png" },
-          }),
-        ]),
+        _c(
+          "a",
+          {
+            staticClass: "logo",
+            attrs: { href: "https://www.matesklubas.lt/" },
+          },
+          [_c("img", { attrs: { src: _vm.domain + "/assets/img/logo.png" } })]
+        ),
         _vm._v(" "),
         _c("nav", { class: _vm.mobileMenu ? "active" : "" }, [
           _c(

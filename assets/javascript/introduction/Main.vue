@@ -9,9 +9,9 @@
     >
     </CoolLightBox>
     <div class="sidebar">
-      <div class="logo">
-        <img :src="domain + '/assets/img/introduction/logo.png'" />
-      </div>
+      <a href="https://www.matesklubas.lt/" class="logo">
+        <img :src="domain + '/assets/img/logo.png'" />
+      </a>
       <nav :class="mobileMenu ? 'active' : ''">
         <ul>
           <li
@@ -1000,5 +1000,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
