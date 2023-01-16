@@ -64,7 +64,7 @@ get_header(); ?>
       </div>
       <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>
       <div class="wrapper">
-        <?php echo do_shortcode('[mailpoet_form id=1]'); ?>
+        <?php echo do_shortcode('[sibwp_form id=1]'); ?>
       </div>
     </div>
   </section>
