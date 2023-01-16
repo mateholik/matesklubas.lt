@@ -140,8 +140,8 @@ header.header {
           }
         }
       }
-      li.shop {
-        .shop-dropdown {
+      li.store {
+        .store-dropdown {
           .inner-wrapper {
             padding: 3.2rem 6.4rem;
             .title {
@@ -216,7 +216,7 @@ header.header {
           }
         }
         &:hover {
-          .shop-dropdown {
+          .store-dropdown {
             opacity: 1;
             pointer-events: auto;
           }
@@ -469,5 +469,26 @@ header.header {
   }
   .is-active {
     display: block !important;
+  }
+  .star a {
+    padding-left: 3rem !important;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0.7rem;
+      left: 0;
+      width: 2rem;
+      height: 2rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("./../../img/icons/star.svg");
+    }
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-left: 1rem;
+    }
   }
 }

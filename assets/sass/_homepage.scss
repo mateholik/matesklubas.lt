@@ -98,6 +98,7 @@
         margin-right: -1.5rem;
       }
       &:before {
+        display: none;
         position: absolute;
         content: "";
         top: -3rem;
@@ -110,6 +111,7 @@
         width: 44rem;
         z-index: -1;
         @include phone {
+          display: block;
           top: 1rem;
           left: -7rem;
           height: 11rem;
@@ -156,9 +158,9 @@
           }
         }
         p {
-          font-size: 2.8rem;
+          font-size: 2.2rem;
           margin-bottom: 3.2rem;
-          max-width: 648px;
+          max-width: 620px;
           color: #222;
           @include phone {
             font-size: 1.6rem;
@@ -436,6 +438,11 @@
           img {
             width: 1.8rem;
             margin-right: 0.8rem;
+          }
+          .star {
+            width: 2.4rem;
+            margin-right: 0;
+            margin-left: 0.8rem;
           }
         }
         li:last-child a {

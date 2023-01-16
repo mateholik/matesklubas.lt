@@ -35,10 +35,13 @@
           $term_link = get_term_link( $term, $taxonomy ); ?>
       <li>
         <a href="<?php echo esc_url( $term_link ); ?>">
-          <img class="preview"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/<?php echo $args['category'] ?>.svg"
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/<?php echo $args['category'] ?>.svg"
             alt="title-mob-wrap">
           <?php echo $term->name; ?>
+          <?php if ($term->name === 'Rinkiniai') { ?>
+          <img class="star" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/star.svg"
+            alt="star icon">
+          <?php } ?>
         </a>
       </li>
       <?php } ?>

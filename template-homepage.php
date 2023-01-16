@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="container">
       <div class="wrapper">
         <div class="wrapper__content">
-          <h1>Matės klubas - tai bendruomenė</h1>
+          <h1>Matės klubas - <br> tai bendruomenė</h1>
           <p>Susitikimai, patarimai, matės pasaulio naujienos, matės rūšių apžvalgos, receptai bei daug kitų
             įdomybių</p>
           <div class="btn__holder">
