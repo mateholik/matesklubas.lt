@@ -164,6 +164,14 @@ img {
       display: none;
     }
   }
+  .choose {
+    font-weight: 300;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
   &__content {
     width: 100%;
   }

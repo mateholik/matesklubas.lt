@@ -1,5 +1,6 @@
 <div class="main__sidebar">
   <div class="sidebar">
+    <div class="choose">NEGALI IŠSIRINKTI?</div>
     <a href="https://matesklubas.lt/negali-issirinkti/" class="sidebar__btn">ATLIK TESTĄ</a>
     <div class="sidebar__block">
       <a href="https://matesklubas.lt/produkto-kategorija/mate/" class="sidebar__block-title">
