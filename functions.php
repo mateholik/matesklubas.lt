@@ -34,7 +34,7 @@ function addScripts() {
      
         wp_enqueue_script('introduction-script', get_stylesheet_directory_uri() . '/assets/compiled/js/introduction/main.js', array(), '', true);
     }
-    if ( is_product_category() || is_shop() ) {
+    if ( is_product_category() || is_shop() || is_front_page() ) {
         wp_enqueue_script('product', get_stylesheet_directory_uri() . '/assets/compiled/js/product.js', array(), $jsTimeProduct, true);
     }
 }
