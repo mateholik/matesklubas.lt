@@ -14,6 +14,7 @@
 /**
  * Dequeue the Storefront Parent theme core CSS
  */
+
 function sf_child_theme_dequeue_style() {
     wp_dequeue_style( 'storefront-style' );
     wp_dequeue_style( 'storefront-woocommerce-style' );
@@ -25,12 +26,16 @@ function sf_child_theme_dequeue_style() {
 
 function addScripts() {
     $jsTime = filemtime(get_stylesheet_directory() . '/assets/compiled/js/main.js' );
+    $jsTimeProduct = filemtime(get_stylesheet_directory() . '/assets/compiled/js/product.js' );
 
    
     wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/assets/compiled/js/main.js', array(), $jsTime, true);
     if(is_page_template( 'template-introduction.php' )) {
      
         wp_enqueue_script('introduction-script', get_stylesheet_directory_uri() . '/assets/compiled/js/introduction/main.js', array(), '', true);
+    }
+    if ( is_product_category() || is_shop() ) {
+        wp_enqueue_script('product', get_stylesheet_directory_uri() . '/assets/compiled/js/product.js', array(), $jsTimeProduct, true);
     }
 }
 add_action( 'wp_enqueue_scripts', 'addScripts' );

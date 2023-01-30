@@ -8,6 +8,8 @@ mix
   )
   .vue();
 
+mix.js("assets/javascript/product.js", "assets/compiled/js");
+
 mix.sass("assets/sass/style.scss", "assets/compiled/css").options({
   processCssUrls: false,
 });
