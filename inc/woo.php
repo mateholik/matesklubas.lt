@@ -23,35 +23,63 @@ add_filter( 'woocommerce_checkout_fields' , 'custom_remove_woo_checkout_fields' 
 
 function custom_remove_woo_checkout_fields( $fields ) {
 
-    // remove billing fields
-//     unset($fields['billing']['billing_first_name']);
-//     unset($fields['billing']['billing_last_name']);
-    unset($fields['billing']['billing_company']);
-     unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_1']);
     unset($fields['billing']['billing_address_2']);
-     unset($fields['billing']['billing_city']);
-     unset($fields['billing']['billing_postcode']);
-//    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
     unset($fields['billing']['billing_state']);
-//     unset($fields['billing']['billing_phone']);
-//     unset($fields['billing']['billing_email']);
 
-    // remove shipping fields
-//     unset($fields['shipping']['shipping_first_name']);
-//     unset($fields['shipping']['shipping_last_name']);
-//     unset($fields['shipping']['shipping_company']);
-//     unset($fields['shipping']['shipping_address_1']);
-//     unset($fields['shipping']['shipping_address_2']);
-//     unset($fields['shipping']['shipping_city']);
-//     unset($fields['shipping']['shipping_postcode']);
-//     unset($fields['shipping']['shipping_country']);
-//     unset($fields['shipping']['shipping_state']);
-
-    // remove order comment fields
-    unset($fields['order']['order_comments']['label']);
+    $fields[ 'billing' ][ 'billing_company' ][ 'priority' ] = 120;
+    $fields[ 'billing' ][ 'billing_company' ][ 'label' ] = 'Įmonės pavadinimas';
     $fields['order']['order_comments']['placeholder'] = 'Jei reikia - palikite papildomą informaciją';
+
+   
+    $fields['billing']['checkbox_trigger'] = array(
+        'type'      => 'checkbox',
+        'label'     => __('Įmonė?', 'woocommerce'),
+        'class'     => array('form-row-wide'),
+        'clear'     => true,
+        'priority'     => 115
+    );   
+
     return $fields;
 }
+
+
+add_action( 'woocommerce_after_checkout_form', 'bbloomer_conditionally_hide_show_new_field', 9999 );
+  
+function bbloomer_conditionally_hide_show_new_field() {
+    
+  wc_enqueue_js( "
+      jQuery('input#checkbox_trigger').change(function(){
+           
+         if (! this.checked) {
+            // HIDE IF NOT CHECKED
+            jQuery('#billing_company_field').hide();
+            jQuery('#billing_company_field input').val('');   
+            
+            jQuery('#VAT_number_field').hide();
+            jQuery('#VAT_number_field input').val('');   
+
+            jQuery('#company_code_field').hide();
+            jQuery('#company_code_field input').val('');  
+            
+            jQuery('.woocommerce-additional-fields label').hide();
+
+         } else {
+            // SHOW IF CHECKED
+            jQuery('#billing_company_field').show();
+            jQuery('#VAT_number_field').show();
+            jQuery('#company_code_field').show();
+            jQuery('.woocommerce-additional-fields label').show();
+         }
+           
+      }).change();
+  ");
+       
+}
+
+
 
 //woo nav cart item
 if ( ! function_exists( 'storefront_cart_link' ) ) {
@@ -64,14 +92,15 @@ if ( ! function_exists( 'storefront_cart_link' ) ) {
      */
     function storefront_cart_link() {
         ?>
-        <a class="nav__cart-link" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
-            <span class="img-wrap">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cart.svg" alt="cart">
-                <span class="count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-            </span>
-            <span class="krepselis">krepšelis</span>
-        </a>
-        <?php
+<a class="nav__cart-link" href="<?php echo esc_url( wc_get_cart_url() ); ?>"
+  title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
+  <span class="img-wrap">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cart.svg" alt="cart">
+    <span class="count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+  </span>
+  <span class="krepselis">krepšelis</span>
+</a>
+<?php
     }
 };
 
@@ -127,6 +156,3 @@ function my_custom_wc_free_shipping_notice() {
 
 }
 add_action( 'wp', 'my_custom_wc_free_shipping_notice' );
-
-
-

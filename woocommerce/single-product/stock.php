@@ -22,13 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 $block = ($product->get_stock_quantity()>0 ? '' : 'style="display: block;"');
 ?>
 <p class="stock <?php echo esc_attr( $class ); ?>" <?php echo $block; ?>>
-  
-   
-    <?php 
+
+
+  <?php 
     	if($product->get_stock_quantity()>0) {
-    		?> 
-    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate.svg" alt="klubas">
-    		<?php
+    		?>
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mate.svg" alt="klubas">
+  <?php
 	    echo wp_kses_post( $availability );
 	} else {
 	    echo "Prekė išpirkta, greitu metu turėsime ją vėl! Rezervuok prekę iš anksto. Rašyk mums el. paštu <a href='mailto:mateholikai@gmail.com'>mateholikai@gmail.com</a> arba <a target='_blank' href='https://www.facebook.com/matesklubass'>facebook'e</a>.";
@@ -36,6 +36,6 @@ $block = ($product->get_stock_quantity()>0 ? '' : 'style="display: block;"');
     ?>
 </p>
 <p class="shippin">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/truck.svg" alt="klubas">
-    <span>Nemokamas pristatymas nuo<span class="green"> 25 €</span></span>
+  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/truck.svg" alt="klubas">
+  <span>Nemokamas pristatymas nuo<span class="green"> 30 €</span></span>
 </p>

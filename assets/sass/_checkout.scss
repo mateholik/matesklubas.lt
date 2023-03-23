@@ -194,3 +194,8 @@ p.stars a:after,
 .woocommerce-shipping-destination {
   display: none;
 }
+
+//handle company fields
+#customer_details > .col-1 {
+  margin-bottom: 0;
+}
