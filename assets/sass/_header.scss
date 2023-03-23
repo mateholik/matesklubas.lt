@@ -491,4 +491,18 @@ header.header {
       margin-left: 1rem;
     }
   }
+  .rinkiniai {
+    margin-left: -2.6rem;
+    a {
+      display: block;
+      color: #fff;
+      padding: 1.2rem 0;
+      &:before {
+        display: none;
+      }
+      &:after {
+        top: 1.3rem !important;
+      }
+    }
+  }
 }
