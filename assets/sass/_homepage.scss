@@ -142,7 +142,7 @@
         //   padding: 6rem 0;
         // }
         @include phone {
-          width: 75%;
+          // width: 75%;
           padding-bottom: 0;
           padding-top: 5.2rem;
         }
@@ -170,12 +170,15 @@
       }
       &__img {
         width: 33.33%;
+        position: relative;
+        top: 19px;
         @include phone {
           width: 13rem;
           position: absolute;
           bottom: -2rem;
-          right: -6rem;
+          right: 0;
           z-index: -1;
+          top: unset;
         }
         img.desktop {
           width: 39.5rem;

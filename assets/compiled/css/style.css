@@ -2797,7 +2797,6 @@ ul.order_details {
 }
 @media (max-width: 767px) {
   .homepage section.hero .wrapper__content {
-    width: 75%;
     padding-bottom: 0;
     padding-top: 5.2rem;
   }
@@ -2829,14 +2828,17 @@ ul.order_details {
 }
 .homepage section.hero .wrapper__img {
   width: 33.33%;
+  position: relative;
+  top: 19px;
 }
 @media (max-width: 767px) {
   .homepage section.hero .wrapper__img {
     width: 13rem;
     position: absolute;
     bottom: -2rem;
-    right: -6rem;
+    right: 0;
     z-index: -1;
+    top: unset;
   }
 }
 .homepage section.hero .wrapper__img img.desktop {
