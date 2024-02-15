@@ -267,6 +267,17 @@ p.no-comments {
   margin-top: 94px;
 }
 
+.arrow-down {
+  position: relative;
+  top: 16px;
+  left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #dadada;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -369,7 +380,7 @@ header.header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 99999;
   background: #000;
 }
 header.header .container {
@@ -384,6 +395,7 @@ header.header .wrapper {
 header.header .wrapper .logo {
   max-width: 20rem;
   width: 100%;
+  padding: 0.4rem;
 }
 @media (max-width: 1023px) {
   header.header .wrapper .logo {
@@ -405,11 +417,11 @@ header.header .wrapper nav.desktop > ul > li > a {
   display: block;
   color: #fff;
   padding: 1.8rem 3.2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 @media (max-width: 1200px) {
   header.header .wrapper nav.desktop > ul > li > a {
-    padding: 1.8rem;
+    padding: 1.6rem 1.8rem;
   }
 }
 header.header .wrapper nav.desktop > ul > li > a:before {
@@ -427,7 +439,7 @@ header.header .wrapper nav.desktop > ul > li > a:hover:before {
 }
 header.header .wrapper nav.desktop .dropdown {
   position: absolute;
-  top: 6.3rem;
+  top: 5.6rem;
   left: 50%;
   transform: translateX(-50%);
   min-height: 43.2rem;
