@@ -823,11 +823,20 @@
   }
   section.products {
     .options {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+
       display: flex;
+      overflow: auto;
       justify-content: center;
       margin-bottom: 4rem;
       @include phone {
         margin-bottom: 2.4rem;
+        justify-content: start;
       }
       span {
         padding: 0 2rem;

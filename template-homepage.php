@@ -76,16 +76,21 @@ get_header(); ?>
         <span class="active">Populiariausios</span>
         <span>Naujienos</span>
         <span>Išpardavimas</span>
+        <span>Rezervuok</span>
       </div>
       <div class="results">
         <div>
-          <?php echo do_shortcode('[best_selling_products columns="4" limit="8"]'); ?>
+          <?php display_top_products_excluding_soldout(8); ?>
         </div>
         <div>
-          <?php echo do_shortcode('[recent_products columns="4" limit="8"]'); ?>
+          <?php display_newest_products_excluding_soldout(8); ?>
         </div>
         <div>
-          <?php echo do_shortcode('[sale_products columns="4" limit="8"]'); ?>
+          <?php display_sale_products_excluding_soldout(8);  ?>
+        </div>
+        <div>
+          <?php display_soldout_products(8);  ?>
+
         </div>
       </div>
       <div class="btn__holder">

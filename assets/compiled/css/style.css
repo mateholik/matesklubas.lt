@@ -3576,13 +3576,22 @@ ul.order_details {
   margin: 0 auto;
 }
 .homepage section.products .options {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   display: flex;
+  overflow: auto;
   justify-content: center;
   margin-bottom: 4rem;
+}
+.homepage section.products .options::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 767px) {
   .homepage section.products .options {
     margin-bottom: 2.4rem;
+    justify-content: start;
   }
 }
 .homepage section.products .options span {

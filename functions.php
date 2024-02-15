@@ -226,3 +226,125 @@ add_action( 'wp', 'remove_image_zoom_support_webtalkhub', 100 );
 function get_excerpt_by_id( $post_id ) {
     return apply_filters( 'get_the_excerpt', wp_trim_excerpt( get_post_field( 'post_excerpt', $post_id ), $post_id ), $post_id );
 }
+
+//for homepage tabs
+function display_top_products_excluding_soldout($limit = 10) {
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => $limit,
+        'meta_key' => 'total_sales',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC',
+        'meta_query' => array(
+            array(
+                'key' => '_stock_status',
+                'value' => 'instock',
+                'compare' => '='
+            )
+        )
+    );
+
+    $loop = new WP_Query($args);
+
+    if ($loop->have_posts()) {
+        echo '<ul class="products">';
+        while ($loop->have_posts()) : $loop->the_post();
+            wc_get_template_part('content', 'product');
+        endwhile;
+        echo '</ul>';
+    } else {
+        echo '<p>No products found</p>';
+    }
+
+    wp_reset_postdata();
+}
+function display_newest_products_excluding_soldout($limit = 10) {
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => $limit,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'meta_query' => array(
+            array(
+                'key' => '_stock_status',
+                'value' => 'instock',
+                'compare' => '='
+            )
+        )
+    );
+
+    $loop = new WP_Query($args);
+
+    if ($loop->have_posts()) {
+        echo '<ul class="products">';
+        while ($loop->have_posts()) : $loop->the_post();
+            wc_get_template_part('content', 'product');
+        endwhile;
+        echo '</ul>';
+    } else {
+        echo '<p>No products found</p>';
+    }
+
+    wp_reset_postdata();
+}
+function display_sale_products_excluding_soldout($limit = 10) {
+    // Get all sale products IDs
+    $product_ids_on_sale = wc_get_product_ids_on_sale();
+
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => $limit,
+        'no_found_rows' => 1,
+        'post__in' => array_merge(array(0), $product_ids_on_sale),
+        'meta_query' => array(
+            'relation' => 'AND',
+            array(
+                'key' => '_stock_status',
+                'value' => 'instock',
+                'compare' => '='
+            )
+        )
+    );
+
+    $loop = new WP_Query($args);
+
+    if ($loop->have_posts()) {
+        echo '<ul class="products">';
+        while ($loop->have_posts()) : $loop->the_post();
+            wc_get_template_part('content', 'product');
+        endwhile;
+        echo '</ul>';
+    } else {
+        echo '<p>No sale products found</p>';
+    }
+
+    wp_reset_postdata();
+}
+function display_soldout_products($limit = 10) {
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => $limit,
+        'no_found_rows' => 1,
+        'meta_query' => array(
+            array(
+                'key' => '_stock_status',
+                'value' => 'outofstock',
+                'compare' => '='
+            )
+        )
+    );
+
+    $loop = new WP_Query($args);
+
+    if ($loop->have_posts()) {
+        echo '<ul class="products">';
+        while ($loop->have_posts()) : $loop->the_post();
+            wc_get_template_part('content', 'product');
+        endwhile;
+        echo '</ul>';
+    } else {
+        echo '<p>No sold out products found</p>';
+    }
+
+    wp_reset_postdata();
+}
