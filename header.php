@@ -102,9 +102,14 @@
             <nav class="desktop">
               <ul>
                 <li>
+                  <a href="<?php echo home_url() . '/?s=' ?>" class="login">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/search.svg" alt="login">
+                  </a>
+                </li>
+                <li>
                   <a class="login" href="<?php echo $loginPermalink ?>">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/login.svg" alt="login">
-                    <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?>
+                    <!-- <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?> -->
                   </a>
                 </li>
               </ul>
@@ -134,10 +139,13 @@
           ) );
         ?>
         <ul>
-          <li>
+          <li class="login-profile-mob">
             <a class="login" href="<?php echo $loginPermalink ?>">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/login.svg" alt="login">
-              <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?>
+              <!-- <?php is_user_logged_in() ? print 'Paskyra' : print "Prisijungti" ?> -->
+            </a>
+            <a href="<?php echo home_url() . '/?s=' ?>" class="login">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/search.svg" alt="login">
             </a>
           </li>
         </ul>

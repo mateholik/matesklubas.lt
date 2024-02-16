@@ -362,9 +362,17 @@ header.header {
         }
       }
     }
+    .login-profile-mob {
+      display: flex;
+      align-items: center;
+    }
   }
   .cart {
     position: relative;
+    padding-left: 1rem;
+    @include phone {
+      padding-left: 0;
+    }
     .cta {
       width: 6.4rem;
       height: 4.4rem;
@@ -450,14 +458,23 @@ header.header {
   .login {
     display: flex !important;
     align-items: center;
+    padding: 1.8rem !important;
+    &:before {
+      left: 1.6rem !important;
+    }
     @include tablet {
       margin-top: 2rem;
       margin-bottom: 0.8rem;
     }
+    &:first-of-type {
+      @include tablet {
+        padding-left: 0 !important;
+      }
+    }
     img {
       width: 2.4rem;
       height: 2.4rem;
-      margin-right: 0.8rem;
+      // margin-right: 0.8rem;
       @include phone {
         width: 2.4rem;
         height: 2.4rem;

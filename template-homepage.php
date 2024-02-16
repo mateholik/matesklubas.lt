@@ -19,11 +19,10 @@ get_header(); ?>
     <div class="container">
       <div class="wrapper">
         <div class="wrapper__content">
-          <h1>Matės klubas - <br> tai bendruomenė</h1>
-          <p>Susitikimai, patarimai, matės pasaulio naujienos, matės rūšių apžvalgos, receptai bei daug kitų
-            įdomybių</p>
+          <h1>Yerba mate - <br> energija ir nuotaika</h1>
+          <p>Stebuklingas gėrimas, kuris greitai taps hobiu</p>
           <div class="btn__holder">
-            <a href="#community" class="btn">prisijungti</a>
+            <a href="https://www.matesklubas.lt/parduotuve/" class="btn">parduotuvė</a>
           </div>
         </div>
         <div class="wrapper__img">
@@ -36,6 +35,47 @@ get_header(); ?>
       </div>
     </div>
   </section>
+
+  <section class="feature-product">
+    <div class="container">
+
+      <div class="wrapper">
+        <div class="left">
+          <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys', 'hide_rombs' => true ) ); ?>
+          <ul>
+            <li>
+              <img width="30" height="30"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+              Yerba Maté Pajarito – 250 g
+            </li>
+            <li>
+              <img width="30" height="30"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+              Yerba Maté Taragui – 250 g
+            </li>
+            <li>
+              <img width="30" height="30"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+              Klasikinė moliūgo kalabasa ,,Calabaza Classic” (tūris apie 120-150 ml.)
+            </li>
+            <li>
+              <img width="30" height="30"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+              ,,3Road” nerūdijančio plieno bombilė (15,5 cm)
+            </li>
+          </ul>
+          <div class="btn__holder">
+            <a href="https://www.matesklubas.lt/produktas/klasikinis-mates-rinkinys-2/" class="btn">pirkti</a>
+          </div>
+        </div>
+        <div class="img">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ee.png" alt="mate">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <?php get_template_part('templates/latestNews'); ?>
 
   <section class="categories">

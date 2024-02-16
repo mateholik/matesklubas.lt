@@ -278,6 +278,26 @@ p.no-comments {
   border-top: 6px solid #dadada;
 }
 
+.search form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.search input {
+  margin-bottom: 0 !important;
+}
+.search input[type=submit] {
+  display: block;
+  border-radius: 0.5rem;
+  margin-left: 0.6rem;
+}
+.search label {
+  width: 100%;
+}
+.search label input {
+  width: 100%;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -700,8 +720,18 @@ header.header nav.mobile .all-products a:before {
   color: white;
   filter: none !important;
 }
+header.header nav.mobile .login-profile-mob {
+  display: flex;
+  align-items: center;
+}
 header.header .cart {
   position: relative;
+  padding-left: 1rem;
+}
+@media (max-width: 767px) {
+  header.header .cart {
+    padding-left: 0;
+  }
 }
 header.header .cart .cta {
   width: 6.4rem;
@@ -796,6 +826,10 @@ header.header .cart:hover .dropdown-cart {
 header.header .login {
   display: flex !important;
   align-items: center;
+  padding: 1.8rem !important;
+}
+header.header .login:before {
+  left: 1.6rem !important;
 }
 @media (max-width: 1023px) {
   header.header .login {
@@ -803,10 +837,14 @@ header.header .login {
     margin-bottom: 0.8rem;
   }
 }
+@media (max-width: 1023px) {
+  header.header .login:first-of-type {
+    padding-left: 0 !important;
+  }
+}
 header.header .login img {
   width: 2.4rem;
   height: 2.4rem;
-  margin-right: 0.8rem;
 }
 @media (max-width: 767px) {
   header.header .login img {
@@ -2793,7 +2831,7 @@ ul.order_details {
 }
 .homepage section.hero .wrapper__content {
   padding: 10.2rem 0;
-  width: 66.6%;
+  width: 65.6%;
 }
 @media (max-width: 767px) {
   .homepage section.hero .wrapper__content {
@@ -3679,4 +3717,40 @@ ul.order_details {
   .homepage section.products ul.products li.product:nth-child(n+6) {
     display: none !important;
   }
+}
+.homepage section.feature-product .wrapper {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .homepage section.feature-product .wrapper {
+    display: block;
+  }
+}
+.homepage section.feature-product .wrapper .left {
+  flex: 1;
+}
+.homepage section.feature-product .wrapper .left .section-title {
+  justify-content: start;
+  margin-left: 0;
+}
+.homepage section.feature-product .wrapper .left .section-title h2 {
+  padding-left: 0;
+}
+.homepage section.feature-product .wrapper .left ul {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.homepage section.feature-product .wrapper .left li {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.8rem;
+}
+.homepage section.feature-product .wrapper .left li img {
+  display: block;
+  width: 16px;
+  height: auto;
+  margin-right: 1.6rem;
+}
+.homepage section.feature-product .wrapper .img {
+  flex: 1;
 }

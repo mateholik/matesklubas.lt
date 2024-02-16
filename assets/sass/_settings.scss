@@ -274,3 +274,25 @@ p.no-comments {
   border-right: 4px solid transparent;
   border-top: 6px solid rgb(218, 218, 218);
 }
+
+.search {
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  input {
+    margin-bottom: 0 !important;
+  }
+  input[type="submit"] {
+    display: block;
+    border-radius: 0.5rem;
+    margin-left: 0.6rem;
+  }
+  label {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+}
