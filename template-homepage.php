@@ -19,10 +19,10 @@ get_header(); ?>
     <div class="container">
       <div class="wrapper">
         <div class="wrapper__content">
-          <h1>Yerba mate - <br> energija ir nuotaika</h1>
-          <p>Stebuklingas gėrimas, kuris greitai taps hobiu</p>
+          <h1>Yerba mate - <br>ENERGIJA, NUOTAIKA IR SVEIKATA</h1>
+          <p>Pietų Amerikos gėrimas, pasižymintis kavos jėga, arbatos nauda ir šokolado suteikiama euforija.</p>
           <div class="btn__holder">
-            <a href="https://www.matesklubas.lt/parduotuve/" class="btn">parduotuvė</a>
+            <a href="https://www.matesklubas.lt/produkto-kategorija/kita/rinkiniai/" class="btn">išbandyti</a>
           </div>
         </div>
         <div class="wrapper__img">
@@ -36,32 +36,160 @@ get_header(); ?>
     </div>
   </section>
 
+  <section class="facts">
+    <div class="container">
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'yerba mate privalumai' ) 
+     ); ?>
+      <div class="wrapper">
+        <div class="block">
+          <div class="accordion">
+            <div class="title">Energijos Šaltinis
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Matės arbata suteikia natūralios, ilgai neblėstančios energijos, todėl yra puiki sveikesnė
+              alternatyva kavai ar energetiniams gėrimams</div>
+          </div>
+          <div class="accordion">
+            <div class="title">Gerina protinę veiklą
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Gerina atmintį ir nuotaiką, stiprina kognityvines funkcijas. Skatiną produktyvumą ir
+              kūrybiškumą.</div>
+          </div>
+          <div class="accordion">
+            <div class="title">Vitaminų ir mineralų šaltinis
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Matė yra itin turtinga maistinėmis medžiagomis, įskaitant A, C, B1, B2, B3, B5 ir E
+              vitaminus, mineralus - kalcį, geležį, magnį, manganą, fosforą, kalį, seleną, natrijų, sierą ir cinką. Be
+              to, joje randama taninų, mikroelementų, chlorofilo, flavonoidų, 15 amino rūgščių ir 11 polifenolių. Tai
+              daugiausiai antioksidantų turinti arbata.</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="block">
+          <div class="accordion">
+            <div class="title">Stiprina imunitetą
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Arbatoje esantys saponinai, natūralūs emulsikliai, stiprina imuninę sistemą ir turi
+              antioksidacinį bei priešuždegiminį poveikį. Taip pat ji gali būti naudinga gydant šlapimo pūslės
+              infekcijas ir mažinant sezoninių alergijų simptomus.</div>
+          </div>
+          <div class="accordion">
+            <div class="title">Padeda numesti svorio
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Mažina apetitą, didina energijos sąnaudas, gerina insulinui jautrumą ir skatina riebalų
+              deginimą.</div>
+          </div>
+          <div class="accordion">
+            <div class="title">Padeda virškinimui
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Matė yra naudojama tradicinėje medicinoje virškinimo sutrikimams, įskaitant vidurių
+              užkietėjimą ir viduriavimą, gydyti. Ji turi antibakterinių savybių, kovojančių prieš E. coli bakteriją, ir
+              saponinų, naikinančių žarnyno parazitus. Taip pat gali būti naudinga šlapimo pūslės ir inkstų akmenų
+              gydymui.</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="block">
+          <div class="accordion">
+            <div class="title">Stiprina kaulus
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Matė arbata gali padidinti kaulų tankį net be mankštos, kas yra įdomu, nes kofeinas dažnai
+              siejamas su kaulų mineralų netekimu. Tyrimas su menopauzę išgyvenančiomis moterimis, kurioms gresia
+              osteoporozė, parodė, kad reguliarus matės vartojimas padidino jų kaulų tankį apie 10%, lyginant su tos
+              pačios grupės moterimis, nevartojusiomis šios arbatos, nepaisant to, kad jos nesimankštino.
+              (https://pubmed.ncbi.nlm.nih.gov/21920487/)</div>
+          </div>
+
+          <div class="accordion">
+            <div class="title">Gerina širdies veiklą
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Arbata pasižymi priešuždegiminėmis ir antioksidacinėmis savybėmis, kurios saugo širdies ir
+              kraujagyslių sistemą. Be to, teobrominas esantis šioje arbatoje atpalaiduoja kraujagysles ir gerina
+              kraujotaką.  https://www.aaem.pl/pdf-119994-52236?filename=Health%20properties%20of.pdf</div>
+          </div>
+
+          <div class="accordion">
+            <div class="title">Gerina fizinę ištvermę
+              <img width="30" height="30" class="plus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/plus.svg" alt="plus">
+              <img width="30" height="30" class="minus"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/minus.svg" alt="plus">
+            </div>
+            <div class="text">Matė gali padidinti fizinę ištvermę ir pagreitinti atsistatymą po fizinio krūvio, todėl ją
+              geria daug garsių sportininkų, pvz.: Edgaras Ulanovas, Lionel Messi, Cristiano Ronaldo ir kiti.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="feature-product">
     <div class="container">
-
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
       <div class="wrapper">
         <div class="left">
-          <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys', 'hide_rombs' => true ) ); ?>
           <ul>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
-              Yerba Maté Pajarito – 250 g
+              <div>
+                <span>Pradėkite be rūpesčių:</span> rinkinyje yra viskas ko reikia pirmą kartą geriant matę.
+              </div>
             </li>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
-              Yerba Maté Taragui – 250 g
+              <div>
+                <span>Degustuokite:</span> paragaukite net dviejų klasikinių matės rūšių iš skirtingų regionų ir
+                atraskite
+                skonių įvairovę.
+              </div>
             </li>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
-              Klasikinė moliūgo kalabasa ,,Calabaza Classic” (tūris apie 120-150 ml.)
+              <div>
+                <span>Autentiškas ritualas</span> moliūgo kalabasoje paruošta matė atskleidžia gilų ir turtingą skonį,
+                leidžiantį patirti tradicinį matės gėrimo malonumą.
+              </div>
             </li>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
-              ,,3Road” nerūdijančio plieno bombilė (15,5 cm)
+              <div>
+                <span> Greitas pristatymas</span> darbo dienomis pristatome per ~24 val. nuoužsakymo!
+              </div>
             </li>
           </ul>
           <div class="btn__holder">
