@@ -162,7 +162,8 @@ get_header(); ?>
       <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
       <div class="wrapper">
         <div class="left">
-          <p><b>Nežinai nuo ko pradėti?</b> Atrask matės pasaulį su mūsų išskirtiniu rinkiniu, kuriame yra viskas, ko
+          <p class="bold">Nežinai nuo ko pradėti?</p>
+          <p> Atrask matės pasaulį su mūsų išskirtiniu rinkiniu, kuriame yra viskas, ko
             reikia lengvai ir paprastai
             mėgautis šiuo tonizuojančiu gėrimu.</p>
           <ul>
@@ -177,7 +178,7 @@ get_header(); ?>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Tradiciniai gėrimo įrankiai</span> Komplekte esanti tradicinė moliūgo kalabasa ir ilgaamžė
+                <span>Tradiciniai gėrimo įrankiai</span> Tradicinė moliūgo kalabasa ir ilgaamžė
                 nerūdijančio plieno bombilė užtikrins, kad mėgausies Yerba Mate arbata taip, kaip ir priklauso
                 tradiciniu budu.
               </div>
@@ -186,7 +187,7 @@ get_header(); ?>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Dviejų rūšių populiariausi variantai</span> Rinkinyje yra dvi populiariausios Yerba Matė
+                <span>Dviejų rūšių populiariausi variantai</span> Dvi populiariausios Yerba Matė
                 arbatos: Yerba Matė Taragui ir Yerba Matė Pajarito - kiekviena pasižymi unikaliu ir galingu skoniu,
                 suteikiančiu išskirtinę degustacijos patirtį.
               </div>

@@ -3690,6 +3690,7 @@ ul.order_details {
 }
 .homepage section.feature-product .wrapper {
   display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .homepage section.feature-product .wrapper {
@@ -3709,8 +3710,16 @@ ul.order_details {
 .homepage section.feature-product .wrapper .left p {
   margin-bottom: 1.6rem;
 }
-.homepage section.feature-product .wrapper .left p b {
-  font-weight: 600;
+.homepage section.feature-product .wrapper .left .bold {
+  display: block;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .homepage section.feature-product .wrapper .left .bold {
+    font-size: 1.6rem;
+  }
 }
 .homepage section.feature-product .wrapper .left ul {
   margin-bottom: 4rem;

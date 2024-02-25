@@ -822,6 +822,7 @@
   section.feature-product {
     .wrapper {
       display: flex;
+      align-items: center;
       @include phone {
         flex-direction: column-reverse;
       }
@@ -836,8 +837,14 @@
         }
         p {
           margin-bottom: 1.6rem;
-          b {
-            font-weight: 600;
+        }
+        .bold {
+          display: block;
+          font-size: 2rem;
+          color: #222;
+          margin-bottom: 0;
+          @include phone {
+            font-size: 1.6rem;
           }
         }
         ul {
