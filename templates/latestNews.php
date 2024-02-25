@@ -1,6 +1,6 @@
 <?php
     $latestPosts = wp_get_recent_posts(array(
-        'numberposts' => 10, // Number of recent posts thumbnails to display
+        'numberposts' => 6, // Number of recent posts thumbnails to display
         'post_status' => 'publish', // Show only the published posts
         'category__not_in' => array(112)
     ));
@@ -16,50 +16,39 @@
   <div class="container">
     <?php get_template_part( 'templates/title', null, array( 'title' => 'naujienos' ) 
      ); ?>
-
     <div class="wrapper">
-      <div class="block">
-        <h3>Straipsniai</h3>
-        <div class="block__items">
-          <?php foreach ($latestPosts as $item) {   ?>
-          <a href="<?php echo get_permalink($item['ID']) ?>" class="block__card">
-            <div class="image">
-              <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
-            </div>
-            <div class="content">
-              <div class="title"> <?php echo $item['post_title'] ?> </div>
-              <div class="excerpt"><?php echo substr(get_excerpt_by_id($item['ID']),0,70).'...'; ?></div>
-            </div>
-          </a>
-          <?php } ?>
+
+      <?php foreach ($latestPosts as $item) {   ?>
+      <div class="card">
+        <a href="<?php echo get_permalink($item['ID']) ?>" class=" image">
+          <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
+        </a>
+        <div class="meta">
+          <?php 
+          // Get post categories
+          $categories = get_the_category($item['ID']);
+          if (!empty($categories)) {
+            echo '<span class="categories">';
+            foreach ($categories as $category) {
+              $cat_link = get_category_link($category->term_id);
+              echo '<a href="'.esc_url($cat_link).'" class="category-link">'.esc_html($category->name).'</a> ';
+            }
+            echo '</span>';
+          }
+        ?>
+          <div class="date">
+            <?php echo get_the_date('F j, Y', $item['ID']); ?>
+          </div>
+
         </div>
-        <div class="btn__holder">
-          <a href="#" class="btn">Visi straipsniai</a>
-        </div>
+
+
+        <a href="<?php echo get_permalink($item['ID']) ?>" class="title"> <?php echo $item['post_title'] ?> </a>
       </div>
-      <div class="block">
-        <h3>video</h3>
-        <div class="block__items">
-          <?php foreach ($latestVideos as $item) { ?>
-          <a href="<?php echo get_permalink($item['ID']) ?>" class="block__card">
-            <div class="image">
-              <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
-              <div class="icon">
-                <img width="20" height="20"
-                  src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/play.svg" alt="icon">
-              </div>
-            </div>
-            <div class="content">
-              <div class="title"> <?php echo $item['post_title'] ?> </div>
-              <div class="excerpt"><?php echo substr(get_excerpt_by_id($item['ID']),0,70).'...'; ?></div>
-            </div>
-          </a>
-          <?php } ?>
-        </div>
-        <div class="btn__holder">
-          <a href="#" class="btn">Visi video</a>
-        </div>
-      </div>
+      <?php } ?>
+    </div>
+    <div class="btn__holder">
+      <a href="https://www.matesklubas.lt/category/straipsniai/" class="btn">Visi straipsniai</a>
     </div>
   </div>
 </section>

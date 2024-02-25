@@ -75,7 +75,7 @@
 
   <?php do_action( 'storefront_before_site' ); ?>
 
-  <div id="page" class="hfeed site c-content">
+  <div id="page" class="hfeed site <?php if (!is_front_page() && !is_home()) echo 'c-content'; ?>">
 
     <?php if( !is_page_template( 'template-introduction.php' )) { ?>
 

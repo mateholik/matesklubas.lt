@@ -19,23 +19,27 @@ get_header(); ?>
     <div class="container">
       <div class="wrapper">
         <div class="wrapper__content">
-          <h1>Yerba mate - <br>ENERGIJA, NUOTAIKA IR SVEIKATA</h1>
+          <h1>
+            <span>
+              <img width="48" height="32"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
+              Yerba mate
+            </span>
+            ENERGIJA, NUOTAIKA IR SVEIKATA
+          </h1>
           <p>Pietų Amerikos gėrimas, pasižymintis kavos jėga, arbatos nauda ir šokolado suteikiama euforija.</p>
           <div class="btn__holder">
             <a href="https://www.matesklubas.lt/produkto-kategorija/kita/rinkiniai/" class="btn">išbandyti</a>
           </div>
         </div>
         <div class="wrapper__img">
-          <img class="desktop" width="390" height="404"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-desktop.png" alt="text-wrap">
-          <img class="mobile" width="130" height="248"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-mobile.png" alt="text-wrap">
+          <img width="390" height="404"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-desktop.png" alt="img">
         </div>
 
       </div>
     </div>
   </section>
-
   <section class="facts">
     <div class="container">
       <?php get_template_part( 'templates/title', null, array( 'title' => 'yerba mate privalumai' ) 
@@ -153,47 +157,50 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
   <section class="feature-product">
     <div class="container">
       <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
       <div class="wrapper">
         <div class="left">
+          <p><b>Nežinai nuo ko pradėti?</b> Atrask matės pasaulį su mūsų išskirtiniu rinkiniu, kuriame yra viskas, ko
+            reikia lengvai ir paprastai
+            mėgautis šiuo tonizuojančiu gėrimu.</p>
           <ul>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Pradėkite be rūpesčių:</span> rinkinyje yra viskas ko reikia pirmą kartą geriant matę.
+                <span>Pradėk be rūpesčių</span> Rinkinyje yra viskas ko reikia pirmą kartą geriant matę.
               </div>
             </li>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Degustuokite:</span> paragaukite net dviejų klasikinių matės rūšių iš skirtingų regionų ir
-                atraskite
-                skonių įvairovę.
+                <span>Tradiciniai gėrimo įrankiai</span> Komplekte esanti tradicinė moliūgo kalabasa ir ilgaamžė
+                nerūdijančio plieno bombilė užtikrins, kad mėgausies Yerba Mate arbata taip, kaip ir priklauso
+                tradiciniu budu.
               </div>
             </li>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Autentiškas ritualas</span> moliūgo kalabasoje paruošta matė atskleidžia gilų ir turtingą skonį,
-                leidžiantį patirti tradicinį matės gėrimo malonumą.
+                <span>Dviejų rūšių populiariausi variantai</span> Rinkinyje yra dvi populiariausios Yerba Matė
+                arbatos: Yerba Matė Taragui ir Yerba Matė Pajarito - kiekviena pasižymi unikaliu ir galingu skoniu,
+                suteikiančiu išskirtinę degustacijos patirtį.
               </div>
             </li>
             <li>
               <img width="30" height="30"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span> Greitas pristatymas</span> darbo dienomis pristatome per ~24 val. nuoužsakymo!
+                <span> Greitas pristatymas</span> Darbo dienomis pristatome per ~24 val. nuoužsakymo!
               </div>
             </li>
           </ul>
           <div class="btn__holder">
-            <a href="https://www.matesklubas.lt/produktas/klasikinis-mates-rinkinys-2/" class="btn">pirkti</a>
+            <a href="https://www.matesklubas.lt/produktas/klasikinis-mates-rinkinys-2/" class="btn">Plačiau</a>
           </div>
         </div>
         <div class="img">
@@ -203,9 +210,6 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
-  <?php get_template_part('templates/latestNews'); ?>
-
   <section class="categories">
     <div class="container">
       <?php get_template_part( 'templates/title', null, array( 'title' => 'prekių kategorijos' ) 
@@ -270,76 +274,7 @@ get_header(); ?>
     </div>
 
   </section>
-  <section class="help distortion-bg ">
-    <div class="container">
-      <div class="wrapper">
-        <div class="block">
-          <div class="top">
-            <?php get_template_part( 'templates/title', null, array( 'title' => 'negali išsirinkti?' ) ); ?>
-            <p>Matės pasaulyje esi naujokas? Nori išbandyti mate bei jos aksesuarus, bet nežinai ką išsirinkti? Atlik
-              testą ir gauk asmeninę rekomendaciją</p>
-          </div>
-          <div class="btn__holder">
-            <a href="<?php echo get_permalink( 330 ); ?>" class="btn">testas</a>
-          </div>
-        </div>
-        <div class="block">
-          <div class="top">
-            <?php get_template_part( 'templates/title', null, array( 'title' => 'visa informacija naujokui' ) ); ?>
-            <p>Kas per augalas ta matė? Kokios yra jos rūšys? Kodėl išvis verta ją gerti? Kuo skiriasi medinė ir moliūgo
-              kalabasa? Čia rasi trumpą ir aiškią informaciją, kuri padės tau pasinerti į matės pasaulį</p>
-          </div>
-          <div class="btn__holder">
-            <a href="<?php echo get_permalink( 681 ); ?>" class="btn">instrukcija</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="community" class="community">
-    <div class="container">
-      <?php get_template_part( 'templates/title', null, array( 'title' => 'tapk bendruomenės dalimi' ) ); ?>
-      <div class="wrapper">
-        <div class="contacts">
-          <p>Prisijunk prie svetainės ir rink nuolaidas mūsų el. parduotuvėje! <a
-              href="<?php echo get_permalink( 9 ); ?>">Prisijunk!</a></p>
-          <p>Užsisakyk naujienlaiškį ir gauk informaciją apie naujas prekes bei straipsnius! <a
-              href="#newsletter">užsisakyk!!</a>
-          </p>
-          <div class="social">
-            <div class="subtitle">Sekite mus!</div>
-            <a href="https://www.facebook.com/matesklubass" target="_blank" rel="noopener noreferrer">
-              <img width="24" height="24"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
-              Facebook puslapis
-            </a>
-            <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
-              <img width="24" height="24"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
-              Facebook grupė
-            </a>
-            <a href="https://www.instagram.com/matesklubas" target="_blank" rel="noopener noreferrer">
-              <img width="24" height="24"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="instagram-icon">
-              Instagram
-            </a>
-            <a href="https://www.youtube.com/channel/UCiL5qWJ7cer2tAvY7Y7sNwA" target="_blank"
-              rel="noopener noreferrer">
-              <img width="24" height="24"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
-              Youtube
-            </a>
-          </div>
-        </div>
-        <div class="image">
-          <img width="421" height="399" class="bg"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-community.jpeg" alt="fb-icon">
-          <img width="190" height="439" class="person"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/footbal-player.png" alt="fb-icon">
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('templates/latestNews'); ?>
 </div>
 
 <?php
