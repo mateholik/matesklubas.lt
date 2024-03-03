@@ -4,11 +4,6 @@
         'post_status' => 'publish', // Show only the published posts
         'category__not_in' => array(112)
     ));
-    $latestVideos = wp_get_recent_posts(array(
-      'post_type'=>'videos',
-      'numberposts' => 10, // Number of recent posts thumbnails to display
-      'post_status' => 'publish' // Show only the published posts
-    ))
 
   ?>
 
@@ -20,7 +15,7 @@
 
       <?php foreach ($latestPosts as $item) {   ?>
       <div class="card">
-        <a href="<?php echo get_permalink($item['ID']) ?>" class=" image">
+        <a href="<?php echo get_permalink($item['ID']) ?>" class="image">
           <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
         </a>
         <div class="meta">

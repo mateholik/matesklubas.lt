@@ -27,7 +27,7 @@
       <source media="(min-width: 769px)"
         srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-footer.svg">
       <source media="(max-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/no-img.jpg">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-footer.svg" alt="before">
+      <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-footer.svg" alt="before">
     </picture>
   </div>
   <div class="footer__top">
@@ -48,20 +48,23 @@
         <div class="menu about">
           <h3 class="footer__title">Sekite mus!</h3>
           <a href="https://www.facebook.com/matesklubass" target="_blank" rel="noopener noreferrer">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg"
+              alt="fb-icon">
             Facebook puslapis
           </a>
           <a href="https://www.facebook.com/groups/1098983160306904/" target="_blank" rel="noopener noreferrer">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="fb-icon">
+            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg"
+              alt="fb-icon">
             Facebook grupė
           </a>
           <a href="https://www.instagram.com/matesklubas" target="_blank" rel="noopener noreferrer">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg"
+            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg"
               alt="instagram-icon">
             Instagram
           </a>
           <a href="https://www.youtube.com/channel/UCiL5qWJ7cer2tAvY7Y7sNwA" target="_blank" rel="noopener noreferrer">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="youtube-icon">
+            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg"
+              alt="youtube-icon">
             Youtube
           </a>
         </div>
@@ -85,8 +88,9 @@
 
       </div>
       <div class="card-logos">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mastercard2.png" alt="text-wrap">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/visa2.png" alt="text-wrap">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mastercard2.png" alt="text-wrap"
+          loading="lazy">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/visa2.png" alt="text-wrap" loading="lazy">
       </div>
     </div>
   </div>

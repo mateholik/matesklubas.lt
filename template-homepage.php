@@ -162,41 +162,39 @@ get_header(); ?>
       <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
       <div class="wrapper">
         <div class="left">
-          <p class="bold">Nežinai nuo ko pradėti?</p>
-          <p> Atrask matės pasaulį su mūsų išskirtiniu rinkiniu, kuriame yra viskas, ko
+          <!-- <p class="bold">Nežinai nuo ko pradėti?</p> -->
+          <p>Nežinai nuo ko pradėti?
+            Atrask matės pasaulį su mūsų išskirtiniu rinkiniu, kuriame yra viskas, ko
             reikia lengvai ir paprastai
             mėgautis šiuo tonizuojančiu gėrimu.</p>
           <ul>
             <li>
-              <img width="30" height="30"
+              <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Pradėk be rūpesčių</span> Rinkinyje yra viskas ko reikia pirmą kartą geriant matę.
+                <span>Pradėk be rūpesčių</span>
               </div>
             </li>
             <li>
-              <img width="30" height="30"
+              <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Tradiciniai gėrimo įrankiai</span> Tradicinė moliūgo kalabasa ir ilgaamžė
-                nerūdijančio plieno bombilė užtikrins, kad mėgausies Yerba Mate arbata taip, kaip ir priklauso
-                tradiciniu budu.
+                <span>Tradicinė moliūgo kalabasa ir nerūdijančio plieno bombilė</span>
               </div>
             </li>
             <li>
-              <img width="30" height="30"
+              <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span>Dviejų rūšių populiariausi variantai</span> Dvi populiariausios Yerba Matė
-                arbatos: Yerba Matė Taragui ir Yerba Matė Pajarito - kiekviena pasižymi unikaliu ir galingu skoniu,
-                suteikiančiu išskirtinę degustacijos patirtį.
+                <span>Dvi populiariausios Yerba Matė
+                  arbatos</span>
               </div>
             </li>
             <li>
-              <img width="30" height="30"
+              <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
               <div>
-                <span> Greitas pristatymas</span> Darbo dienomis pristatome per ~24 val. nuoužsakymo!
+                <span> Greitas pristatymas</span>
               </div>
             </li>
           </ul>
@@ -205,7 +203,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="img">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ee.png" alt="mate">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ee.png" alt="mate">
 
         </div>
       </div>
@@ -216,7 +214,7 @@ get_header(); ?>
       <?php get_template_part( 'templates/title', null, array( 'title' => 'prekių kategorijos' ) 
      ); ?>
       <div class="wrapper">
-        <img width="1170" height="177" class="background"
+        <img width="1170" height="177" class="background" loading="lazy"
           src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cats.jpeg" alt="title-mob-wrap">
         <?php get_template_part('templates/category', null, array( 'category' => 'mate', 'title' => 'Matė arbatos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'kalabasos', 'title' => 'Kalabasos' )); ?>
@@ -229,10 +227,10 @@ get_header(); ?>
   <section id="newsletter" class="newsletter distortion-bg">
     <div class="container">
       <div class="section-title">
-        <img width="48" height="32"
+        <img width="48" height="32" loading="lazy"
           src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
         <h2>prenumeruoti naujienlaiškį</h2>
-        <img width="48" height="32"
+        <img width="48" height="32" loading="lazy"
           src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
       </div>
       <p>Gauk informaciją apie naujas prekes, naujus straipsnius bei video apžvalgas</p>

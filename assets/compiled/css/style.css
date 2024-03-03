@@ -3729,13 +3729,9 @@ ul.order_details {
     margin-bottom: 2.4rem;
   }
 }
-.homepage section.feature-product .wrapper .left .btn__holder {
-  margin-left: 3.2rem;
-}
 @media (max-width: 767px) {
   .homepage section.feature-product .wrapper .left .btn__holder {
     justify-content: center;
-    margin-left: 0;
   }
 }
 .homepage section.feature-product .wrapper .left li {
