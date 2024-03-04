@@ -38,11 +38,12 @@ header.header {
   .wrapper {
     @include center(space-between);
     .logo {
-      max-width: 20rem;
+      max-width: 14rem;
       width: 100%;
+      height: auto;
       padding: 0.4rem;
       @include tablet {
-        max-width: 14.4rem;
+        max-width: 12rem;
       }
     }
     nav.desktop {

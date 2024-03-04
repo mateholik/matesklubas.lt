@@ -195,7 +195,7 @@
         @include phone {
           position: absolute;
           width: 14rem;
-          right: -8.6rem;
+          right: -4.6rem;
           bottom: 0;
         }
         img {
@@ -888,6 +888,10 @@
         flex: 1;
         @include phone {
           margin-bottom: 2.4rem;
+        }
+        img {
+          width: 80%;
+          margin: 0 auto;
         }
       }
     }

@@ -413,13 +413,14 @@ header.header .wrapper {
   align-items: center;
 }
 header.header .wrapper .logo {
-  max-width: 20rem;
+  max-width: 14rem;
   width: 100%;
+  height: auto;
   padding: 0.4rem;
 }
 @media (max-width: 1023px) {
   header.header .wrapper .logo {
-    max-width: 14.4rem;
+    max-width: 12rem;
   }
 }
 @media (max-width: 1023px) {
@@ -2908,7 +2909,7 @@ ul.order_details {
   .homepage section.hero .wrapper__img {
     position: absolute;
     width: 14rem;
-    right: -8.6rem;
+    right: -4.6rem;
     bottom: 0;
   }
 }
@@ -3768,6 +3769,10 @@ ul.order_details {
   .homepage section.feature-product .wrapper .img {
     margin-bottom: 2.4rem;
   }
+}
+.homepage section.feature-product .wrapper .img img {
+  width: 80%;
+  margin: 0 auto;
 }
 .homepage section.facts .wrapper {
   display: flex;

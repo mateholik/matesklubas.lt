@@ -33,8 +33,8 @@ get_header(); ?>
           </div>
         </div>
         <div class="wrapper__img">
-          <img width="390" height="404"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-hipster-desktop.png" alt="img">
+          <img width="390" height="404" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-ppl.webp"
+            alt="img">
         </div>
 
       </div>
@@ -163,38 +163,30 @@ get_header(); ?>
       <div class="wrapper">
         <div class="left">
           <!-- <p class="bold">Nežinai nuo ko pradėti?</p> -->
-          <p>Nežinai nuo ko pradėti?
-            Atrask matės pasaulį su mūsų išskirtiniu rinkiniu, kuriame yra viskas, ko
-            reikia lengvai ir paprastai
-            mėgautis šiuo tonizuojančiu gėrimu.</p>
+          <p>Nežinai nuo ko pradėti? <br>
+            Rinkinyje yra viskas, ko
+            reikia kokybiškam startui!</p>
           <ul>
             <li>
               <img width="30" height="30" loading="lazy"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/check.svg" alt="romb">
               <div>
-                <span>Pradėk be rūpesčių</span>
+                <span>Tradicinė moliūgo kalabasa</span>
               </div>
             </li>
             <li>
               <img width="30" height="30" loading="lazy"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/check.svg" alt="romb">
               <div>
-                <span>Tradicinė moliūgo kalabasa ir nerūdijančio plieno bombilė</span>
+                <span>Nerūdijančio plieno bombilė</span>
               </div>
             </li>
             <li>
               <img width="30" height="30" loading="lazy"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/check.svg" alt="romb">
               <div>
-                <span>Dvi populiariausios Yerba Matė
+                <span>Dvi populiariausios Yerba Mate
                   arbatos</span>
-              </div>
-            </li>
-            <li>
-              <img width="30" height="30" loading="lazy"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon.png" alt="romb">
-              <div>
-                <span> Greitas pristatymas</span>
               </div>
             </li>
           </ul>
@@ -203,7 +195,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="img">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ee.png" alt="mate">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/rinkinys.webp" alt="mate">
 
         </div>
       </div>
