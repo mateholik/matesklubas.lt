@@ -1,5 +1,6 @@
 .sidebar {
   padding-right: 2.5rem;
+  margin-top: 1rem;
   &__text {
     line-height: 2.2rem;
     color: #272727;
@@ -22,8 +23,9 @@
       line-height: 3.5rem;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
+      transition-duration: 0.1s;
       &:hover {
-        transform: scale(1.01);
+        transform: translateX(0.1rem);
       }
       img {
         margin-right: 0.5rem;
@@ -31,8 +33,11 @@
         height: 2.4rem;
       }
     }
+    li {
+      transition-duration: 0.2s;
+    }
     li:hover {
-      transform: scale(1.01);
+      transform: translateX(0.1rem);
       color: $black;
     }
     li a {

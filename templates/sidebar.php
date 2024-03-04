@@ -1,7 +1,8 @@
 <div class="main__sidebar">
   <div class="sidebar">
-    <div class="choose">NEGALI IŠSIRINKTI?</div>
-    <a href="https://matesklubas.lt/negali-issirinkti/" class="sidebar__btn">ATLIK TESTĄ</a>
+    <!-- <div class="choose">NEGALI IŠSIRINKTI?</div>
+    <a href="https://matesklubas.lt/negali-issirinkti/" class="sidebar__btn">ATLIK TESTĄ</a> -->
+
     <div class="sidebar__block">
       <a href="https://matesklubas.lt/produkto-kategorija/mate/" class="sidebar__block-title">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
@@ -43,9 +44,6 @@
       </ul>
     </div>
     <div class="sidebar__block">
-      <div class="sidebar__block-title title-for-fb">
-        Sekite naujienas Facebook'e:
-      </div>
       <iframe target="_top"
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmatesklubass&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=969696006719798"
         width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
