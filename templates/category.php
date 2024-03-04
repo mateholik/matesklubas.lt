@@ -7,21 +7,21 @@
 <div class="category">
   <a href="<?php echo get_term_link( $parent, $taxonomy ); ?>" class="parent">
     <div class="image">
-      <img class="preview" width="192" height="192"
+      <img class="preview" width="192" height="192" loading="lazy"
         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/<?php echo $args['category'] ?>.png"
         alt="title-mob-wrap">
       <picture>
         <source media="(max-width: 768px)"
           srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-mobile.svg">
-        <img class="bg" width="279" height="192"
+        <img class="bg" width="279" height="192" loading="lazy"
           src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-<?php echo $args['category'] ?>-cat.svg"
           alt="title-mob-wrap">
       </picture>
     </div>
     <div class="subtitle">
-      <img class="subtitle__bg" width="279" height="80"
+      <img class="subtitle__bg" width="279" height="80" loading="lazy"
         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-title.svg" alt="title-mob-wrap">
-      <img class="subtitle__icon" width="22" height="22"
+      <img class="subtitle__icon" width="22" height="22" loading="lazy"
         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/<?php echo $args['category'] ?>.svg"
         alt="title-mob-wrap">
       <?php echo $args['title'] ?>
@@ -35,11 +35,12 @@
           $term_link = get_term_link( $term, $taxonomy ); ?>
       <li>
         <a href="<?php echo esc_url( $term_link ); ?>">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/<?php echo $args['category'] ?>.svg"
+          <img loading="lazy"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/<?php echo $args['category'] ?>.svg"
             alt="title-mob-wrap">
           <?php echo $term->name; ?>
           <?php if ($term->name === 'Rinkiniai') { ?>
-          <img class="star" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/star.svg"
+          <img loading="lazy" class="star" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/star.svg"
             alt="star icon">
           <?php } ?>
         </a>

@@ -254,6 +254,26 @@ p.no-comments {
   border-top: 6px solid #dadada;
 }
 
+.search form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.search input {
+  margin-bottom: 0 !important;
+}
+.search input[type=submit] {
+  display: block;
+  border-radius: 0.5rem;
+  margin-left: 0.6rem;
+}
+.search label {
+  width: 100%;
+}
+.search label input {
+  width: 100%;
+}
+
 html {
   font-size: 62.5%;
 }

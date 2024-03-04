@@ -225,12 +225,12 @@ function productsToggle() {
   var options = products.getElementsByClassName("options")[0].children;
   var results = products.getElementsByClassName("results")[0].children;
 
-  var _loop = function _loop(i) {
-    options[i].addEventListener("click", function () {
-      options[i].to;
+  var _loop = function _loop(_i) {
+    options[_i].addEventListener("click", function () {
+      options[_i].to;
 
       for (var j = 0; j < results.length; j++) {
-        if (j === i) {
+        if (j === _i) {
           results[j].style.display = "block";
           options[j].classList.add("active");
         } else {
@@ -241,9 +241,25 @@ function productsToggle() {
     });
   };
 
-  for (var i = 0; i < options.length; i++) {
-    _loop(i);
+  for (var _i = 0; _i < options.length; _i++) {
+    _loop(_i);
   }
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.getElementsByClassName("text")[0];
+
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 
 /***/ }),

@@ -6,7 +6,7 @@ function unHookHeader(){
     remove_action('storefront_header', 'storefront_social_icons', 10);
     remove_action('storefront_header', 'storefront_site_branding', 20);
     remove_action('storefront_header', 'storefront_secondary_navigation', 30);
-    remove_action('storefront_header', 'storefront_product_search', 40);
+    // remove_action('storefront_header', 'storefront_product_search', 40);
     remove_action('storefront_header', 'storefront_header_container_close', 41);
     remove_action('storefront_header', 'storefront_primary_navigation_wrapper', 42);
     remove_action('storefront_header', 'storefront_primary_navigation', 50);
@@ -37,35 +37,35 @@ function customHeader() {
 <!---->
 <!--        </div>-->
 <!--        <nav class="nav" style="background-image: url('--><?php //echo get_stylesheet_directory_uri(); ?>/*/assets/img/bg-nav.svg');">*/
-/*            <div class="container container--nav">*/
-/*                */<?php
+/* <div class="container container--nav">*/
+  /* */<?php
 //                wp_nav_menu( array(
 //                    'menu_class' => 'nav__ul',
 //                    'theme_location' => 'primary',
 //                    'container' => ''
 //                ) );
 //                ?>
-<!--                <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">-->
-<!--                    <div class="nav-icon" :class="{open: mobMenu}">-->
-<!--                        <div></div>-->
-<!--                    </div>-->
-<!--                    MENIU-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--                <div v-show="mobMenu" style="display: none;">-->
-<!--                    --><?php
+  <!--                <div v-on:click="mobMenu = !mobMenu" class="menu-btn-holder">-->
+  <!--                    <div class="nav-icon" :class="{open: mobMenu}">-->
+  <!--                        <div></div>-->
+  <!--                    </div>-->
+  <!--                    MENIU-->
+  <!--                </div>-->
+  <!--            </div>-->
+  <!---->
+  <!--                <div v-show="mobMenu" style="display: none;">-->
+  <!--                    --><?php
 //                    wp_nav_menu( array(
 //                        'menu_class' => 'nav__ul--mob',
 //                        'theme_location' => 'primary',
 //                        'container' => ''
 //                    ) );
 //                    ?>
-<!--                </div>-->
-<!---->
-<!--        </nav>-->
-<!--    </header>-->
-   <!--
+  <!--                </div>-->
+  <!---->
+  <!--        </nav>-->
+  <!--    </header>-->
+  <!--
     <div class="container container--nav">
        <div class="header__wrap">
            <div class="header__logo">
@@ -127,7 +127,7 @@ function customHeader() {
     <div class="container <?php if( !is_front_page()) echo 'container--cannabis'?>">    -->
 
 
-    <?php
+  <?php
 
 }
 add_action( 'storefront_header', 'customHeader', 1 );
@@ -160,4 +160,3 @@ function atg_menu_classes($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
-
