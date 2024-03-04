@@ -100,11 +100,11 @@
 </footer>
 </div><!-- #page -->
 
-<!-- Messenger Chat plugin Code -->
+
 <div id="fb-root"></div>
 
-<!-- Your Chat plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
+
+<!-- <div id="fb-customer-chat" class="fb-customerchat">
 </div>
 
 <script>
@@ -113,7 +113,6 @@ chatbox.setAttribute("page_id", "696622920756854");
 chatbox.setAttribute("attribution", "biz_inbox");
 </script>
 
-<!-- Your SDK code -->
 <script>
 window.fbAsyncInit = function() {
   FB.init({
@@ -130,7 +129,7 @@ window.fbAsyncInit = function() {
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-</script>
+</script> -->
 
 <?php }?>
 

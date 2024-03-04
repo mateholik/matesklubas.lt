@@ -15,7 +15,7 @@
 
       <?php foreach ($latestPosts as $item) {   ?>
       <div class="card">
-        <a href="<?php echo get_permalink($item['ID']) ?>" class="image">
+        <a aria-label="<?php echo $item['post_title'] ?>" href="<?php echo get_permalink($item['ID']) ?>" class="image">
           <?php echo get_the_post_thumbnail($item['ID'], 'home-news'); ?>
         </a>
         <div class="meta">
