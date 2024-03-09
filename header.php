@@ -21,7 +21,20 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600&display=swap"
     rel="stylesheet">
   <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
-  <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/safari-pinned-tab.svg"
+    color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+
+
   <?php
     $env = $_SERVER['SERVER_NAME'];
     if($env == 'matesklubas.lt') { ?>
