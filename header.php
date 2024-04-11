@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600&display=swap"
     rel="stylesheet">
   <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
+  <meta name="google-site-verification" content="5bWsF-vPCDybHkQRRrVH80Igro1qDZByhSJiOmyL3yI" />
 
   <link rel="apple-touch-icon" sizes="180x180"
     href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-touch-icon.png" />
@@ -99,7 +100,7 @@
       <div class="container">
         <div class="wrapper">
           <a href="<?php echo home_url(); ?>" class="logo">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
           </a>
           <nav class="desktop">
             <?php
