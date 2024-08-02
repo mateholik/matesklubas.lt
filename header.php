@@ -23,17 +23,7 @@
   <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
   <meta name="google-site-verification" content="5bWsF-vPCDybHkQRRrVH80Igro1qDZByhSJiOmyL3yI" />
 
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/safari-pinned-tab.svg"
-    color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
 
 
   <?php
