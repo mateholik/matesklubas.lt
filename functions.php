@@ -347,3 +347,16 @@ function mysite_filter_related_products( $related_product_ids ) {
 
     return $related_product_ids;
 }
+
+function move_out_of_stock_products_to_end( $query ) {
+    if ( ! is_admin() && $query->is_main_query() && ( is_shop() || is_product_category() || is_product_tag() ) ) {
+        
+        // Modify sorting order
+        $query->set( 'meta_key', '_stock_status' );
+        $query->set( 'orderby', array(
+            'meta_value' => 'ASC',  // Sort by stock status first
+            'menu_order' => 'ASC',  // Then use default menu order
+        ) );
+    }
+}
+add_action( 'pre_get_posts', 'move_out_of_stock_products_to_end' );
