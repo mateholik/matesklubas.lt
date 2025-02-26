@@ -69,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   color: #222;
   margin: 0;
 }
@@ -165,7 +165,7 @@ img {
   line-height: 3.5rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
 }
 .main__content {
   width: 100%;
@@ -957,7 +957,7 @@ ul.custom a.button {
   align-items: center;
   background: #f75d1b;
   color: #fff;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 3.3rem;
@@ -1136,7 +1136,7 @@ input[type=submit].alt,
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -1313,7 +1313,7 @@ ul.products li.product .btn-wrap .button {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -1430,7 +1430,7 @@ ul.products li.product .btn-wrap .button img {
 }
 
 .post__title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   font-style: normal;
   font-weight: 300;
   font-size: 4.2rem;
@@ -1573,7 +1573,7 @@ article.videos img {
   color: white;
 }
 .footer__title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   font-size: 2.4rem;
   line-height: 3.3rem;
   text-transform: uppercase;
@@ -1600,7 +1600,7 @@ article.videos img {
 .sidebar__text {
   line-height: 2.2rem;
   color: #272727;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   margin-bottom: 1rem;
 }
 .sidebar__btn {
@@ -1620,7 +1620,7 @@ article.videos img {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   margin: 0;
@@ -1655,7 +1655,7 @@ article.videos img {
   margin-bottom: 3rem;
 }
 .sidebar__block-title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   display: flex;
   align-items: center;
   font-weight: 300;
@@ -1761,7 +1761,7 @@ input[type=submit],
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -2512,7 +2512,7 @@ ul.order_details {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -2559,7 +2559,7 @@ ul.order_details {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   width: auto;
@@ -2607,7 +2607,7 @@ ul.order_details {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -2738,7 +2738,7 @@ ul.order_details {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   font-size: 2.2rem;
@@ -2955,7 +2955,7 @@ ul.order_details {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
 }
 .homepage section.news .wrapper .card .meta {
   display: flex;
@@ -3000,7 +3000,7 @@ ul.order_details {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   font-size: 2.2rem;
@@ -3115,7 +3115,7 @@ ul.order_details {
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: 0.2s;
 }
 @media (max-width: 1023px) {
@@ -3666,7 +3666,7 @@ ul.order_details {
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Rubik", serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   font-size: 2.2rem;
