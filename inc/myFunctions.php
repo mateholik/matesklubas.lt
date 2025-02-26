@@ -8,15 +8,29 @@ function getSubCategories($id, $where){
     );
     $list = get_terms( $args );
 
-    if($where === 'footer') {
-        foreach($list as $item) {
-            echo  '<a href="'. get_term_link($item->slug, 'product_cat') .'">'. $item->name .'</a>';
-        }
-    } else {
-        foreach($list as $item) {
-            echo  '<li><a href="'. get_term_link($item->slug, 'product_cat') .'">'. $item->name .'   <span>(' . $item->count  . ')</span></a></li>';
-        }
-    }
+  
+
+       // Get the current category being viewed
+       $current_term_id = get_queried_object_id();
+
+       if ($where === 'footer') {
+           foreach ($list as $item) {
+            if ($item->count > 0) { 
+                $active_class = ($item->term_id == $current_term_id) ? 'active-item' : '';
+                echo '<a href="' . get_term_link($item->slug, 'product_cat') . '" class="' . $active_class . '">' . $item->name . '</a>';
+            }
+            
+           }
+       } else {
+           foreach ($list as $item) {
+            if ($item->count > 0) { 
+                $active_class = ($item->term_id == $current_term_id) ? 'active-item' : '';
+                echo '<li><a href="' . get_term_link($item->slug, 'product_cat') . '" class="' . $active_class . '">' . $item->name . ' <span>(' . $item->count . ')</span></a></li>';
+            }
+             
+           }
+       }
+       
 }
 
 function categoryLink($catId) {
@@ -41,4 +55,3 @@ function productCustomTags($postID, $taxName, $pavadinimas){
     $output .= '</span>';
     echo $output;
 }
-

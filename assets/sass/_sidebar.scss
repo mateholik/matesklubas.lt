@@ -24,27 +24,33 @@
       text-transform: uppercase;
       margin-bottom: 1.5rem;
       transition-duration: 0.1s;
-      &:hover {
-        transform: translateX(0.1rem);
-      }
+
       img {
         margin-right: 0.5rem;
         width: 2.4rem;
         height: 2.4rem;
       }
     }
+
+    .active-item,
+    :hover {
+      color: #4bb852;
+      img {
+        filter: invert(58%) sepia(28%) saturate(619%) hue-rotate(63deg);
+      }
+    }
+
     li {
-      transition-duration: 0.2s;
-    }
-    li:hover {
-      transform: translateX(0.1rem);
-      color: $black;
-    }
-    li a {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 1.2rem;
-      color: #6d6d6d;
+      a {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+        color: #6d6d6d;
+      }
+      a.active-item,
+      a:hover {
+        color: #4bb852;
+      }
     }
   }
 }
