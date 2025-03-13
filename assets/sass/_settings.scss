@@ -54,7 +54,7 @@ textarea {
   max-height: 8rem;
 }
 a {
-  color: #2c2d33;
+  color: #373543;
 }
 p {
   margin: 0;
@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
   font-family: "Rubik", serif;
-  color: #222;
+  color: #373543;
   margin: 0;
 }
 h2 {
@@ -138,7 +138,7 @@ img {
 //  }
 //  &:hover {
 //    background: #304A0D;
-//    border-bottom: 0.3rem solid #222f0f;
+//    border-bottom: 0.3rem solid #373543f0f;
 //  }
 //  &:active {
 //    border: 0 solid;
@@ -295,4 +295,9 @@ p.no-comments {
       width: 100%;
     }
   }
+}
+
+body,
+.secondary-navigation a {
+  color: #373543;
 }
