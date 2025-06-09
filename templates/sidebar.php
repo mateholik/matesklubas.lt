@@ -51,7 +51,7 @@
       ?>
       <a href="https://matesklubas.lt/produkto-kategorija/kita/" class="sidebar__block-title <?php echo $is_active; ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/gift.svg" alt="kita">
-        KITA:
+        kitos prekės:
       </a>
       <ul>
         <?php getSubCategories($main_category_id, 'sidebar'); ?>

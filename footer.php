@@ -81,7 +81,7 @@
           <?php getSubCategories(16,'footer'); ?>
         </div>
         <div class="menu">
-          <h3 class="footer__title">KITA</h3>
+          <h3 class="footer__title">KITOS PREKĖS</h3>
           <?php getSubCategories(187,'footer'); ?>
         </div>
 

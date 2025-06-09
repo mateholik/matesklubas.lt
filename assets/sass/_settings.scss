@@ -19,6 +19,8 @@ $white: #fff;
 $orange: #f75d1b;
 $yellow: #fad728;
 $green: #4bb852;
+$h1h2Weight: 900;
+$headingsWeight: 700;
 
 html {
   font-size: 62.5%;
@@ -69,6 +71,12 @@ h6 {
   font-family: 'Rubik', serif;
   color: #373543;
   margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-weight: $h1h2Weight;
 }
 h2 {
   padding: 3rem 0;

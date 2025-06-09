@@ -102,28 +102,6 @@ ul.custom {
   }
 }
 
-//todo CIA PAKEIST
-ul.products li.product h2,
-ul.products li.product h3,
-ul.products li.product .woocommerce-loop-product__title,
-ul.products li.product .wc-block-grid__product-title,
-ul.products .wc-block-grid__product h2,
-ul.products .wc-block-grid__product h3,
-ul.products .wc-block-grid__product .woocommerce-loop-product__title,
-ul.products .wc-block-grid__product .wc-block-grid__product-title,
-.wc-block-grid__products li.product h2,
-.wc-block-grid__products li.product h3,
-.wc-block-grid__products li.product .woocommerce-loop-product__title,
-.wc-block-grid__products li.product .wc-block-grid__product-title,
-.wc-block-grid__products .wc-block-grid__product h2,
-.wc-block-grid__products .wc-block-grid__product h3,
-.wc-block-grid__products
-  .wc-block-grid__product
-  .woocommerce-loop-product__title,
-.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
-  font-size: 2rem;
-}
-
 .onsale {
   color: #fe191a;
   border-color: #fe191a;
@@ -171,9 +149,11 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
       line-height: 2.2rem;
       font-weight: 600;
       color: #373543;
+      text-transform: uppercase;
       a {
         font-weight: 400;
         display: inline-block !important;
+        text-transform: capitalize;
         &:hover {
           color: #4bb852;
           text-decoration: underline;
@@ -323,6 +303,7 @@ ul.products {
         font-family: 'Rubik', serif;
         text-transform: uppercase;
         padding: 0;
+        font-weight: 500 !important;
       }
       .price {
         color: #4bb852;

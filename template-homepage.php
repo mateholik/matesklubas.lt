@@ -398,7 +398,7 @@ get_header(); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'mate', 'title' => 'Matė arbatos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'kalabasos', 'title' => 'Kalabasos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'bombiles', 'title' => 'Bombilės' )); ?>
-        <?php get_template_part('templates/category', null, array( 'category' => 'kita', 'title' => 'Kita' )); ?>
+        <?php get_template_part('templates/category', null, array( 'category' => 'kita', 'title' => 'Kitos prekės' )); ?>
 
       </div>
     </div>
