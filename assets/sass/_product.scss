@@ -32,7 +32,7 @@ ul.custom {
     text-transform: uppercase;
     padding: 0 0.5rem !important;
     margin-bottom: 0 !important;
-    font-family: "Rubik", serif;
+    font-family: 'Rubik', serif;
   }
   .btn-wrap {
     padding: 1.5rem 2rem;
@@ -47,9 +47,9 @@ ul.custom {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $primaryColor;
+    background: $orange;
     color: $white;
-    font-family: "Rubik", serif;
+    font-family: 'Rubik', serif;
     font-weight: 300;
     font-size: 2rem;
     line-height: 3.3rem;
@@ -72,12 +72,12 @@ ul.custom {
   background-color: #fa9e39;
   color: $white;
   &:hover {
-    background-color: $secondaryColor;
+    background-color: $yellow;
     color: $white;
   }
 }
 .woocommerce-pagination .page-numbers li .page-numbers.current {
-  background-color: $secondaryColor;
+  background-color: $yellow;
   color: $white;
 }
 .woocommerce-products-header {
@@ -148,7 +148,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     color: #4bb852;
     margin: 1.5rem 0 !important;
     del {
-      color: $secondaryColor;
+      color: $yellow;
     }
   }
   //description
@@ -187,7 +187,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     display: flex;
     align-items: center;
     padding: 1rem 0;
-    color: $secondaryColor;
+    color: $yellow;
     img {
       margin-right: 0.5rem;
       max-width: 2.5rem;
@@ -223,12 +223,12 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
 }
 
 button.alt,
-input[type="button"].alt,
-input[type="reset"].alt,
-input[type="submit"].alt,
+input[type='button'].alt,
+input[type='reset'].alt,
+input[type='submit'].alt,
 .button.alt,
 .widget-area .widget a.button.alt {
-  @include button;
+  @include button($theme: green);
 }
 // description an comment tabs
 // .woocommerce-tabs ul.tabs {
@@ -271,7 +271,7 @@ input[type="submit"].alt,
     .value {
       margin-bottom: 0 !important;
       select {
-        background: $primaryColor;
+        background: $orange;
       }
     }
   }
@@ -320,7 +320,7 @@ ul.products {
       h2 {
         font-size: 1.6rem !important;
         margin-bottom: 0.8rem !important;
-        font-family: "Rubik", serif;
+        font-family: 'Rubik', serif;
         text-transform: uppercase;
         padding: 0;
       }
@@ -329,7 +329,7 @@ ul.products {
         font-size: 2rem;
         margin-bottom: 0;
         del {
-          color: $secondaryColor;
+          color: $yellow;
         }
       }
       .star-rating span:before,
@@ -341,9 +341,9 @@ ul.products {
       #payment
         .payment_methods
         li
-        input[type="radio"]:first-child:checked
+        input[type='radio']:first-child:checked
         + label:before {
-        color: $primaryColor;
+        color: $orange;
       }
     }
     .btn-wrap {
@@ -351,7 +351,8 @@ ul.products {
       border: 0.1rem solid #f2f2f2;
       border-top: none;
       .button {
-        @include button;
+        @include button($theme: green);
+        font-size: 1.8rem;
       }
     }
   }

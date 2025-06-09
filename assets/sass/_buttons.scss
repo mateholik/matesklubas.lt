@@ -1,4 +1,4 @@
-@mixin button($lander: false, $theme: primary, $size: normal) {
+@mixin button($theme: orange, $size: normal) {
   outline: none;
   user-select: none;
   display: flex;
@@ -6,28 +6,29 @@
   align-items: center;
   color: $white;
   height: unset;
-  @if $theme == primary {
-    background-color: $primaryColor;
-  } @else {
-    background-color: $secondaryColor;
+  @if $theme == orange {
+    background-color: $orange;
+  } @else if $theme == yellow {
+    background-color: $yellow;
+  } @else if $theme == green {
+    background-color: $green;
   }
   font-size: 2rem;
   padding: 1rem 2rem;
   text-transform: uppercase;
   line-height: 3.2rem;
   font-weight: 600;
-  font-family: "Rubik", serif;
+  font-family: 'Rubik', serif;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   border-radius: 1.4rem;
-  @if $lander {
+  @if $size == large {
     font-size: 2.6rem;
     padding: 2rem 3rem;
-    // @if $theme == primary {
-    //   box-shadow: 0 0.5rem 0.2rem -0.2rem darken($primaryColor, 5%);
-    // } @else {
-    //   box-shadow: 0 0.5rem 0.2rem -0.2rem darken($secondaryColor, 5%);
-    // }
+    img {
+      margin: 0 !important;
+      margin-left: 1.4rem !important;
+    }
   }
   @include phone {
     border-radius: 0.8rem;
@@ -42,10 +43,12 @@
     }
   }
   &:hover {
-    @if $theme == primary {
-      background: darken($primaryColor, 5%);
-    } @else {
-      background: darken($secondaryColor, 5%);
+    @if $theme == orange {
+      background: darken($orange, 5%);
+    } @else if $theme == yellow {
+      background: darken($yellow, 5%);
+    } @else if $theme == green {
+      background: darken($green, 5%);
     }
     color: $white;
   }
@@ -53,9 +56,17 @@
     box-shadow: none;
   }
   img {
+    @if $size == large {
+      margin-left: 1.4rem;
+      @include phone {
+        margin-left: 1rem;
+      }
+    } @else {
+      margin: 0 0.8rem 0 0 !important;
+    }
     width: 2.4rem;
     height: 2.4rem;
-    margin: 0 0.8rem 0 0 !important;
+
     @include phone {
       width: 1.6rem;
       height: 1.6rem;
@@ -64,5 +75,5 @@
 }
 
 .button.loading:hover {
-  background: $primaryColor;
+  background: $orange;
 }

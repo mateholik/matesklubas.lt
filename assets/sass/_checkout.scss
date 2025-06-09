@@ -1,11 +1,11 @@
 //form inputs
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea,
 .input-text {
   transition: all 0.2s;
@@ -36,12 +36,12 @@ textarea,
 //sheckout btns
 //checkout btns
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
 .button,
 .widget a.button {
-  @include button;
+  @include button($theme: green);
 }
 
 //woo messages
@@ -171,9 +171,9 @@ p.stars a:after,
 #payment
   .payment_methods
   li
-  input[type="radio"]:first-child:checked
+  input[type='radio']:first-child:checked
   + label:before {
-  color: $primaryColor;
+  color: $orange;
 }
 //stripe end
 

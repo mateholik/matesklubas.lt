@@ -29,7 +29,7 @@
       right: -28px;
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 100%;
@@ -39,7 +39,7 @@
       border-width: 5px;
     }
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       top: 100%;
@@ -57,7 +57,7 @@
     display: inline-block;
     margin: 0;
     transform: rotate(45deg);
-    background: $secondaryColor;
+    background: $yellow;
     color: white;
     position: absolute;
     top: 11px;
@@ -71,7 +71,7 @@
       right: -28px;
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 100%;
@@ -81,7 +81,7 @@
       border-width: 5px;
     }
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       top: 100%;

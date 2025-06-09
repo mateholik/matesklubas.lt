@@ -184,7 +184,10 @@ get_header(); ?>
             </li>
           </ul>
           <div class="btn__holder">
-            <a href="https://www.matesklubas.lt/produktas/klasikinis-mates-rinkinys-2/" class="btn">Plačiau</a>
+            <a href="https://www.matesklubas.lt/produktas/klasikinis-mates-rinkinys-2/" class="btn">Plačiau  
+               <img width="30" height="30" class="arrow"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/arrow-right.svg"
+                alt="product background"></a>
           </div>
         </div>
         <div class="img">
