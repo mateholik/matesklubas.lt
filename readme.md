@@ -1,0 +1,1 @@
+- When JS and SCSS are compiled, they are stored in 'dist' folder. When updated prod, dont fotget to upload 'dist' folder to server
