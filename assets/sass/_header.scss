@@ -5,6 +5,7 @@ header.header {
   width: 100%;
   z-index: 99999;
   background: $black;
+
   .container {
     background: $black;
     position: relative;
@@ -38,12 +39,12 @@ header.header {
   .wrapper {
     @include center(space-between);
     .logo {
-      max-width: 18rem;
+      max-width: 14rem;
       width: 100%;
       height: auto;
-      padding: 0.4rem;
+      margin: 1rem 0;
       @include tablet {
-        max-width: 14rem;
+        max-width: 11rem;
       }
     }
     nav.desktop {
@@ -63,7 +64,7 @@ header.header {
               padding: 1.6rem 1.8rem;
             }
             &:before {
-              content: "";
+              content: '';
               position: absolute;
               bottom: 0.4rem;
               left: 3.2rem;
@@ -116,6 +117,7 @@ header.header {
               margin-bottom: 3.2rem;
               font-size: 2.2rem;
               font-weight: 600;
+              text-transform: uppercase;
             }
             ul {
               li {
@@ -154,14 +156,16 @@ header.header {
               margin-bottom: 3.2rem;
               font-size: 2.2rem;
               font-weight: 600;
+              text-transform: uppercase;
             }
             ul.level-0 > li {
               & > a {
                 position: relative;
-                color: #eb9365;
+                color: #f6e0b8;
+                text-transform: uppercase;
                 &:before {
                   position: absolute;
-                  content: "";
+                  content: '';
                   left: -28px;
                   top: 4px;
                   width: 2rem;
@@ -174,16 +178,16 @@ header.header {
                 }
               }
               &:nth-child(1) > a:before {
-                background-image: url("./../../img/icons/daigelis.svg");
+                background-image: url('./../../img/icons/daigelis.svg');
               }
               &:nth-child(2) > a:before {
-                background-image: url("./../../img/icons/kalabasas.svg");
+                background-image: url('./../../img/icons/kalabasas.svg');
               }
               &:nth-child(3) > a:before {
-                background-image: url("./../../img/icons/bombiles.svg");
+                background-image: url('./../../img/icons/bombiles.svg');
               }
               &:nth-child(4) > a:before {
-                background-image: url("./../../img/icons/ajavaska.svg");
+                background-image: url('./../../img/icons/ajavaska.svg');
               }
             }
             & > ul {
@@ -192,7 +196,7 @@ header.header {
 
               & > li {
                 flex: 1;
-                padding-left: 2.8rem;
+                padding-right: 2.8rem;
                 &:nth-child(5) {
                   display: none;
                 }
@@ -276,13 +280,13 @@ header.header {
           top: 50%;
           transform: translateY(-50%) rotate(180deg);
           right: 0;
-          content: "";
+          content: '';
           width: 1.6rem;
           height: 1.6rem;
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
-          background-image: url("./../../img/icons/arrow.svg");
+          background-image: url('./../../img/icons/arrow.svg');
           transition: 200ms;
         }
       }
@@ -295,7 +299,7 @@ header.header {
         position: relative;
         &:before {
           position: absolute;
-          content: "";
+          content: '';
           left: -24px;
           top: 50%;
           transform: translateY(-50%);
@@ -309,16 +313,16 @@ header.header {
         }
       }
       &:nth-child(1) > a:before {
-        background-image: url("./../../img/icons/daigelis.svg");
+        background-image: url('./../../img/icons/daigelis.svg');
       }
       &:nth-child(2) > a:before {
-        background-image: url("./../../img/icons/kalabasas.svg");
+        background-image: url('./../../img/icons/kalabasas.svg');
       }
       &:nth-child(3) > a:before {
-        background-image: url("./../../img/icons/bombiles.svg");
+        background-image: url('./../../img/icons/bombiles.svg');
       }
       &:nth-child(4) > a:before {
-        background-image: url("./../../img/icons/ajavaska.svg");
+        background-image: url('./../../img/icons/ajavaska.svg');
       }
     }
     .sub-menu > li > .sub-menu {
@@ -349,7 +353,7 @@ header.header {
 
         &:before {
           position: absolute;
-          content: "+" !important;
+          content: '+' !important;
           left: -24px;
           top: 50%;
           transform: translateY(-50%);
@@ -377,14 +381,14 @@ header.header {
     .cta {
       width: 6.4rem;
       height: 4.4rem;
-      background-image: url("./../../img/cart-bg.png");
+      background-image: url('./../../img/cart-bg.png');
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       @include tablet {
         width: 14.2rem;
         height: 4.4rem;
-        background-image: url("./../../img/cart-bg-mobile.png");
+        background-image: url('./../../img/cart-bg-mobile.png');
       }
       a {
         width: 100%;
@@ -496,7 +500,7 @@ header.header {
     padding-left: 3rem !important;
     position: relative;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0.7rem;
       left: 0;
@@ -505,7 +509,7 @@ header.header {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url("./../../img/icons/star.svg");
+      background-image: url('./../assets/img/icons/star.svg');
     }
     img {
       width: 2.4rem;

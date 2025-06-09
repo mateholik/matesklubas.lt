@@ -4,8 +4,8 @@
     position: relative;
     &:before {
       position: absolute;
-      content: "";
-      background-image: url("./../../img/bg-distortion.svg");
+      content: '';
+      background-image: url('./../../img/bg-distortion.svg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -18,8 +18,8 @@
     }
     &:after {
       position: absolute;
-      content: "";
-      background-image: url("./../../img/bg-distortion.svg");
+      content: '';
+      background-image: url('./../../img/bg-distortion.svg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -55,7 +55,7 @@
         text-transform: uppercase;
         padding: 0 1.6rem;
         text-align: center;
-        font-family: "Rubik", serif;
+        font-family: 'Rubik', serif;
 
         @include phone {
           font-size: 2.4rem;
@@ -91,7 +91,7 @@
   //   //   height: 100%;
   //   //   width: 50%;
   //   //   z-index: -2;
-  //   //   background-color: #eb9365;
+  //   //   background-color: #f75d1b;
   //   //   @include tablet {
   //   //     display: none;
   //   //   }
@@ -333,7 +333,7 @@
           font-size: 2rem;
           text-transform: uppercase;
           font-weight: 600;
-          font-family: "Rubik", serif;
+          font-family: 'Rubik', serif;
         }
         .meta {
           display: flex;
@@ -395,10 +395,11 @@
       .image {
         position: relative;
         .preview {
-          max-width: 19.2rem;
+          aspect-ratio: 1 / 1;
+          object-fit: contain;
           margin: 0 auto;
           @include tablet {
-            max-width: 15rem;
+            max-width: 18rem;
           }
         }
         .bg {
@@ -418,7 +419,7 @@
       .subtitle {
         font-weight: 900;
         text-transform: uppercase;
-        font-family: "Rubik", serif;
+        font-family: 'Rubik', serif;
         padding: 2.4rem 0;
         font-size: 2.4rem;
         text-align: center;
@@ -448,7 +449,7 @@
       }
       &:hover {
         .subtitle {
-          transform: translatey(-0.2rem);
+          transform: translateX(0.2rem);
         }
       }
     }
@@ -542,12 +543,13 @@ section.newsletter {
     @include phone {
       display: block;
     }
-    input[type="email"] {
+    input[type='email'] {
       max-width: 68rem;
       width: 100%;
       background: $white;
       margin-right: 3.2rem;
       height: 5.6rem;
+      border-radius: 1.4rem;
       @include phone {
         margin-right: 0;
         margin-bottom: 2.4rem;
@@ -569,7 +571,7 @@ section.newsletter {
     background: white;
     margin-bottom: 2rem;
   }
-  input[type="email"] {
+  input[type='email'] {
     border-radius: 0;
     margin-bottom: 0;
   }
@@ -864,7 +866,7 @@ section.products {
       margin-top: 1.2rem;
     }
     .btn {
-      @include button($lander: true, $theme: secondary);
+      @include button($lander: true, $theme: secondary, $size: small);
     }
   }
   ul.products li.product {
@@ -876,6 +878,17 @@ section.products {
   }
 }
 section.feature-product {
+  .description {
+    font-size: 2rem;
+    color: #373543;
+    @include phone {
+      font-size: 1.6rem;
+    }
+    @include phone {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  }
   .wrapper {
     display: flex;
     align-items: center;

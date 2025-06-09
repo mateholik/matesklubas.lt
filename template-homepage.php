@@ -155,13 +155,10 @@ get_header(); ?>
   <section class="feature-product">
     <div class="container">
       <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
-      <div class="description">Nežinai nuo ko pradėti? Rinkinyje yra viskas, ko reikia kokybiškam startui!</div>
+      <div class="description">Nežinai nuo ko pradėti? <br> Rinkinyje yra viskas, ko reikia kokybiškam startui!</div>
       <div class="wrapper">
         <div class="left">
-          <p class="bold">Nežinai nuo ko pradėti?</p>
-          <p>
-            Rinkinyje yra viskas, ko
-            reikia kokybiškam startui!</p>
+       
           <ul>
             <li>
               <img width="30" height="30" loading="lazy"
@@ -408,7 +405,7 @@ get_header(); ?>
       <div class="section-title">
         <img width="48" height="32" loading="lazy"
           src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
-        <h2>prenumeruoti naujienlaiškį</h2>
+        <h2>Naujienlaiškis</h2>
         <img width="48" height="32" loading="lazy"
           src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/title-icon-mate.png" alt="romb">
       </div>

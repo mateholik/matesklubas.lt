@@ -7,19 +7,11 @@
 <div class="category">
   <a href="<?php echo get_term_link( $parent, $taxonomy ); ?>" class="parent">
     <div class="image">
-      <img class="preview" width="192" height="192" loading="lazy"
+      <img class="preview" width="263" height="263" loading="lazy"
         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/<?php echo $args['category'] ?>.png"
-        alt="title-mob-wrap">
-      <!-- <picture>
-        <source media="(max-width: 768px)"
-          srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-cat-mobile.svg">
-        <img class="bg" width="279" height="192" loading="lazy"
-          src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-<?php echo $args['category'] ?>-cat.svg"
-          alt="title-mob-wrap">
-      </picture> -->
+        alt="category image">
     </div>
     <div class="subtitle">
-
       <?php echo $args['title'] ?>
     </div>
   </a>

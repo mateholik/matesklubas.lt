@@ -23,19 +23,23 @@ Images License: GNU General Public License v2 or later
  * Add your own custom css below this text.
  */
 
-@import "settings";
-@import "hamburger";
-@import "buttons";
-@import "header";
-@import "custom";
-@import "product";
-@import "posts";
-@import "contact";
-@import "footer";
-@import "sidebar";
-@import "checkout";
-@import "about";
-@import "quiz";
-@import "badge";
-@import "woo";
-@import "homepage";
+@import 'settings';
+@import 'hamburger';
+@import 'buttons';
+@import 'header';
+@import 'custom';
+@import 'product';
+@import 'posts';
+@import 'contact';
+@import 'footer';
+@import 'sidebar';
+@import 'checkout';
+@import 'about';
+@import 'quiz';
+@import 'badge';
+@import 'woo';
+@import 'homepage';
+
+#wpadminbar {
+  display: none !important;
+}
