@@ -1,5 +1,5 @@
 {
-    "/assets/compiled/js/main.js": "/assets/compiled/js/main.js",
-    "/assets/compiled/js/product.js": "/assets/compiled/js/product.js",
-    "/assets/compiled/css/style.css": "/assets/compiled/css/style.css"
+    "/dist/main.js": "/dist/main.js",
+    "/dist/product.js": "/dist/product.js",
+    "/dist/style.css": "/dist/style.css"
 }
