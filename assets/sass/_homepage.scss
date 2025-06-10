@@ -89,7 +89,7 @@
     @include phone {
       margin-bottom: 6.4rem;
       min-width: auto;
-      padding-top: 5rem;
+      padding-top: 10rem;
     }
     @include tablet {
       min-height: 58rem;
@@ -251,7 +251,8 @@
   section.categories {
     padding: 9.6rem 0;
     @include phone {
-      padding-bottom: 6.4rem 0;
+      padding-bottom: 6.4rem;
+      margin-bottom: 0;
     }
     background-color: #fcf9f3;
     .wrapper {
@@ -272,9 +273,11 @@
     flex-direction: column;
     align-items: center;
     @include phone {
-      max-width: 46rem;
       margin: 0 auto;
       margin-bottom: 4.4rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
     .parent {
       .image {
@@ -284,7 +287,7 @@
           object-fit: contain;
           margin: 0 auto;
           @include tablet {
-            max-width: 18rem;
+            max-width: 32rem;
           }
         }
         .bg {
@@ -339,13 +342,8 @@
       }
     }
     .children {
-      display: flex;
-      justify-content: center;
-      max-width: 14rem;
-      width: 100%;
-
-      a {
-        @include center(flex-start, center);
+      li a {
+        @include center(center, center);
         font-size: 2rem;
         margin-bottom: 1.6rem;
         transition: 0.2s;
@@ -355,6 +353,7 @@
         @include phone {
           font-size: 1.8rem;
         }
+
         img {
           width: 1.8rem;
           margin-right: 0.8rem;
@@ -734,8 +733,9 @@ section.products {
       color: #747474;
       font-size: 2rem;
       font-weight: 600;
+      text-transform: uppercase;
       @include phone {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 0 0.8rem;
       }
     }
