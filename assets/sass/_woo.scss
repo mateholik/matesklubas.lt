@@ -225,3 +225,8 @@ ul.order_details {
 #payment .place-order .button {
   font-size: 2rem;
 }
+
+//after adding product to cart, message appears, add underline to cart link
+.woocommerce-message .button {
+  text-decoration: underline;
+}
