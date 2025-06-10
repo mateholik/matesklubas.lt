@@ -126,7 +126,7 @@ ul.custom {
     color: #4bb852;
     margin: 1.5rem 0 !important;
     del {
-      color: $yellow;
+      color: $orange;
     }
   }
   //description
@@ -310,7 +310,7 @@ ul.products {
         font-size: 2rem;
         margin-bottom: 0;
         del {
-          color: $yellow;
+          color: $orange;
         }
       }
       .star-rating span:before,
@@ -324,7 +324,7 @@ ul.products {
         li
         input[type='radio']:first-child:checked
         + label:before {
-        color: $orange;
+        color: $yellow;
       }
     }
     .btn-wrap {
