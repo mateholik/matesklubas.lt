@@ -69,15 +69,15 @@ ul.custom {
 
 //pagination
 .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
-  background-color: #fa9e39;
+  background-color: $yellow;
   color: $white;
   &:hover {
-    background-color: $yellow;
+    background-color: $orange;
     color: $white;
   }
 }
 .woocommerce-pagination .page-numbers li .page-numbers.current {
-  background-color: $yellow;
+  background-color: $orange;
   color: $white;
 }
 .woocommerce-products-header {
@@ -166,7 +166,7 @@ ul.custom {
     display: flex;
     align-items: center;
     padding: 1rem 0;
-    color: $yellow;
+    color: $orange;
     img {
       margin-right: 0.5rem;
       max-width: 2.5rem;
