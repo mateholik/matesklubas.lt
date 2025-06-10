@@ -40,6 +40,6 @@ Images License: GNU General Public License v2 or later
 @import 'woo';
 @import 'homepage';
 
-#wpadminbar {
-  display: none !important;
+.page-header {
+  margin-bottom: 64px;
 }

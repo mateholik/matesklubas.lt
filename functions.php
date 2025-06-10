@@ -347,3 +347,13 @@ function mysite_filter_related_products( $related_product_ids ) {
 
     return $related_product_ids;
 }
+
+
+function remove_category_prefix_from_title($title) {
+    if (is_category()) { // Check if the current page is a category archive
+        $title = single_cat_title('', false); // Return just the category name
+    }
+    return $title;
+}
+
+add_filter('get_the_archive_title', 'remove_category_prefix_from_title');
