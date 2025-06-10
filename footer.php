@@ -88,9 +88,9 @@
 
       </div>
       <div class="card-logos">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mastercard2.png" alt="text-wrap"
+        <img width="50" height="36" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/mastercard2.png" alt="text-wrap"
           loading="lazy">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/visa2.png" alt="text-wrap" loading="lazy">
+        <img width="50" height="17" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/visa2.png" alt="text-wrap" loading="lazy">
       </div>
     </div>
   </div>
