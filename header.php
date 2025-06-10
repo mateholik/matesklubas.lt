@@ -31,7 +31,13 @@
   <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
   <meta name="google-site-verification" content="5bWsF-vPCDybHkQRRrVH80Igro1qDZByhSJiOmyL3yI" />
 
-  <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
+  <!-- <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" /> -->
+
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/site.webmanifest" />
 
 
   <?php
@@ -98,7 +104,7 @@
       <div class="container">
         <div class="wrapper">
           <a href="<?php echo home_url(); ?>" class="logo">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
+            <img width="140" height="49" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
           </a>
           <nav class="desktop">
             <?php

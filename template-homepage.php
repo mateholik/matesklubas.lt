@@ -191,7 +191,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="img">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/rinkinys.webp" alt="mate">
+          <img loading="lazy" width="585" height="436" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/rinkinys.webp" alt="mate">
 
         </div>
       </div>
