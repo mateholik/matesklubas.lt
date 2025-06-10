@@ -149,7 +149,6 @@ ul.custom {
       line-height: 2.2rem;
       font-weight: 600;
       color: #373543;
-      text-transform: uppercase;
       a {
         font-weight: 400;
         display: inline-block !important;
@@ -289,6 +288,8 @@ ul.products {
     }
     & > a {
       border: 0.1rem solid #f2f2f2;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
       padding: 2.4rem 1rem 1.6rem;
       display: block;
       height: 100%;
@@ -318,12 +319,7 @@ ul.products {
       .quantity .minus,
       p.stars a:hover:after,
       p.stars a:after,
-      .star-rating span:before,
-      #payment
-        .payment_methods
-        li
-        input[type='radio']:first-child:checked
-        + label:before {
+      .star-rating span:before {
         color: $yellow;
       }
     }
@@ -331,6 +327,8 @@ ul.products {
       padding: 1.6rem;
       border: 0.1rem solid #f2f2f2;
       border-top: none;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       .button {
         @include button($theme: green);
         font-size: 1.8rem;

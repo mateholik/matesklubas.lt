@@ -14,7 +14,7 @@ header.header {
     //   content: "";
     //   top: 0;
     //   left: 0;
-    //   background-image: url("./../../img/header-bg.svg");
+    //   background-image: url("./../assets/img/header-bg.svg");
     //   background-size: cover;
     //   background-position: center;
     //   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ header.header {
     //   content: "";
     //   top: 0;
     //   right: 0;
-    //   background-image: url("./../../img/header-bg.svg");
+    //   background-image: url("./../assets/img/header-bg.svg");
     //   background-size: cover;
     //   background-position: center;
     //   background-repeat: no-repeat;
@@ -177,18 +177,18 @@ header.header {
                     hue-rotate(332deg) brightness(95%) contrast(93%);
                 }
               }
-              &:nth-child(1) > a:before {
-                background-image: url('./../../img/icons/daigelis.svg');
-              }
-              &:nth-child(2) > a:before {
-                background-image: url('./../../img/icons/kalabasas.svg');
-              }
-              &:nth-child(3) > a:before {
-                background-image: url('./../../img/icons/bombiles.svg');
-              }
-              &:nth-child(4) > a:before {
-                background-image: url('./../../img/icons/ajavaska.svg');
-              }
+              // &:nth-child(1) > a:before {
+              //   background-image: url('./../assets/img/icons/daigelis.svg');
+              // }
+              // &:nth-child(2) > a:before {
+              //   background-image: url('./../assets/img/icons/kalabasas.svg');
+              // }
+              // &:nth-child(3) > a:before {
+              //   background-image: url('./../assets/img/icons/bombiles.svg');
+              // }
+              // &:nth-child(4) > a:before {
+              //   background-image: url('./../assets/img/icons/ajavaska.svg');
+              // }
             }
             & > ul {
               @include center(space-between, flex-start);
@@ -286,7 +286,7 @@ header.header {
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
-          background-image: url('./../../img/icons/arrow.svg');
+          background-image: url('./../assets/img/icons/arrow.svg');
           transition: 200ms;
         }
       }
@@ -313,16 +313,16 @@ header.header {
         }
       }
       &:nth-child(1) > a:before {
-        background-image: url('./../../img/icons/daigelis.svg');
+        background-image: url('./../assets/img/icons/daigelis.svg');
       }
       &:nth-child(2) > a:before {
-        background-image: url('./../../img/icons/kalabasas.svg');
+        background-image: url('./../assets/img/icons/kalabasas.svg');
       }
       &:nth-child(3) > a:before {
-        background-image: url('./../../img/icons/bombiles.svg');
+        background-image: url('./../assets/img/icons/bombiles.svg');
       }
       &:nth-child(4) > a:before {
-        background-image: url('./../../img/icons/ajavaska.svg');
+        background-image: url('./../assets/img/icons/ajavaska.svg');
       }
     }
     .sub-menu > li > .sub-menu {
@@ -381,14 +381,14 @@ header.header {
     .cta {
       width: 6.4rem;
       height: 4.4rem;
-      background-image: url('./../../img/cart-bg.png');
+      background-image: url('./../assets/img/cart-bg.png');
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       @include tablet {
         width: 14.2rem;
         height: 4.4rem;
-        background-image: url('./../../img/cart-bg-mobile.png');
+        background-image: url('./../assets/img/cart-bg-mobile.png');
       }
       a {
         width: 100%;
