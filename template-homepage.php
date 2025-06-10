@@ -155,10 +155,10 @@ get_header(); ?>
   <section class="feature-product">
     <div class="container">
       <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
-      <div class="description">Nežinai nuo ko pradėti? <br> Rinkinyje yra viskas, ko reikia kokybiškam startui!</div>
+    
       <div class="wrapper">
         <div class="left">
-       
+         <div class="description">Nežinai nuo ko pradėti? <br> Rinkinyje yra viskas, ko reikia kokybiškam startui!</div>
           <ul>
             <li>
               <img width="30" height="30" loading="lazy"
