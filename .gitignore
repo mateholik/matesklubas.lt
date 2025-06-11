@@ -4,3 +4,4 @@ package-lock.json
 .DS_Store
 test_woo_templates
 test_storefront
+/dist

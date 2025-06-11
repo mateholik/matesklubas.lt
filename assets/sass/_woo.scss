@@ -33,7 +33,7 @@ ul.order_details {
   display: block;
 }
 .woocommerce-invalid #checkout-checkbox {
-  outline: 2px solid $secondaryColor;
+  outline: 2px solid $yellow;
 }
 .mycheckbox {
   padding-bottom: 2rem;
@@ -66,7 +66,7 @@ ul.order_details {
   }
 }
 .kuponas {
-  background: $primaryColor;
+  background: $orange;
 }
 
 /* winter */
@@ -107,7 +107,7 @@ ul.order_details {
   }
 }
 .lang-switcher-desk img {
-  width: auto;
+  width: 3rem;
   margin-right: 0.4rem !important;
 }
 .lang-switcher-mob {
@@ -115,7 +115,7 @@ ul.order_details {
   padding: 1.5rem;
 }
 .lang-switcher-mob img {
-  width: auto;
+  width: 3rem;
   margin-right: 0.8rem !important;
 }
 
@@ -137,7 +137,7 @@ ul.order_details {
 .title-for-fb {
   text-transform: none;
   font-size: 2rem;
-  color: #2c2d33;
+  color: #373543;
 }
 .term-description {
   margin-top: 15px;
@@ -152,14 +152,14 @@ ul.order_details {
 .added_to_cart.alt:hover,
 .added_to_cart:hover,
 .widget a.button.checkout:hover {
-  background-color: darken($secondaryColor, 5%) !important;
+  background-color: darken($yellow, 5%) !important;
 }
 
 //cart in nav =======
 .added_to_cart.alt,
 .added_to_cart,
 .widget a.button.checkout {
-  background: $secondaryColor;
+  background: $yellow;
 }
 .cart-contents {
   padding-left: 3rem !important;
@@ -174,7 +174,7 @@ ul.order_details {
   background: $white;
   transition: 0.2s;
   &:hover {
-    background: lighten($primaryColor, 5%);
+    background: lighten($orange, 5%);
     color: $black !important;
     span,
     a {
@@ -202,20 +202,31 @@ ul.order_details {
     margin-bottom: 0;
   }
   .button {
-    @include button($size: large);
+    @include button($theme: green);
   }
 }
 
 //checkout discount apply btn
 #pwgc-redeem-button {
-  @include button($theme: secondary);
+  @include button($theme: yellow);
   width: auto;
 }
 #place_order {
-  @include button($size: large, $theme: primary);
+  @include button($theme: green);
 }
 
 //admin order page btns
 .hentry .entry-content a.button {
   margin-bottom: 1rem;
+}
+
+//conntinue cta in cart page, pay cta in checkout page
+.hentry .entry-content a.button,
+#payment .place-order .button {
+  font-size: 2rem;
+}
+
+//after adding product to cart, message appears, add underline to cart link
+.woocommerce-message .button {
+  text-decoration: underline;
 }

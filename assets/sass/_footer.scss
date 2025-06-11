@@ -57,12 +57,13 @@
     }
   }
   &__title {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 2.4rem;
-    line-height: 3.3rem;
+    font-family: 'Rubik', serif;
+    font-size: 2rem;
+    line-height: 3rem;
     text-transform: uppercase;
     color: $white;
     margin-bottom: 0.5rem;
+    font-weight: $headingsWeight;
   }
   &__text {
     font-size: 1.4rem;

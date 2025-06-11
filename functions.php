@@ -25,21 +25,21 @@ function sf_child_theme_dequeue_style() {
  */
 
 function addScripts() {
-    $jsTime = filemtime(get_stylesheet_directory() . '/assets/compiled/js/main.js' );
-    $jsTimeProduct = filemtime(get_stylesheet_directory() . '/assets/compiled/js/product.js' );
+    $jsTime = filemtime(get_stylesheet_directory() . '/dist/main.js' );
+    $jsTimeProduct = filemtime(get_stylesheet_directory() . '/dist/product.js' );
 
-    wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/assets/compiled/js/main.js', array(), $jsTime, true);
+    wp_enqueue_script('child-theme-script', get_stylesheet_directory_uri() . '/dist/main.js', array(), $jsTime, true);
 
     if ( is_product_category() || is_shop() || is_front_page() ) {
-        wp_enqueue_script('product', get_stylesheet_directory_uri() . '/assets/compiled/js/product.js', array(), $jsTimeProduct, true);
+        wp_enqueue_script('product', get_stylesheet_directory_uri() . '/dist/product.js', array(), $jsTimeProduct, true);
     }
 }
 add_action( 'wp_enqueue_scripts', 'addScripts' );
 
 function addStyles() {
-    $cssTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/style.css' );
+    $cssTime = filemtime(get_stylesheet_directory() . '/dist/style.css' );
     if(!is_page_template( 'template-introduction.php' )) {
-        wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/assets/compiled/css/style.css', array(), $cssTime, false);
+        wp_enqueue_style( 'child-theme-style', get_stylesheet_directory_uri() . '/dist/style.css', array(), $cssTime, false);
     }
 
     // $cssHomepageTime = filemtime(get_stylesheet_directory() . '/assets/compiled/css/homepage/style.css' );
@@ -347,3 +347,13 @@ function mysite_filter_related_products( $related_product_ids ) {
 
     return $related_product_ids;
 }
+
+
+function remove_category_prefix_from_title($title) {
+    if (is_category()) { // Check if the current page is a category archive
+        $title = single_cat_title('', false); // Return just the category name
+    }
+    return $title;
+}
+
+add_filter('get_the_archive_title', 'remove_category_prefix_from_title');

@@ -9,11 +9,10 @@
   &__title {
     display: block;
     margin-bottom: 1rem;
-    @include phone {
-      font-size: 2rem;
-    }
+
     h2 {
       padding: 0;
+      font-size: 2.6rem;
     }
   }
   &__block {
@@ -84,12 +83,11 @@
 }
 .post {
   &__title {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Rubik', serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: $h1h2Weight;
     font-size: 4.2rem;
     line-height: 5.7rem;
-    text-align: center;
     color: #272727;
     margin-bottom: 2rem;
   }

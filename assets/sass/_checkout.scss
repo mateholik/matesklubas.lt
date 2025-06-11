@@ -1,11 +1,11 @@
 //form inputs
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea,
 .input-text {
   transition: all 0.2s;
@@ -16,12 +16,12 @@ textarea,
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   &:hover {
-    border: 1px solid #fa9e38;
+    border: 1px solid $orange;
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px #fa9e38;
-    border: 1px solid #fa9e38;
+    box-shadow: 0 0 0 1px $orange;
+    border: 1px solid $orange;
     background: #f3e2ce3b;
   }
 }
@@ -30,28 +30,28 @@ textarea,
   margin-bottom: 1rem;
 }
 .form-row.woocommerce-invalid input.input-text {
-  box-shadow: 0 0 0 1px #e2401c;
+  box-shadow: 0 0 0 1px $orange;
 }
 
 //sheckout btns
 //checkout btns
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
 .button,
 .widget a.button {
-  @include button;
+  @include button($theme: green);
 }
 
 //woo messages
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-  background-color: #ff8100e0;
+  background-color: $orange;
 }
 .woocommerce-error {
-  background-color: #cf4b26;
+  background-color: $orange;
   margin-left: 0 !important;
   padding: 1em 2em 1em 3.5em !important;
 }
@@ -59,7 +59,7 @@ p.no-comments {
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-  background-color: #2b9678;
+  background-color: $green;
 }
 .woocommerce-notices-wrapper .woocommerce-message,
 .woocommerce-notices-wrapper .woocommerce-error li,
@@ -167,13 +167,16 @@ table:not(.has-background) tbody td {
 .quantity .minus,
 p.stars a:hover:after,
 p.stars a:after,
-.star-rating span:before,
+.star-rating span:before {
+  color: $yellow;
+}
+
 #payment
   .payment_methods
   li
-  input[type="radio"]:first-child:checked
+  input[type='radio']:first-child:checked
   + label:before {
-  color: $primaryColor;
+  color: $orange;
 }
 //stripe end
 

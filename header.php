@@ -18,12 +18,26 @@
   <meta name="author" content="Vladis Vaisov">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600&display=swap"
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600&display=swap"
+    rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+
+
   <meta name="verify-paysera" content="84b182157eb93faeba9fcb332168b0da">
   <meta name="google-site-verification" content="5bWsF-vPCDybHkQRRrVH80Igro1qDZByhSJiOmyL3yI" />
 
-  <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" />
+  <!-- <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon.png" /> -->
+
+    <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/favicon/site.webmanifest" />
 
 
   <?php
@@ -90,7 +104,7 @@
       <div class="container">
         <div class="wrapper">
           <a href="<?php echo home_url(); ?>" class="logo">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
+            <img width="140" height="49" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.svg" alt="logo">
           </a>
           <nav class="desktop">
             <?php

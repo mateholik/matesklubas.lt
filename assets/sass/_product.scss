@@ -19,7 +19,7 @@ ul.custom {
     .price {
       font-size: 1.6rem;
       line-height: 2.2rem;
-      color: #69a90f;
+      color: #4bb852;
       margin: 1rem 0 1.5rem !important;
       @include phone {
         margin: 1rem !important;
@@ -32,7 +32,7 @@ ul.custom {
     text-transform: uppercase;
     padding: 0 0.5rem !important;
     margin-bottom: 0 !important;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', serif;
   }
   .btn-wrap {
     padding: 1.5rem 2rem;
@@ -47,9 +47,9 @@ ul.custom {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $primaryColor;
+    background: $orange;
     color: $white;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Rubik', serif;
     font-weight: 300;
     font-size: 2rem;
     line-height: 3.3rem;
@@ -69,15 +69,15 @@ ul.custom {
 
 //pagination
 .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
-  background-color: #fa9e39;
+  background-color: $yellow;
   color: $white;
   &:hover {
-    background-color: $secondaryColor;
+    background-color: $orange;
     color: $white;
   }
 }
 .woocommerce-pagination .page-numbers li .page-numbers.current {
-  background-color: $secondaryColor;
+  background-color: $orange;
   color: $white;
 }
 .woocommerce-products-header {
@@ -102,28 +102,6 @@ ul.custom {
   }
 }
 
-//todo CIA PAKEIST
-ul.products li.product h2,
-ul.products li.product h3,
-ul.products li.product .woocommerce-loop-product__title,
-ul.products li.product .wc-block-grid__product-title,
-ul.products .wc-block-grid__product h2,
-ul.products .wc-block-grid__product h3,
-ul.products .wc-block-grid__product .woocommerce-loop-product__title,
-ul.products .wc-block-grid__product .wc-block-grid__product-title,
-.wc-block-grid__products li.product h2,
-.wc-block-grid__products li.product h3,
-.wc-block-grid__products li.product .woocommerce-loop-product__title,
-.wc-block-grid__products li.product .wc-block-grid__product-title,
-.wc-block-grid__products .wc-block-grid__product h2,
-.wc-block-grid__products .wc-block-grid__product h3,
-.wc-block-grid__products
-  .wc-block-grid__product
-  .woocommerce-loop-product__title,
-.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
-  font-size: 2rem;
-}
-
 .onsale {
   color: #fe191a;
   border-color: #fe191a;
@@ -145,15 +123,21 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.3rem;
-    color: #69a90f;
+    color: #4bb852;
     margin: 1.5rem 0 !important;
     del {
-      color: $secondaryColor;
+      color: $orange;
     }
   }
   //description
   .woocommerce-product-details__short-description {
     margin-bottom: 1.5rem;
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: #4bb852;
+      }
+    }
   }
   //custom meta
   .customMeta {
@@ -164,12 +148,14 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
       font-size: 1.6rem;
       line-height: 2.2rem;
       font-weight: 600;
+      color: #373543;
       a {
         font-weight: 400;
-        text-decoration: none !important;
         display: inline-block !important;
+        text-transform: capitalize;
         &:hover {
-          transform: scale(1.01);
+          color: #4bb852;
+          text-decoration: underline;
         }
       }
     }
@@ -180,7 +166,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     display: flex;
     align-items: center;
     padding: 1rem 0;
-    color: $secondaryColor;
+    color: $orange;
     img {
       margin-right: 0.5rem;
       max-width: 2.5rem;
@@ -190,7 +176,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
     }
   }
   .stock.in-stock {
-    color: #0f834d;
+    color: #4bb852;
   }
   //shipping
   .shippin {
@@ -202,7 +188,7 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
       max-width: 2.5rem;
     }
     .green {
-      color: #69a90f;
+      color: #4bb852;
     }
   }
   //quantiti
@@ -216,12 +202,12 @@ ul.products .wc-block-grid__product .wc-block-grid__product-title,
 }
 
 button.alt,
-input[type="button"].alt,
-input[type="reset"].alt,
-input[type="submit"].alt,
+input[type='button'].alt,
+input[type='reset'].alt,
+input[type='submit'].alt,
 .button.alt,
 .widget-area .widget a.button.alt {
-  @include button;
+  @include button($theme: green);
 }
 // description an comment tabs
 // .woocommerce-tabs ul.tabs {
@@ -264,7 +250,7 @@ input[type="submit"].alt,
     .value {
       margin-bottom: 0 !important;
       select {
-        background: $primaryColor;
+        background: $orange;
       }
     }
   }
@@ -302,6 +288,8 @@ ul.products {
     }
     & > a {
       border: 0.1rem solid #f2f2f2;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
       padding: 2.4rem 1rem 1.6rem;
       display: block;
       height: 100%;
@@ -313,16 +301,17 @@ ul.products {
       h2 {
         font-size: 1.6rem !important;
         margin-bottom: 0.8rem !important;
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Rubik', serif;
         text-transform: uppercase;
         padding: 0;
+        font-weight: 500 !important;
       }
       .price {
-        color: #69a90f;
+        color: #4bb852;
         font-size: 2rem;
         margin-bottom: 0;
         del {
-          color: $secondaryColor;
+          color: $orange;
         }
       }
       .star-rating span:before,
@@ -330,21 +319,19 @@ ul.products {
       .quantity .minus,
       p.stars a:hover:after,
       p.stars a:after,
-      .star-rating span:before,
-      #payment
-        .payment_methods
-        li
-        input[type="radio"]:first-child:checked
-        + label:before {
-        color: $primaryColor;
+      .star-rating span:before {
+        color: $yellow;
       }
     }
     .btn-wrap {
       padding: 1.6rem;
       border: 0.1rem solid #f2f2f2;
       border-top: none;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       .button {
-        @include button;
+        @include button($theme: green);
+        font-size: 1.8rem;
       }
     }
   }
