@@ -423,15 +423,15 @@ get_header(); ?>
       <?php get_template_part( 'templates/title', null, array( 'title' => 'prekės' ) 
      ); ?>
       <div class="options">
-        <span class="active">Rezervuok</span>
-        <span>Populiariausios</span>
+        <!-- <span class="active">Rezervuok</span> -->
+        <span class="active">Populiariausios</span>
         <span>Naujienos</span>
         <span>Išpardavimas</span>
       </div>
       <div class="results">
-        <div>
+        <!-- <div>
           <?php display_soldout_products(8);  ?>
-        </div>
+        </div> -->
         <div>
           <?php display_top_products_excluding_soldout(8); ?>
         </div>
