@@ -38,9 +38,9 @@ get_header(); ?>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/mail.svg" alt="mail-icon">
     info@matesklubas.lt
   </a>
-  <a href="tel:+37067900146">
+  <a href="tel:+37064830875">
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/phone.svg" alt="phone-icon">
-    +37067900146
+    +37064830875
   </a>
 
   <!--    <p><strong>Kontaktinis asmuo:</strong> Andrius Vitkauskas</p>-->
