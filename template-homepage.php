@@ -25,8 +25,8 @@ get_header(); ?>
           </h1>
           <p>Pietų Amerikos gėrimas, pasižymintis kavos jėga, arbatos nauda ir šokolado suteikiama euforija.</p>
           <div class="btn__holder">
-            <a href="https://www.matesklubas.lt/produkto-kategorija/kita/rinkiniai/" class="btn">
-              išbandyti
+            <a href="https://www.matesklubas.lt/produkto-kategorija/yerba-mate-rinkiniai/" class="btn">
+              Rinkiniai naujokams
               <img width="30" height="30" class="arrow"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/arrow-right.svg"
                 alt="product background"></a>
@@ -395,7 +395,7 @@ get_header(); ?>
      ); ?>
       <div class="wrapper">
 
-        <?php get_template_part('templates/category', null, array( 'category' => 'mate', 'title' => 'Matė arbatos' )); ?>
+        <?php get_template_part('templates/category', null, array( 'category' => 'yerba-mate-arbata', 'title' => 'Matė arbatos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'kalabasos', 'title' => 'Kalabasos' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'bombiles', 'title' => 'Bombilės' )); ?>
         <?php get_template_part('templates/category', null, array( 'category' => 'kita', 'title' => 'Kitos prekės' )); ?>

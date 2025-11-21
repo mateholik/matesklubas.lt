@@ -5,7 +5,7 @@
         $main_category_id = 24; // ID of "MATÈ" category
         $is_active = (get_queried_object_id() == $main_category_id) ? 'active-item' : '';
       ?>
-      <a href="https://matesklubas.lt/produkto-kategorija/mate/" class="sidebar__block-title <?php echo $is_active; ?>">
+      <a href="https://www.matesklubas.lt/produkto-kategorija/yerba-mate-arbata/" class="sidebar__block-title <?php echo $is_active; ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/daigelis.svg" alt="daigelis">
         MATÈ:
       </a>
@@ -52,6 +52,20 @@
       <a href="https://matesklubas.lt/produkto-kategorija/kita/" class="sidebar__block-title <?php echo $is_active; ?>">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/gift.svg" alt="kita">
         kitos prekės:
+      </a>
+      <ul>
+        <?php getSubCategories($main_category_id, 'sidebar'); ?>
+      </ul>
+    </div>
+
+      <div class="sidebar__block">
+      <?php 
+        $main_category_id = 119; // ID of "RINKINIAI NAUJOKAMS" category
+        $is_active = (get_queried_object_id() == $main_category_id) ? 'active-item' : '';
+      ?>
+      <a href="https://www.matesklubas.lt/produkto-kategorija/yerba-mate-rinkiniai/" class="sidebar__block-title <?php echo $is_active; ?>">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/gift.svg" alt="kita">
+       RINKINIAI NAUJOKAMS
       </a>
       <ul>
         <?php getSubCategories($main_category_id, 'sidebar'); ?>
