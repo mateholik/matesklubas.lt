@@ -154,7 +154,7 @@ get_header(); ?>
   </section>
   <section class="feature-product">
     <div class="container">
-      <?php get_template_part( 'templates/title', null, array( 'title' => 'klasikinis rinkinys' ) ); ?>
+      <?php get_template_part( 'templates/title', null, array( 'title' => 'Matės Klubo naujoko rinkinys' ) ); ?>
     
       <div class="wrapper">
         <div class="left">
@@ -164,34 +164,33 @@ get_header(); ?>
               <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/check.svg" alt="romb">
               <div>
-                <span>Tradicinė moliūgo kalabasa</span>
+                <span> Švelnūs skoniai</span>
               </div>
             </li>
             <li>
               <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/check.svg" alt="romb">
               <div>
-                <span>Nerūdijančio plieno bombilė</span>
+                <span>Paprasta priežiūra</span>
               </div>
             </li>
             <li>
               <img width="30" height="30" loading="lazy"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/check.svg" alt="romb">
               <div>
-                <span>Dvi populiariausios Yerba Mate
-                  arbatos</span>
+                <span>Viskas viename</span>
               </div>
             </li>
           </ul>
           <div class="btn__holder">
-            <a href="https://www.matesklubas.lt/produktas/klasikinis-mates-rinkinys-2/" class="btn">Plačiau  
+            <a href="https://www.matesklubas.lt/produktas/mates-klubo-naujoko-rinkinys/" class="btn">Plačiau  
                <img width="30" height="30" class="arrow"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/arrow-right.svg"
                 alt="product background"></a>
           </div>
         </div>
         <div class="img">
-          <img loading="lazy" width="585" height="436" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/rinkinys.webp" alt="mate">
+          <img loading="lazy" width="585" height="436" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/naujoko-rinkinys.jpg" alt="mate">
 
         </div>
       </div>
