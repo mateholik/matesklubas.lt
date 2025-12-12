@@ -41,21 +41,7 @@ if($product->get_id() != 1067) { ?>
 
         <?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 
-        <?php
-        // Your custom product meta fields
-        productCustomTags($product->get_id(), 'salis', 'Kilmės šalis');
-        productCustomTags($product->get_id(), 'sudetis', 'Sudėtis');
-        productCustomTags($product->get_id(), 'skonio_intensyvumas', 'Skonio intensyvumas');
-        productCustomTags($product->get_id(), 'kiekis', 'Kiekis');
-        productCustomTags($product->get_id(), 'paruosimo_budas', 'Rekomenduojamas paruošimo būdas');
-        productCustomTags($product->get_id(), 'turis', 'Tūris');
-        productCustomTags($product->get_id(), 'aukstis', 'Aukštis');
-        productCustomTags($product->get_id(), 'skersmuo', 'Skersmuo');
-        productCustomTags($product->get_id(), 'medziaga', 'Medžiaga');
-        productCustomTags($product->get_id(), 'stilius', 'Stilius');
-        productCustomTags($product->get_id(), 'ilgis', 'Ilgis');
-        productCustomTags($product->get_id(), 'filtras', 'Filtras');
-        ?>
+        <?php if ( function_exists( 'productAllCustomTags' ) ) { productAllCustomTags( $product->get_id() ); } ?>
 
         <?php do_action( 'woocommerce_product_meta_end' ); ?>
 
